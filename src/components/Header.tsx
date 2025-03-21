@@ -74,7 +74,7 @@ const Header: React.FC<HeaderProps> = ({ onProductsClick }) => {
             <div className="md:hidden flex items-center">
               <button 
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-gray-200 hover:text-[#f47847] focus:outline-none p-1 -ml-20"
+                className="text-gray-200 hover:text-[#f47847] focus:outline-none p-1 "
                 aria-label="Toggle menu"
               >
                 {mobileMenuOpen ? (

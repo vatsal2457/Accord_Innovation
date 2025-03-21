@@ -116,24 +116,24 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
         <div className="absolute inset-0 bg-gradient-to-r from-[#082a45] to-[#082a45]/70"></div>
       </div>
       
-      <div className="relative p-8 h-full flex flex-col">
+      <div className="relative p-4 sm:p-6 md:p-8 h-full flex flex-col">
         {/* Logo */}
-        <div className="mb-12 transform transition-all duration-1000 translate-y-0 opacity-100">
-          <img src={logo} alt="Company logo" className="h-16 animate-fadeIn" />
+        <div className="mb-4 sm:mb-8 md:mb-12 transform transition-all duration-1000 translate-y-0 opacity-100">
+          <img src={logo} alt="Company logo" className="h-10 sm:h-12 md:h-16 animate-fadeIn" />
         </div>
         
         {/* Stat */}
         <div className="flex-1">
-          <div className="text-6xl font-bold mb-2 animate-numberCountUp">{stat}</div>
-          <div className="text-xl mb-8 animate-slideInRight">{statLabel || ''}</div>
-          <p className="text-lg animate-fadeIn transition-opacity duration-1000 delay-300">{description}</p>
+          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-1 sm:mb-2 animate-numberCountUp">{stat}</div>
+          <div className="text-sm sm:text-base md:text-lg lg:text-xl mb-3 sm:mb-5 md:mb-8 animate-slideInRight">{statLabel || ''}</div>
+          <p className="text-sm sm:text-base md:text-lg animate-fadeIn transition-opacity duration-1000 delay-300 line-clamp-4 sm:line-clamp-none">{description}</p>
         </div>
         
         {/* Buttons */}
-        <div className="mt-6 flex flex-wrap gap-4 animate-slideInUp">
-          <button className="flex items-center text-white hover:text-[#f47847] transition-all duration-300 group">
-            <span className="flex items-center justify-center bg-[#f47847] rounded-full w-8 h-8 mr-2 group-hover:animate-pulse">
-              <Play className="h-4 w-4 ml-0.5" />
+        <div className="mt-4 sm:mt-6 flex flex-wrap gap-3 sm:gap-4 animate-slideInUp">
+          <button className="flex items-center text-white hover:text-[#f47847] transition-all duration-300 group text-sm sm:text-base">
+            <span className="flex items-center justify-center bg-[#f47847] rounded-full w-6 h-6 sm:w-8 sm:h-8 mr-2 group-hover:animate-pulse">
+              <Play className="h-3 w-3 sm:h-4 sm:w-4 ml-0.5" />
             </span>
             <span className="relative overflow-hidden inline-block">
               Watch Video
@@ -141,12 +141,12 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
             </span>
           </button>
           
-          <button className="flex items-center text-white hover:text-[#f47847] transition-colors group">
+          <button className="flex items-center text-white hover:text-[#f47847] transition-colors group text-sm sm:text-base">
             <span className="relative overflow-hidden inline-block">
               Learn More
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#f47847] group-hover:w-full transition-all duration-300"></span>
             </span>
-            <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+            <ArrowRight className="ml-1 sm:ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1" />
           </button>
         </div>
       </div>
@@ -160,6 +160,21 @@ const Testimonials: React.FC = () => {
   const [isPaused, setIsPaused] = useState(false);
   const timerRef = useRef<number | null>(null);
   const progressRef = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
+  
+  // Check if screen is mobile
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => {
+      window.removeEventListener('resize', checkMobile);
+    };
+  }, []);
   
   const testimonials = [
     {
@@ -258,14 +273,14 @@ const Testimonials: React.FC = () => {
   }, [activeIndex, isPaused]);
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-10 sm:py-16 md:py-20 bg-white">
       {/* CSS for animations */}
       <style dangerouslySetInnerHTML={{ __html: animationStyles }} />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="flex justify-between items-end mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#052e49] leading-tight max-w-xl animate-float">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#052e49] leading-tight mb-6 md:mb-0 md:max-w-xl animate-float">
             When our customers work, the world works
           </h2>
           <a 
@@ -278,7 +293,7 @@ const Testimonials: React.FC = () => {
         
         {/* Active Testimonial Card Container */}
         <div 
-          className="mb-16 h-[400px] relative overflow-hidden rounded-lg shadow-xl"
+          className="mb-8 sm:mb-12 md:mb-16 h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] relative overflow-hidden rounded-lg shadow-xl"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => {
             setIsPaused(false);
@@ -302,26 +317,26 @@ const Testimonials: React.FC = () => {
           ))}
           
           {/* Navigation buttons overlaid on testimonial */}
-          <div className="absolute bottom-4 right-4 flex space-x-2">
+          <div className="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 flex space-x-2">
             <button 
               onClick={prevTestimonial}
               className="p-2 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm transition-all duration-300"
               aria-label="Previous testimonial"
             >
-              <ChevronLeft className="h-5 w-5 text-white" />
+              <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
             </button>
             <button 
               onClick={nextTestimonial}
               className="p-2 rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-sm transition-all duration-300"
               aria-label="Next testimonial"
             >
-              <ChevronRight className="h-5 w-5 text-white" />
+              <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
             </button>
           </div>
         </div>
         
         {/* Mobile CTA */}
-        <div className="md:hidden mb-16">
+        <div className="md:hidden mb-8 sm:mb-12">
           <a 
             href="#" 
             className="block text-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:shadow-lg"
@@ -331,7 +346,7 @@ const Testimonials: React.FC = () => {
         </div>
         
         {/* Progress bar */}
-        <div className="w-full h-1 bg-gray-200 mb-8 rounded-full overflow-hidden">
+        <div className="w-full h-1 bg-gray-200 mb-6 sm:mb-8 rounded-full overflow-hidden">
           <div 
             ref={progressRef}
             className="h-full bg-[#f47847] animate-progress"
@@ -343,35 +358,38 @@ const Testimonials: React.FC = () => {
         <div className="flex items-center justify-center">
           <button 
             onClick={prevTestimonial}
-            className="p-3 rounded-full border border-gray-300 hover:border-[#0a3d62] hover:bg-gray-50 mr-6 transition-all duration-300 hover:shadow-md transform hover:-translate-x-1"
+            className="p-2 sm:p-3 rounded-full border border-gray-300 hover:border-[#0a3d62] hover:bg-gray-50 mr-3 sm:mr-6 transition-all duration-300 hover:shadow-md transform hover:-translate-x-1"
             aria-label="Previous testimonial"
           >
-            <ChevronLeft className="h-6 w-6 text-gray-600" />
+            <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6 text-gray-600" />
           </button>
           
-          <div className="flex items-center justify-center space-x-12">
+          <div className="flex items-center justify-center space-x-4 sm:space-x-8 md:space-x-12 overflow-x-auto no-scrollbar px-2">
             {testimonials.map((testimonial, index) => {
               // Calculate position relative to active index
               const position = (index - activeIndex + testimonials.length) % testimonials.length;
-              // Only show logos in range [-2, 2] from active
-              const isVisible = position <= 2 && position >= -2;
+              
+              // Only show logos in range [-1, 1] on mobile and [-2, 2] on desktop
+              const isVisible = isMobile 
+                ? position <= 1 && position >= -1 
+                : position <= 2 && position >= -2;
               
               return (
                 <button 
                   key={index}
                   onClick={() => handleLogoClick(index)}
-                  className={`transition-all duration-500 focus:outline-none ${
+                  className={`transition-all duration-500 focus:outline-none flex-shrink-0 ${
                     !isVisible ? 'hidden' : ''
                   } ${
                     position === 0 
-                      ? 'opacity-100 scale-125 transform-gpu' 
+                      ? 'opacity-100 scale-110 sm:scale-125 transform-gpu' 
                       : 'opacity-50 hover:opacity-75 transform-gpu hover:scale-110'
                   }`}
                 >
                   <img 
                     src={testimonial.logo} 
                     alt={`Company logo ${index + 1}`} 
-                    className={`h-10 max-w-[120px] object-contain ${
+                    className={`h-8 sm:h-10 max-w-[80px] sm:max-w-[120px] object-contain ${
                       position === 0 ? 'animate-float' : ''
                     }`}
                   />
@@ -382,11 +400,29 @@ const Testimonials: React.FC = () => {
           
           <button 
             onClick={nextTestimonial}
-            className="p-3 rounded-full border border-gray-300 hover:border-[#0a3d62] hover:bg-gray-50 ml-6 transition-all duration-300 hover:shadow-md transform hover:translate-x-1"
+            className="p-2 sm:p-3 rounded-full border border-gray-300 hover:border-[#0a3d62] hover:bg-gray-50 ml-3 sm:ml-6 transition-all duration-300 hover:shadow-md transform hover:translate-x-1"
             aria-label="Next testimonial"
           >
-            <ChevronRight className="h-6 w-6 text-gray-600" />
+            <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6 text-gray-600" />
           </button>
+        </div>
+        
+        {/* Mobile Dots Indicator */}
+        <div className="flex justify-center mt-6 md:hidden">
+          <div className="flex space-x-2">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => handleLogoClick(index)}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  index === activeIndex 
+                    ? 'bg-[#f47847] w-6' 
+                    : 'bg-gray-300 hover:bg-gray-400'
+                }`}
+                aria-label={`Go to testimonial ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
