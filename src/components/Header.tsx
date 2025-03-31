@@ -28,6 +28,16 @@ const Header: React.FC<HeaderProps> = ({ onProductsClick }) => {
   }, []);
 
   const handleMenuClick = (label: string) => {
+    if (label === 'Home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.location.href = '/home';
+      return;
+    }
+    if (label === 'Career' || label === 'Contact Us') {
+      // For Career and Contact Us, prevent dropdown behavior
+      setMobileMenuOpen(false);
+      return;
+    }
     if (activeMenu === label) {
       setActiveMenu(null);
     } else {
@@ -37,10 +47,19 @@ const Header: React.FC<HeaderProps> = ({ onProductsClick }) => {
     setMobileMenuOpen(false);
   };
 
+  const handleNavigation = (label: string) => {
+    if (label === 'Career') {
+      window.location.href = '/career';
+    } else if (label === 'Contact Us') {
+      window.location.href = '/contact';
+    }
+  };
+
   const navItems = [
-    { label: 'Home', hasDropdown: true },
+    { label: 'Home', hasDropdown: false },
     { label: 'About', hasDropdown: true },
     { label: 'Services', hasDropdown: true },
+    { label: 'Solutions', hasDropdown: true },
     { label: 'Industries', hasDropdown: true },
     { label: 'Career', hasDropdown: false },
     { label: 'Contact Us', hasDropdown: false },
@@ -93,7 +112,12 @@ const Header: React.FC<HeaderProps> = ({ onProductsClick }) => {
                   className="relative"
                 >
                   <button
-                    onClick={() => handleMenuClick(item.label)}
+                    onClick={() => {
+                      handleMenuClick(item.label);
+                      if (item.label === 'Career' || item.label === 'Contact Us') {
+                        handleNavigation(item.label);
+                      }
+                    }}
                     className={`inline-flex items-center px-1 py-2 text-sm font-medium transition-colors ${
                       activeMenu === item.label
                         ? 'text-[#f47847]'
@@ -139,7 +163,12 @@ const Header: React.FC<HeaderProps> = ({ onProductsClick }) => {
             {navItems.map((item) => (
               <div key={item.label} className="py-1">
                 <button
-                  onClick={() => handleMenuClick(item.label)}
+                  onClick={() => {
+                    handleMenuClick(item.label);
+                    if (item.label === 'Career' || item.label === 'Contact Us') {
+                      handleNavigation(item.label);
+                    }
+                  }}
                   className={`w-full flex justify-between items-center py-2 pl-3 pr-4 text-base font-medium rounded-md ${
                     activeMenu === item.label
                       ? 'text-[#f47847] bg-[#072c4b]'

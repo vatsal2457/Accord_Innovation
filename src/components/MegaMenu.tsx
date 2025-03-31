@@ -23,16 +23,16 @@ const menuData: MenuData = {
   Products: {
     'Featured products': {
       items: [
-        'AI Agents',
-        'IT Service Management',
-        'Customer Service Management',
-        'IT Operations Management',
-        'HR Service Delivery',
-        'Strategic Portfolio Management',
-        'IT Asset Management',
-        'Integration Hub',
-        'Field Service Management',
-        'Security Operations',
+       'Overview',
+        'Vision & Mission',
+        'Our Story',
+        'Executive Leadership Team',
+        'Our clientele',
+        'Code of Conduct',
+        'Value Proposition',
+        'Sustainability',
+        'Anti Bribery & Anti-Corruption Policy',
+        'PDPA',
       ],
       description: 'Unite people, processes, and systems with AI-powered products for all your workflows.',
       cta: 'See All Products',
@@ -66,14 +66,21 @@ const menuData: MenuData = {
   Industries: {
     'Featured Industries': {
       items: [
-        'Financial Services',
-        'Healthcare',
-        'Manufacturing',
-        'Public Sector',
+        'Banking & Financial Services',
+        'Insurance',
         'Telecommunications',
+        'Software',
+        'Healthcare',
+        'Aerospace & Aviation',
+        'Manufacturing',
         'Retail',
-        'Education',
-        'Energy'
+        'Consumer Electronics Sector',
+        'Energy',
+        'Travel & Logistics',
+        'Life Sciences',
+        'Medical Devices',
+        'Pharmaceutical',
+        'Automotive'
       ],
       description: 'Industry-specific solutions to transform your business operations.',
       cta: 'Explore Industries',
@@ -110,14 +117,15 @@ const menuData: MenuData = {
   Support: {
     'Support Options': {
       items: [
-        'Technical Support',
-        'Customer Success',
-        'Professional Services',
-        'Knowledge Base',
-        'Community Forums',
-        'Status Page',
-        'Support Plans',
-        'Implementation Services'
+        'IoT',
+        'Software Development Services',
+        'QA Testing Services',
+        'Mobility Solutions',
+        'Data Analytics & Business Intellige',
+        'Professional & Managed Services',
+        'Cloud Services',
+        'Infrastructure Management Services',
+        'Artificial Intelligence'
       ],
       description: 'Get the help you need to succeed with our platform.',
       cta: 'Get Support',
@@ -126,6 +134,26 @@ const menuData: MenuData = {
         'Dedicated success managers',
         'Expert consultants',
         'Global support coverage'
+      ]
+    }
+  },
+  Solutions: {
+    'Our Solutions': {
+      items: [
+        'Product Engineering',
+        'SaaS & Cloud',
+        'Data Management',
+        'Web Technologies',
+        'ERP & CRM',
+        'AI – Chat Bot'
+      ],
+      description: 'Comprehensive solutions to transform your business operations.',
+      cta: 'Explore Solutions',
+      features: [
+        'Cutting-edge technology',
+        'Scalable solutions',
+        'Industry expertise',
+        'Proven track record'
       ]
     }
   },
@@ -151,25 +179,50 @@ const menuData: MenuData = {
       ]
     }
   },
-  Company: {
+  About: {
     'About Us': {
       items: [
-        'Leadership Team',
-        'Careers',
-        'Newsroom',
-        'Investor Relations',
-        'Corporate Responsibility',
-        'Events',
-        'Contact Us',
-        'Global Offices'
+        'Overview',
+        'Vision & Mission',
+        'Our Story',
+        'Executive Leadership Team',
+        'Our clientele',
+        'Code of Conduct',
+        'Value Proposition',
+        'Sustainability',
+        'Anti Bribery & Anti-Corruption Policy',
+        'PDPA'
       ],
-      description: 'Learn about our mission, values, and commitment to innovation.',
+      description: 'Learn about our company, values, and commitment to excellence.',
       cta: 'Learn More',
       features: [
         'Global presence',
         'Industry leadership',
         'Innovation culture',
         'Social impact'
+      ]
+    }
+  },
+  Services: {
+    'Our Services': {
+      items: [
+        'IoT',
+        'Software Development Services',
+        'QA Testing Services',
+        'Mobility Solutions',
+        'Data Analytics & Business Intellige',
+        'Professional & Managed Services',
+        'Cloud Services',
+        'Infrastructure Management Services',
+        'Artificial Intelligence'
+      ],
+      description: 'Comprehensive services to transform your business operations.',
+      cta: 'Explore Services',
+      features: [
+        'Expert team',
+        'Quality assurance',
+        'Innovation focus',
+        'Scalable solutions'
       ]
     }
   },
