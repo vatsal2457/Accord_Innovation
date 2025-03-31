@@ -52,6 +52,8 @@ const Header: React.FC<HeaderProps> = ({ onProductsClick }) => {
       window.location.href = '/career';
     } else if (label === 'Contact Us') {
       window.location.href = '/contact';
+    } else if (label === 'Overview') {
+      window.location.href = '/overview';
     }
   };
 
