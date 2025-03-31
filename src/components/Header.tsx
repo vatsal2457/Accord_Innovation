@@ -42,8 +42,8 @@ const Header: React.FC<HeaderProps> = ({ onProductsClick }) => {
     { label: 'About', hasDropdown: true },
     { label: 'Services', hasDropdown: true },
     { label: 'Industries', hasDropdown: true },
-    { label: 'Career', hasDropdown: true },
-    { label: 'Contact Us', hasDropdown: true },
+    { label: 'Career', hasDropdown: false },
+    { label: 'Contact Us', hasDropdown: false },
   ];
 
   return (
