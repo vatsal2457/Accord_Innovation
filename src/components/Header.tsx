@@ -38,12 +38,12 @@ const Header: React.FC<HeaderProps> = ({ onProductsClick }) => {
   };
 
   const navItems = [
-    { label: 'Products', hasDropdown: true },
+    { label: 'Home', hasDropdown: true },
+    { label: 'About', hasDropdown: true },
+    { label: 'Services', hasDropdown: true },
     { label: 'Industries', hasDropdown: true },
-    { label: 'Learning', hasDropdown: true },
-    { label: 'Support', hasDropdown: true },
-    { label: 'Partners', hasDropdown: true },
-    { label: 'Company', hasDropdown: true },
+    { label: 'Career', hasDropdown: true },
+    { label: 'Contact Us', hasDropdown: true },
   ];
 
   return (
