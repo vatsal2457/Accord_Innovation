@@ -32,7 +32,7 @@ const SoftwareDevelopmentServices: React.FC = () => {
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-3">
-            Development Services
+           Software Development Services
           </h2>
           <p className="text-xl text-gray-600 mb-12">
             Explore our comprehensive tech solutions
