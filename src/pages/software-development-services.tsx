@@ -99,7 +99,7 @@ const SoftwareDevelopmentServices: React.FC = () => {
                 {/* Back of the card */}
                 <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#313D4F]/90 p-8 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] shadow-md">
                   <div className="flex flex-col h-full justify-center">
-                    <p className="text-white/80 leading-relaxed">Whether it's building an e-commerce platform or a corporate website, we deliver results that leave a lasting impression.</p>
+                    <p className="text-white/80 leading-relaxed">Our web development solutions are designed to create seamless, user-friendly, and visually appealing websites that captivate your audience and drive engagement. Whether it's building an e-commerce platform or a corporate website, we deliver results that leave a lasting impression.</p>
                   </div>
                 </div>
               </div>
@@ -228,98 +228,6 @@ const SoftwareDevelopmentServices: React.FC = () => {
         </div>
       </div>
 
-      {/* Introduction Section */}
-      <div className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            Transforming Ideas into Powerful Solutions
-          </h2>
-          <p className="text-xl text-gray-600 leading-relaxed">
-            At Accord Innovations, we specialize in delivering cutting-edge software solutions that drive business growth and digital transformation. Our expert team combines technical excellence with innovative thinking to create robust, scalable, and user-friendly applications.
-          </p>
-        </div>
-
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Custom Software Development */}
-          <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-            <div className="text-4xl text-blue-600 mb-4">
-              <i className="fas fa-code"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Custom Software Development</h3>
-            <p className="text-gray-600">
-              Tailored solutions designed to meet your specific business needs, from enterprise applications to specialized tools.
-            </p>
-          </div>
-
-          {/* Web Application Development */}
-          <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-            <div className="text-4xl text-blue-600 mb-4">
-              <i className="fas fa-globe"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Web Application Development</h3>
-            <p className="text-gray-600">
-              Responsive and dynamic web applications built with modern technologies and frameworks for optimal performance.
-            </p>
-          </div>
-
-          {/* Mobile App Development */}
-          <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-            <div className="text-4xl text-blue-600 mb-4">
-              <i className="fas fa-mobile-alt"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Mobile App Development</h3>
-            <p className="text-gray-600">
-              Native and cross-platform mobile applications that deliver exceptional user experiences across all devices.
-            </p>
-          </div>
-
-          {/* API Development & Integration */}
-          <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-            <div className="text-4xl text-blue-600 mb-4">
-              <i className="fas fa-plug"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">API Development & Integration</h3>
-            <p className="text-gray-600">
-              Seamless integration services and robust API development to connect your systems and applications.
-            </p>
-          </div>
-
-          {/* DevOps Services */}
-          <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-            <div className="text-4xl text-blue-600 mb-4">
-              <i className="fas fa-sync-alt"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">DevOps Services</h3>
-            <p className="text-gray-600">
-              Streamlined development and deployment processes with automated testing and continuous integration.
-            </p>
-          </div>
-        </div>
-
-        {/* Technology Stack Section */}
-        <div className="mt-20 text-center">
-          <h2 className="text-4xl font-bold text-gray-800 mb-12">Our Technology Stack</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
-              <h4 className="text-xl font-bold text-gray-800 mb-2">Frontend</h4>
-              <p className="text-gray-600">React, Angular, Vue.js</p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
-              <h4 className="text-xl font-bold text-gray-800 mb-2">Backend</h4>
-              <p className="text-gray-600">Node.js, Python, Java</p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
-              <h4 className="text-xl font-bold text-gray-800 mb-2">Mobile</h4>
-              <p className="text-gray-600">React Native, Flutter</p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
-              <h4 className="text-xl font-bold text-gray-800 mb-2">Cloud</h4>
-              <p className="text-gray-600">AWS, Azure, GCP</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
