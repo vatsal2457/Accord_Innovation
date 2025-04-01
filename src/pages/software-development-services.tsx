@@ -53,7 +53,7 @@ const SoftwareDevelopmentServices: React.FC = () => {
                         </svg>
                       </div>
                       <h3 className="text-2xl font-bold mb-2">Web Development</h3>
-                      <p className="text-white/90">Create stunning, responsive websites with modern frameworks</p>
+                      <p className="text-white/90 text-sm">Our web development solutions are designed to create seamless, user-friendly, and visually appealing websites that captivate your audience and drive engagement.</p>
                     </div>
                     <svg className="w-6 h-6 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -63,14 +63,7 @@ const SoftwareDevelopmentServices: React.FC = () => {
                 {/* Back of the card */}
                 <div className="absolute inset-0 h-full w-full rounded-2xl bg-blue-600 p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
                   <div className="flex flex-col h-full justify-center">
-                    <h4 className="text-xl font-bold mb-4">Technologies We Use:</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>React.js & Next.js</li>
-                      <li>Vue.js & Nuxt.js</li>
-                      <li>Angular</li>
-                      <li>Tailwind CSS</li>
-                      <li>TypeScript</li>
-                    </ul>
+                    <p className="text-white/90">Whether it's building an e-commerce platform or a corporate website, we deliver results that leave a lasting impression.</p>
                   </div>
                 </div>
               </div>
@@ -89,24 +82,14 @@ const SoftwareDevelopmentServices: React.FC = () => {
                         </svg>
                       </div>
                       <h3 className="text-2xl font-bold mb-2">App Development</h3>
-                      <p className="text-white/90">Native and cross-platform mobile applications development</p>
+                      <p className="text-white/90 text-sm">In an increasingly mobile-driven world, our mobile development services cater to both Android and iOS platforms.</p>
                     </div>
-                    <svg className="w-6 h-6 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
                   </div>
                 </div>
                 {/* Back of the card */}
                 <div className="absolute inset-0 h-full w-full rounded-2xl bg-red-500 p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
                   <div className="flex flex-col h-full justify-center">
-                    <h4 className="text-xl font-bold mb-4">App Solutions:</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>iOS Development</li>
-                      <li>Android Development</li>
-                      <li>React Native</li>
-                      <li>Flutter</li>
-                      <li>Cross-platform Apps</li>
-                    </ul>
+                    <p className="text-white/90">We craft mobile apps that are intuitive, feature-rich, and built to enhance user experiences, ensuring your business is accessible on the go.</p>
                   </div>
                 </div>
               </div>
@@ -125,24 +108,14 @@ const SoftwareDevelopmentServices: React.FC = () => {
                         </svg>
                       </div>
                       <h3 className="text-2xl font-bold mb-2">Data Science</h3>
-                      <p className="text-white/90">Transform data into actionable insights and solutions</p>
+                      <p className="text-white/90 text-sm">Leveraging the power of data, our data science solutions provide actionable insights that drive informed decision-making.</p>
                     </div>
-                    <svg className="w-6 h-6 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
                   </div>
                 </div>
                 {/* Back of the card */}
                 <div className="absolute inset-0 h-full w-full rounded-2xl bg-emerald-600 p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
                   <div className="flex flex-col h-full justify-center">
-                    <h4 className="text-xl font-bold mb-4">Data Services:</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>Machine Learning</li>
-                      <li>Predictive Analytics</li>
-                      <li>Data Visualization</li>
-                      <li>Big Data Processing</li>
-                      <li>AI Integration</li>
-                    </ul>
+                    <p className="text-white/90">From data collection and analysis to predictive modeling, we help businesses unlock the true potential of their data.</p>
                   </div>
                 </div>
               </div>
@@ -161,24 +134,14 @@ const SoftwareDevelopmentServices: React.FC = () => {
                         </svg>
                       </div>
                       <h3 className="text-2xl font-bold mb-2">Back-end Development</h3>
-                      <p className="text-white/90">Robust server-side solutions and database architecture</p>
+                      <p className="text-white/90 text-sm">The backbone of any software system, our back-end development expertise ensures robust functionality, data management, and security.</p>
                     </div>
-                    <svg className="w-6 h-6 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
                   </div>
                 </div>
                 {/* Back of the card */}
                 <div className="absolute inset-0 h-full w-full rounded-2xl bg-purple-600 p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
                   <div className="flex flex-col h-full justify-center">
-                    <h4 className="text-xl font-bold mb-4">Backend Stack:</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>Node.js & Express</li>
-                      <li>Python & Django</li>
-                      <li>Java Spring Boot</li>
-                      <li>Database Design</li>
-                      <li>Microservices</li>
-                    </ul>
+                    <p className="text-white/90">We design the infrastructure that powers your applications, guaranteeing reliability and performance.</p>
                   </div>
                 </div>
               </div>
@@ -197,30 +160,20 @@ const SoftwareDevelopmentServices: React.FC = () => {
                         </svg>
                       </div>
                       <h3 className="text-2xl font-bold mb-2">Software Tools Development</h3>
-                      <p className="text-white/90">Custom software tools for enterprise efficiency</p>
+                      <p className="text-white/90 text-sm">Tailored software tools are essential for optimizing business processes.</p>
                     </div>
-                    <svg className="w-6 h-6 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
                   </div>
                 </div>
                 {/* Back of the card */}
                 <div className="absolute inset-0 h-full w-full rounded-2xl bg-orange-500 p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
                   <div className="flex flex-col h-full justify-center">
-                    <h4 className="text-xl font-bold mb-4">Tool Categories:</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>Automation Tools</li>
-                      <li>Business Intelligence</li>
-                      <li>Workflow Solutions</li>
-                      <li>Custom Integrations</li>
-                      <li>Enterprise Software</li>
-                    </ul>
+                    <p className="text-white/90">Our solutions are custom-built to streamline operations, improve efficiency, and drive productivity across your organization.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* API Development */}
+            {/* Embedded Systems Development (previously API Development) */}
             <div className="group h-[300px] [perspective:1000px]">
               <div className="relative h-full w-full rounded-2xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                 {/* Front of the card */}
@@ -232,25 +185,15 @@ const SoftwareDevelopmentServices: React.FC = () => {
                           <path d="M22 10l-6-6H4c-1.1 0-2 .9-2 2v12.01c0 1.1.9 1.99 2 1.99h16c1.1 0 2-.9 2-2v-8zm-7-4.5l5.5 5.5H15V5.5z"/>
                         </svg>
                       </div>
-                      <h3 className="text-2xl font-bold mb-2">API Development</h3>
-                      <p className="text-white/90">RESTful and GraphQL API design and implementation</p>
+                      <h3 className="text-2xl font-bold mb-2">Embedded Systems</h3>
+                      <p className="text-white/90 text-sm">Our embedded systems development services cater to industries where specialized hardware and software integration is essential.</p>
                     </div>
-                    <svg className="w-6 h-6 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
                   </div>
                 </div>
                 {/* Back of the card */}
                 <div className="absolute inset-0 h-full w-full rounded-2xl bg-emerald-600 p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
                   <div className="flex flex-col h-full justify-center">
-                    <h4 className="text-xl font-bold mb-4">API Services:</h4>
-                    <ul className="list-disc list-inside space-y-2">
-                      <li>RESTful APIs</li>
-                      <li>GraphQL</li>
-                      <li>API Gateway</li>
-                      <li>Microservices</li>
-                      <li>API Documentation</li>
-                    </ul>
+                    <p className="text-white/90">We design embedded solutions that are reliable, efficient, and tailored to your specific requirements.</p>
                   </div>
                 </div>
               </div>
