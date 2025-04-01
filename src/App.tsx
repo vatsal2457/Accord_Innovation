@@ -14,6 +14,7 @@ import Overview from './pages/overview.tsx';
 import AntiBriberyCorruption from './pages/anti-bribery-corruption.tsx';
 import PDPA from './pages/pdpa.tsx';
 import Sustainability from './pages/sustainability.tsx';
+import SoftwareDevelopmentServices from './pages/software-development-services.tsx';
 function App() {
   const [isProductsOpen, setIsProductsOpen] = useState(false);
   const [activeSlide, setActiveSlide] = useState(0);
@@ -188,7 +189,7 @@ function App() {
     //   <CallToAction />
     //   <Footer />
     // </div>
-    <Sustainability/>
+   <SoftwareDevelopmentServices />
     
   );
 }
