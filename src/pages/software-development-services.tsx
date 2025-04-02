@@ -4,7 +4,7 @@ const SoftwareDevelopmentServices: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="relative min-h-screen bg-[#0F172A]">
+      <div className="relative min-h-screen bg-[#1B2431]">
         <div className="container mx-auto px-4 h-screen flex items-center">
           {/* Left side - Text Content */}
           <div className="w-full lg:w-1/2 pl-20 relative z-10">
@@ -26,7 +26,7 @@ const SoftwareDevelopmentServices: React.FC = () => {
           
           {/* Right side - Image */}
           <div className="absolute top-0 right-0 w-full lg:w-1/2 h-full">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A] via-[#0F172A]/80 to-transparent z-10" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#1B2431] via-[#1B2431]/80 to-transparent z-10" />
             <div 
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{
@@ -38,10 +38,10 @@ const SoftwareDevelopmentServices: React.FC = () => {
       </div>
 
       {/* Software Development Services Introduction Section */}
-      <div className="relative py-20 pl-20 bg-[#1E293B]">
+      <div className="relative py-20 pl-20 bg-gradient-to-b from-[#1B2431] to-[#2A3441]">
         <div className="container px-4">
           {/* Section Header */}
-          <div className="max-w-3xl mb-16">
+          <div className="max-w-3xl  mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
               Software Development Services
             </h2>
@@ -51,50 +51,14 @@ const SoftwareDevelopmentServices: React.FC = () => {
             </p>
           </div>
 
-          {/* First Part */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-16">
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2425&q=80" 
-                alt="Software Development" 
-                className="rounded-lg shadow-xl w-full h-[500px] object-cover"
-              />
-            </div>
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Bringing Innovative Technology Solutions for Your Success</h2>
-              <div className="space-y-6">
-                <p className="text-lg text-gray-300">
-                  At Accord Innovations, we offer a comprehensive suite of Software Development Services that cater to the diverse needs of businesses in the digital era. Our services are the driving force behind transforming your ideas and concepts into tangible, high-performing software solutions.
-                </p>
-                <p className="text-lg text-gray-300">
-                  Our team of experts is driven by the desire to create software that not only meets your current needs but also prepares your business for the challenges of tomorrow. Quality and cost-effectiveness intertwined with innovation are the cornerstones of our approach.
-                </p>
-                <p className="text-lg text-gray-300">
-                  We strive to be your dependable solutions partner, providing outcomes that exceed your expectations.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Second Part */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div className="md:order-2">
-              <img 
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                alt="Global Presence" 
-                className="rounded-lg shadow-xl w-full h-[500px] object-cover"
-              />
-            </div>
-            <div className="md:order-1">
-              <div className="space-y-6">
-                <p className="text-lg text-gray-300">
-                  As a Microsoft Certified Partner, we hold ourselves to the highest industry standards, and aim to consistently deliver exceptional results in every endeavour. We cater to a wide array of key verticals, including Healthcare, Financial Services, Real Estate, Banking and Financial Services, Insurance, Telecommunications, Software, Aerospace & Aviation, Manufacturing, Retail, Consumer Electronics Sector, Energy, Travel & Logistics, Life Sciences, Medical Devices, Pharmaceutical, Automotive and the IT Industry.
-                </p>
-                <p className="text-lg text-gray-300">
-                  With an exceptional team of over 1000 professionals, we have amassed 15+ years of valuable experience in the IT industry. We are proud to have served more than 500 active clients worldwide, with offices in six strategic locations across Asia-Pacific, making us truly global.
-                </p>
-              </div>
-            </div>
+          {/* Description Paragraph */}
+          <div className="max-w-4xl mb-16">
+            <p className="text-lg text-gray-300 leading-relaxed">
+              At Accord Innovations, we offer a comprehensive suite of Software Development Services that cater to the diverse needs of businesses in the digital era. Our services are the driving force behind transforming your ideas and concepts into tangible, high-performing software solutions. Our team of experts is driven by the desire to create software that not only meets your current needs but also prepares your business for the challenges of tomorrow.
+            </p>
+            <p className="text-lg text-gray-300 leading-relaxed mt-6">
+              Our structured approach ensures the development of optimum solutions with best practices in place. With a strong commitment to methodical progression, we empower businesses with tailored software development services that drive innovation and efficiency.
+            </p>
           </div>
         </div>
 

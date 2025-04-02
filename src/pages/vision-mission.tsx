@@ -4,25 +4,28 @@ const VisionMission: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-[#0a3d62] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                <span className="text-white">Vision &</span>{" "}
-                <span className="text-[#f47847]">Mission</span>
-              </h1>
-              <p className="text-xl md:text-2xl max-w-3xl">
-                Guiding principles that shape our journey towards excellence and innovation in technology solutions.
-              </p>
-            </div>
-            <div className="flex justify-center items-center">
-              <img 
-                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                alt="Vision & Mission" 
-                className="rounded-lg shadow-xl w-[300px] h-[300px] object-cover"
-              />
-            </div>
+      <section className="relative min-h-[60vh] bg-[#0a3d62]">
+        <div className="container mx-auto px-4 h-[60vh] flex items-center">
+          {/* Left side - Text Content */}
+          <div className="w-full lg:w-1/2 pl-20 relative z-10">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <span className="text-white">Vision &</span>{" "}
+              <span className="text-[#f47847]">Mission</span>
+            </h1>
+            <p className="text-xl md:text-2xl max-w-3xl text-gray-300">
+              Guiding principles that shape our journey towards excellence and innovation in technology solutions.
+            </p>
+          </div>
+          
+          {/* Right side - Image */}
+          <div className="absolute top-0 right-0 w-full lg:w-1/2 h-full">
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0a3d62] via-[#0a3d62]/80 to-transparent z-10" />
+            <div 
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{
+                backgroundImage: 'url("https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")',
+              }}
+            />
           </div>
         </div>
       </section>
