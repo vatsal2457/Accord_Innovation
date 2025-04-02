@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Search, Globe, User, Menu, X } from 'lucide-react';
 import MegaMenu from './MegaMenu';
+import { useNavigate } from 'react-router-dom';
 
 interface HeaderProps {
   onProductsClick?: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ onProductsClick }) => {
+const Header: React.FC<HeaderProps> = () => {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
+  const navigate = useNavigate();
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
@@ -30,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ onProductsClick }) => {
   const handleMenuClick = (label: string) => {
     if (label === 'Home') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
-      window.location.href = '/home';
+      navigate('/home');
       return;
     }
     if (label === 'Career' || label === 'Contact Us') {
@@ -49,11 +50,11 @@ const Header: React.FC<HeaderProps> = ({ onProductsClick }) => {
 
   const handleNavigation = (label: string) => {
     if (label === 'Career') {
-      window.location.href = '/career';
+      navigate('/career');
     } else if (label === 'Contact Us') {
-      window.location.href = '/contact';
+      navigate( '/contact');
     } else if (label === 'Overview') {
-      window.location.href = '/overview';
+      navigate( '/overview');
     }
   };
 
@@ -117,7 +118,7 @@ const Header: React.FC<HeaderProps> = ({ onProductsClick }) => {
                     onClick={() => {
                       handleMenuClick(item.label);
                       if (item.label === 'Career' || item.label === 'Contact Us') {
-                        handleNavigation(item.label);
+                      handleNavigation(item.label)
                       }
                     }}
                     className={`inline-flex items-center px-1 py-2 text-sm font-medium transition-colors ${
