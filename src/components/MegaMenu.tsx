@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronRight, X, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface MenuFeature {
   name: string;
@@ -320,13 +321,13 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ onClose, activeSection = 'Products'
                   <div className="pl-2 pt-2 pb-1">
                     <div className="grid grid-cols-1 gap-y-2">
                       {currentSection[category].items.map((item,index) => (
-                        <a
+                        <Link
                           key={index}
-                          href={item.link}
+                          to={item.link}
                           className="block text-gray-300 hover:text-[#f47847] py-1 px-2 text-sm"
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                     
@@ -407,16 +408,16 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ onClose, activeSection = 'Products'
             <div className="w-full md:w-2/3 xl:w-3/4 pl-0 md:pl-8 pt-6 md:pt-0">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6">
                 {selectedCategoryData.items.map((item,index) => (
-                  <a
+                  <Link
                     key={index}
-                    href={item.link}
+                    to={item.link}
                     className="block group text-gray-200 hover:text-[#f47847] transition-colors duration-200"
                   >
                     <div className="font-medium">{item.name}</div>
                     <div className="text-sm text-gray-400 group-hover:text-gray-300">
                       Transform service management
                     </div>
-                  </a>
+                  </Link>
                 ))}
               </div>
 

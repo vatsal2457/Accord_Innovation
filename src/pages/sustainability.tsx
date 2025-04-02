@@ -34,7 +34,8 @@ const Sustainability: React.FC = () => {
   );
 
   return (
-    <div>
+    <div className='w-full'>
+
       <div className="relative h-96 mb-16">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -57,7 +58,7 @@ const Sustainability: React.FC = () => {
             <img 
               src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
               alt="Sustainable Progress"
-              className="w-full h-[500px] object-cover rounded-lg shadow-lg"
+              className="w-full h-[300px] object-cover rounded-lg shadow-lg"
             />
           </div>
           <div className="w-full md:w-1/2">
@@ -74,16 +75,13 @@ const Sustainability: React.FC = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-16">
+      <div className="container w-full mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Card 1 - Ethical Responsibility */}
           <div className="relative">
             <div className="relative h-80 rounded-xl overflow-hidden group mb-4">
               <div 
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                style={{
-                  backgroundImage: 'url("https://images.unsplash.com/photo-1453847668862-487637052f8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1776&q=80")',
-                }}
               >
                 <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
               </div>
@@ -93,10 +91,11 @@ const Sustainability: React.FC = () => {
               </div>
             </div>
             {expandedCards.ethical && (
-              <div className="bg-white rounded-xl p-8 shadow-lg transform transition-all duration-300 ease-in-out">
-                <p className="text-gray-700 leading-relaxed text-xl font-medium tracking-wide">
+              <div className="bg-white rounded-xl w-[100%] p-8 shadow-lg transform transition-all duration-300 ease-in-out">
+                <p className="text-gray-700  leading-relaxed text-xl font-medium tracking-wide">
                   We care deeply about sustainability because it aligns with our ethical responsibility. We believe that as a responsible corporate citizen, it's our duty to minimize our environmental impact. Sustainability remains an integral part of our moral compass.
                 </p>
+                <img src="https://images.unsplash.com/photo-1453847668862-487637052f8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1776&q=80" alt="image" />
               </div>
             )}
           </div>

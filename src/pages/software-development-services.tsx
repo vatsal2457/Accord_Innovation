@@ -7,8 +7,8 @@ const SoftwareDevelopmentServices: React.FC = () => {
       <div className="relative min-h-screen bg-[#1B2431]">
         <div className="container mx-auto px-4 h-screen flex items-center">
           {/* Left side - Text Content */}
-          <div className="w-full lg:w-1/2 pr-8 relative z-10">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+          <div className="w-full lg:w-1/2 pl-20 relative z-10">
+            <h1 className="text-4xl py-20 md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Transform Your Business with Expert Software Solutions
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-12">
@@ -38,21 +38,21 @@ const SoftwareDevelopmentServices: React.FC = () => {
       </div>
 
       {/* Software Development Services Introduction Section */}
-      <div className="relative py-20 bg-gradient-to-b from-[#1B2431] to-[#2A3441]">
-        <div className="container mx-auto px-4">
+      <div className="relative py-20 pl-20 bg-gradient-to-b from-[#1B2431] to-[#2A3441]">
+        <div className="container px-4">
           {/* Section Header */}
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="max-w-3xl  mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
               Software Development Services
             </h2>
-            <div className="w-24 h-1 bg-blue-500 mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-blue-500 mb-8"></div>
             <p className="text-xl text-gray-300 leading-relaxed">
               We deliver cutting-edge software solutions that empower businesses to thrive in the digital age. Our expertise spans across multiple domains and technologies.
             </p>
           </div>
 
           {/* Description Paragraph */}
-          <div className="max-w-4xl mx-auto mb-16">
+          <div className="max-w-4xl mb-16">
             <p className="text-lg text-gray-300 leading-relaxed">
               At Accord Innovations, we offer a comprehensive suite of Software Development Services that cater to the diverse needs of businesses in the digital era. Our services are the driving force behind transforming your ideas and concepts into tangible, high-performing software solutions. Our team of experts is driven by the desire to create software that not only meets your current needs but also prepares your business for the challenges of tomorrow.
             </p>
