@@ -50,11 +50,9 @@ const menuData: MenuData = {
     },
     'AI at ServiceNow': {
       items: [
-        { name: 'Now Platform', link: '/now-platform' },
-        { name: 'AI Agents', link: '/ai-agents' },
-        { name: 'Process Optimization', link: '/process-optimization' },
-        { name: 'Workflow Builder', link: '/workflow-builder' },
-        { name: 'AI & Machine Learning', link: '/ai-ml' },
+        { name: 'IoT', link: '/iot' },
+        { name: 'Software Development', link: '/software-development' },
+        { name: 'QA Testing', link: '/qa-testing' },
         { name: 'Mobile Solutions', link: '/mobile-solutions' },
         { name: 'Analytics & Reporting', link: '/analytics-reporting' },
       ],
@@ -159,6 +157,29 @@ const menuData: MenuData = {
         'Scalable solutions',
         'Industry expertise',
         'Proven track record'
+      ]
+    }
+  },
+  Services: {
+    'Our Services': {
+      items: [
+        { name: 'IoT', link: '/iot' },
+        { name: 'Software Development Services', link: '/software-development' },
+        { name: 'QA Testing Services', link: '/qa-testing-services' },
+        { name: 'Mobility Solutions', link: '/mobility-solutions' },
+        { name: 'Data Analytics & Business Intelligence', link: '/data-analytics' },
+        { name: 'Professional & Managed Services', link: '/managed-services' },
+        { name: 'Cloud Services', link: '/cloud-services' },
+        { name: 'Infrastructure Management Services', link: '/infrastructure-management' },
+        { name: 'Artificial Intelligence', link: '/artificial-intelligence' }
+      ],
+      description: 'Comprehensive technology services to drive your digital transformation journey.',
+      cta: 'Explore Services',
+      features: [
+        'End-to-end solutions',
+        'Expert consulting',
+        'Industry best practices',
+        'Innovative technologies'
       ]
     }
   },
