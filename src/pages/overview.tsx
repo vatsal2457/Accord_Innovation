@@ -8,7 +8,10 @@ const Overview: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">About Us</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                <span className="text-white">About</span>{" "}
+                <span className="text-[#f47847]">Us</span>
+              </h1>
               <p className="text-xl md:text-2xl max-w-3xl">
                 We are a leading technology solutions provider, helping businesses transform and innovate in the digital age.
               </p>
@@ -30,25 +33,49 @@ const Overview: React.FC = () => {
       {/* Company Story Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          {/* First Part */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-16">
             <div className="relative">
               <img 
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Company Story" 
-                className="rounded-lg shadow-xl w-full h-[600px] object-cover"
+                className="rounded-lg shadow-xl w-full h-[500px] object-cover"
               />
             </div>
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-[#0a3d62] mb-12">Bringing Innovative Technology Solutions for Your Success</h2>
-              <p className="text-lg text-gray-700 mb-6">
-                At Accord Innovations, we harness the power of technology and develop innovative solutions that cater to your diverse needs in this rapidly evolving market. We are the leaders in cutting-edge technology, analytics, and consulting services. With an unwavering passion for technology, determination to solve complex problems, and a vision to create revolutionary solutions, we ensure sophisticated visual appeal, seamless usability and substantial profits.
+              <h2 className="text-4xl md:text-5xl font-bold text-[#0a3d62] mb-8">Bringing Innovative Technology Solutions for Your Success</h2>
+              <div className="space-y-6">
+                <p className="text-lg text-gray-700">
+                  At Accord Innovations, we harness the power of technology and develop innovative solutions that cater to your diverse needs in this rapidly evolving market. We are the leaders in cutting-edge technology, analytics, and consulting services.
+                </p>
+                <p className="text-lg text-gray-700">
+                  With an unwavering passion for technology, determination to solve complex problems, and a vision to create revolutionary solutions, we ensure sophisticated visual appeal, seamless usability and substantial profits.
+                </p>
+                <p className="text-lg text-gray-700">
+                  Quality and cost-effectiveness intertwined with innovation are the cornerstones of our approach. We strive to be your dependable solutions partner, providing outcomes that exceed your expectations.
+                </p>
+              </div>
+            </div>
+          </div>
 
-                Quality and cost-effectiveness intertwined with innovation are the cornerstones of our approach. We strive to be your dependable solutions partner, providing outcomes that exceed your expectations.
-
-                As a Microsoft Certified Partner, we hold ourselves to the highest industry standards, and aim to consistently deliver exceptional results in every endeavour. We cater to a wide array of key verticals, including Healthcare, Financial Services, Real Estate, Banking and Financial Services, Insurance, Telecommunications, Software, Aerospace & Aviation, Manufacturing, Retail, Consumer Electronics Sector, Energy, Travel & Logistics, Life Sciences, Medical Devices, Pharmaceutical, Automotive and the IT Industry.
-
-                With an exceptional team of over 1000 professionals, we have amassed 15+ years of valuable experience in the IT industry. We are proud to have served more than 500 active clients worldwide, with offices in six strategic locations across Asia-Pacific, making us truly global.
-              </p>
+          {/* Second Part */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div className="md:order-2">
+              <img 
+                src="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
+                alt="Global Presence" 
+                className="rounded-lg shadow-xl w-full h-[500px] object-cover"
+              />
+            </div>
+            <div className="md:order-1">
+              <div className="space-y-6">
+                <p className="text-lg text-gray-700">
+                  As a Microsoft Certified Partner, we hold ourselves to the highest industry standards, and aim to consistently deliver exceptional results in every endeavour. We cater to a wide array of key verticals, including Healthcare, Financial Services, Real Estate, Banking and Financial Services, Insurance, Telecommunications, Software, Aerospace & Aviation, Manufacturing, Retail, Consumer Electronics Sector, Energy, Travel & Logistics, Life Sciences, Medical Devices, Pharmaceutical, Automotive and the IT Industry.
+                </p>
+                <p className="text-lg text-gray-700">
+                  With an exceptional team of over 1000 professionals, we have amassed 15+ years of valuable experience in the IT industry. We are proud to have served more than 500 active clients worldwide, with offices in six strategic locations across Asia-Pacific, making us truly global.
+                </p>
+              </div>
             </div>
           </div>
         </div>
