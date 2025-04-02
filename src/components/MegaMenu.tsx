@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronRight, X, ChevronDown } from 'lucide-react';
 
+interface MenuFeature {
+  name: string;
+  link: string;
+}
+
 interface MenuItem {
-  items: string[];
+  items: MenuFeature[];
   description: string;
   cta: string;
   features: string[];
@@ -23,16 +28,16 @@ const menuData: MenuData = {
   Products: {
     'Featured products': {
       items: [
-       'Overview',
-        'Vision & Mission',
-        'Our Story',
-        'Executive Leadership Team',
-        'Our clientele',
-        'Code of Conduct',
-        'Value Proposition',
-        'Sustainability',
-        'Anti Bribery & Anti-Corruption Policy',
-        'PDPA',
+        { name: 'Overview', link: '/overview' },
+        { name: 'Vision & Mission', link: '/vision-mission' },
+        { name: 'Our Story', link: '/our-story' },
+        { name: 'Executive Leadership Team', link: '/executive-leadership' },
+        { name: 'Our clientele', link: '/our-clientele' },
+        { name: 'Code of Conduct', link: '/code-of-conduct' },
+        { name: 'Value Proposition', link: '/value-proposition' },
+        { name: 'Sustainability', link: '/sustainability' },
+        { name: 'Anti Bribery & Anti-Corruption Policy', link: '/anti-bribery-policy' },
+        { name: 'PDPA', link: '/pdpa' },
       ],
       description: 'Unite people, processes, and systems with AI-powered products for all your workflows.',
       cta: 'See All Products',
@@ -40,18 +45,18 @@ const menuData: MenuData = {
         'Put AI to work with the Now Platform',
         'Connect and automate workflows',
         'Single AI platform for business transformation',
-        'Drive productivity and ROI'
-      ]
+        'Drive productivity and ROI',
+      ],
     },
     'AI at ServiceNow': {
       items: [
-        'Now Platform',
-        'AI Agents',
-        'Process Optimization',
-        'Workflow Builder',
-        'AI & Machine Learning',
-        'Mobile Solutions',
-        'Analytics & Reporting'
+        { name: 'Now Platform', link: '/now-platform' },
+        { name: 'AI Agents', link: '/ai-agents' },
+        { name: 'Process Optimization', link: '/process-optimization' },
+        { name: 'Workflow Builder', link: '/workflow-builder' },
+        { name: 'AI & Machine Learning', link: '/ai-ml' },
+        { name: 'Mobile Solutions', link: '/mobile-solutions' },
+        { name: 'Analytics & Reporting', link: '/analytics-reporting' },
       ],
       description: 'Take action with autonomous AI agents that work for you.',
       cta: 'Explore Platform',
@@ -59,28 +64,28 @@ const menuData: MenuData = {
         'Productivity and efficiency',
         'Customer and employee experience',
         'Security and compliance',
-        'Advanced automation capabilities'
-      ]
-    }
+        'Advanced automation capabilities',
+      ],
+    },
   },
   Industries: {
     'Featured Industries': {
       items: [
-        'Banking & Financial Services',
-        'Insurance',
-        'Telecommunications',
-        'Software',
-        'Healthcare',
-        'Aerospace & Aviation',
-        'Manufacturing',
-        'Retail',
-        'Consumer Electronics Sector',
-        'Energy',
-        'Travel & Logistics',
-        'Life Sciences',
-        'Medical Devices',
-        'Pharmaceutical',
-        'Automotive'
+        { name: 'Banking & Financial Services', link: '/banking-financial-services' },
+        { name: 'Insurance', link: '/insurance' },
+        { name: 'Telecommunications', link: '/telecommunications' },
+        { name: 'Software', link: '/software' },
+        { name: 'Healthcare', link: '/healthcare' },
+        { name: 'Aerospace & Aviation', link: '/aerospace-aviation' },
+        { name: 'Manufacturing', link: '/manufacturing' },
+        { name: 'Retail', link: '/retail' },
+        { name: 'Consumer Electronics Sector', link: '/consumer-electronics' },
+        { name: 'Energy', link: '/energy' },
+        { name: 'Travel & Logistics', link: '/travel-logistics' },
+        { name: 'Life Sciences', link: '/life-sciences' },
+        { name: 'Medical Devices', link: '/medical-devices' },
+        { name: 'Pharmaceutical', link: '/pharmaceutical' },
+        { name: 'Automotive', link: '/automotive' },
       ],
       description: 'Industry-specific solutions to transform your business operations.',
       cta: 'Explore Industries',
@@ -88,21 +93,21 @@ const menuData: MenuData = {
         'Tailored workflows',
         'Industry best practices',
         'Compliance ready',
-        'Rapid time to value'
-      ]
-    }
+        'Rapid time to value',
+      ],
+    },
   },
   Learning: {
-    'Resources': {
+    Resources: {
       items: [
-        'Now Learning',
-        'Certification Programs',
-        'Developer Portal',
-        'Community',
-        'Documentation',
-        'Training Courses',
-        'Best Practices',
-        'Success Stories'
+        { name: 'Now Learning', link: '/now-learning' },
+        { name: 'Certification Programs', link: '/certification-programs' },
+        { name: 'Developer Portal', link: '/developer-portal' },
+        { name: 'Community', link: '/community' },
+        { name: 'Documentation', link: '/documentation' },
+        { name: 'Training Courses', link: '/training-courses' },
+        { name: 'Best Practices', link: '/best-practices' },
+        { name: 'Success Stories', link: '/success-stories' },
       ],
       description: 'Comprehensive learning resources to help you succeed.',
       cta: 'Start Learning',
@@ -110,22 +115,22 @@ const menuData: MenuData = {
         'Self-paced courses',
         'Hands-on labs',
         'Expert-led training',
-        'Certification paths'
-      ]
-    }
+        'Certification paths',
+      ],
+    },
   },
   Support: {
     'Support Options': {
       items: [
-        'IoT',
-        'Software Development Services',
-        'QA Testing Services',
-        'Mobility Solutions',
-        'Data Analytics & Business Intellige',
-        'Professional & Managed Services',
-        'Cloud Services',
-        'Infrastructure Management Services',
-        'Artificial Intelligence'
+        { name: 'IoT', link: '/iot' },
+        { name: 'Software Development Services', link: '/software-development' },
+        { name: 'QA Testing Services', link: '/qa-testing' },
+        { name: 'Mobility Solutions', link: '/mobility-solutions' },
+        { name: 'Data Analytics & Business Intelligence', link: '/data-analytics' },
+        { name: 'Professional & Managed Services', link: '/managed-services' },
+        { name: 'Cloud Services', link: '/cloud-services' },
+        { name: 'Infrastructure Management Services', link: '/infrastructure-management' },
+        { name: 'Artificial Intelligence', link: '/artificial-intelligence' },
       ],
       description: 'Get the help you need to succeed with our platform.',
       cta: 'Get Support',
@@ -133,19 +138,19 @@ const menuData: MenuData = {
         '24/7 technical support',
         'Dedicated success managers',
         'Expert consultants',
-        'Global support coverage'
-      ]
-    }
+        'Global support coverage',
+      ],
+    },
   },
   Solutions: {
     'Our Solutions': {
       items: [
-        'Product Engineering',
-        'SaaS & Cloud',
-        'Data Management',
-        'Web Technologies',
-        'ERP & CRM',
-        'AI – Chat Bot'
+        { name: 'Product Engineering', link: '/product-engineering' },
+        { name: 'SaaS & Cloud', link: '/saas-cloud' },
+        { name: 'Data Management', link: '/data-management' },
+        { name: 'Web Technologies', link: '/web-technologies' },
+        { name: 'ERP & CRM', link: '/erp-crm' },
+        { name: 'AI – Chat Bot', link: '/ai-chat-bot' }
       ],
       description: 'Comprehensive solutions to transform your business operations.',
       cta: 'Explore Solutions',
@@ -160,14 +165,14 @@ const menuData: MenuData = {
   Partners: {
     'Partner Programs': {
       items: [
-        'Partner Portal',
-        'Technology Partners',
-        'Service Partners',
-        'Sales Partners',
-        'Partner Directory',
-        'Partner Training',
-        'Partner Resources',
-        'Success Stories'
+        { name: 'Partner Portal', link: '/partner-portal' },
+        { name: 'Technology Partners', link: '/technology-partners' },
+        { name: 'Service Partners', link: '/service-partners' },
+        { name: 'Sales Partners', link: '/sales-partners' },
+        { name: 'Partner Directory', link: '/partner-directory' },
+        { name: 'Partner Training', link: '/partner-training' },
+        { name: 'Partner Resources', link: '/partner-resources' },
+        { name: 'Success Stories', link: '/partner-success-stories' }
       ],
       description: 'Join our partner ecosystem and grow your business.',
       cta: 'Become a Partner',
@@ -182,16 +187,16 @@ const menuData: MenuData = {
   About: {
     'About Us': {
       items: [
-        'Overview',
-        'Vision & Mission',
-        'Our Story',
-        'Executive Leadership Team',
-        'Our clientele',
-        'Code of Conduct',
-        'Value Proposition',
-        'Sustainability',
-        'Anti Bribery & Anti-Corruption Policy',
-        'PDPA'
+        { name: 'Overview', link: '/overview' },
+        { name: 'Vision & Mission', link: '/vision-mission' },
+        { name: 'Our Story', link: '/our-story' },
+        { name: 'Executive Leadership Team', link: '/executive-leadership' },
+        { name: 'Our Clientele', link: '/our-clientele' },
+        { name: 'Code of Conduct', link: '/code-of-conduct' },
+        { name: 'Value Proposition', link: '/value-proposition' },
+        { name: 'Sustainability', link: '/sustainability' },
+        { name: 'Anti Bribery & Anti-Corruption Policy', link: '/anti-bribery-corruption' },
+        { name: 'PDPA', link: '/pdpa' }
       ],
       description: 'Learn about our company, values, and commitment to excellence.',
       cta: 'Learn More',
@@ -203,40 +208,17 @@ const menuData: MenuData = {
       ]
     }
   },
-  Services: {
-    'Our Services': {
-      items: [
-        'IoT',
-        'Software Development Services',
-        'QA Testing Services',
-        'Mobility Solutions',
-        'Data Analytics & Business Intellige',
-        'Professional & Managed Services',
-        'Cloud Services',
-        'Infrastructure Management Services',
-        'Artificial Intelligence'
-      ],
-      description: 'Comprehensive services to transform your business operations.',
-      cta: 'Explore Services',
-      features: [
-        'Expert team',
-        'Quality assurance',
-        'Innovation focus',
-        'Scalable solutions'
-      ]
-    }
-  },
   Knowledge: {
-    'Resources': {
+    Resources: {
       items: [
-        'Blog',
-        'Case Studies',
-        'Whitepapers',
-        'Webinars',
-        'eBooks',
-        'Podcasts',
-        'Research',
-        'ROI Calculator'
+        { name: 'Blog', link: '/blog' },
+        { name: 'Case Studies', link: '/case-studies' },
+        { name: 'Whitepapers', link: '/whitepapers' },
+        { name: 'Webinars', link: '/webinars' },
+        { name: 'eBooks', link: '/ebooks' },
+        { name: 'Podcasts', link: '/podcasts' },
+        { name: 'Research', link: '/research' },
+        { name: 'ROI Calculator', link: '/roi-calculator' }
       ],
       description: 'Discover insights and resources to drive digital transformation.',
       cta: 'Explore Resources',
@@ -316,13 +298,13 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ onClose, activeSection = 'Products'
                 {expandedMobileCategory === category && (
                   <div className="pl-2 pt-2 pb-1">
                     <div className="grid grid-cols-1 gap-y-2">
-                      {currentSection[category].items.map((item) => (
+                      {currentSection[category].items.map((item,index) => (
                         <a
-                          key={item}
-                          href="#"
+                          key={index}
+                          href={item.link}
                           className="block text-gray-300 hover:text-[#f47847] py-1 px-2 text-sm"
                         >
-                          {item}
+                          {item.name}
                         </a>
                       ))}
                     </div>
@@ -403,13 +385,13 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ onClose, activeSection = 'Products'
             {/* Right Column - Items Grid */}
             <div className="w-full md:w-2/3 xl:w-3/4 pl-0 md:pl-8 pt-6 md:pt-0">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6">
-                {selectedCategoryData.items.map((item) => (
+                {selectedCategoryData.items.map((item,index) => (
                   <a
-                    key={item}
-                    href="/overview"
+                    key={index}
+                    href={item.link}
                     className="block group text-gray-200 hover:text-[#f47847] transition-colors duration-200"
                   >
-                    <div className="font-medium">{item}</div>
+                    <div className="font-medium">{item.name}</div>
                     <div className="text-sm text-gray-400 group-hover:text-gray-300">
                       Transform service management
                     </div>
