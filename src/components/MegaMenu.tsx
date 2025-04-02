@@ -406,7 +406,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ onClose, activeSection = 'Products'
                 {selectedCategoryData.items.map((item) => (
                   <a
                     key={item}
-                    href="#"
+                    href="/overview"
                     className="block group text-gray-200 hover:text-[#f47847] transition-colors duration-200"
                   >
                     <div className="font-medium">{item}</div>
