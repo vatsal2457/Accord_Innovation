@@ -4,7 +4,7 @@ const SoftwareDevelopmentServices: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="relative min-h-screen bg-[#1B2431]">
+      <div className="relative min-h-screen bg-[#0C4A6E]">
         <div className="container mx-auto px-4 h-screen flex items-center">
           {/* Left side - Text Content */}
           <div className="w-full lg:w-1/2 pl-20 relative z-10">
@@ -15,7 +15,7 @@ const SoftwareDevelopmentServices: React.FC = () => {
               Enterprise-grade development services powering modern businesses forward
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300">
+              <button className="px-8 py-4 bg-[#f47847] text-white text-lg font-semibold rounded-lg hover:bg-[#e66a3a] transition-colors duration-300">
                 Get Started
               </button>
               <button className="px-8 py-4 bg-white text-gray-900 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300">
@@ -26,7 +26,7 @@ const SoftwareDevelopmentServices: React.FC = () => {
           
           {/* Right side - Image */}
           <div className="absolute top-0 right-0 w-full lg:w-1/2 h-full">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#1B2431] via-[#1B2431]/80 to-transparent z-10" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0C4A6E] via-[#0C4A6E]/80 to-transparent z-10" />
             <div 
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{
@@ -36,38 +36,51 @@ const SoftwareDevelopmentServices: React.FC = () => {
           </div>
         </div>
       </div>
-
-      {/* Software Development Services Introduction Section */}
-      <div className="relative py-20 pl-20 bg-gradient-to-b from-[#1B2431] to-[#2A3441]">
-        <div className="container px-4">
-          {/* Section Header */}
-          <div className="max-w-3xl  mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Software Development Services
-            </h2>
-            <div className="w-24 h-1 bg-blue-500 mb-8"></div>
-            <p className="text-xl text-gray-300 leading-relaxed">
-              We deliver cutting-edge software solutions that empower businesses to thrive in the digital age. Our expertise spans across multiple domains and technologies.
-            </p>
-          </div>
-
-          {/* Description Paragraph */}
-          <div className="max-w-4xl mb-16">
-            <p className="text-lg text-gray-300 leading-relaxed">
-              At Accord Innovations, we offer a comprehensive suite of Software Development Services that cater to the diverse needs of businesses in the digital era. Our services are the driving force behind transforming your ideas and concepts into tangible, high-performing software solutions. Our team of experts is driven by the desire to create software that not only meets your current needs but also prepares your business for the challenges of tomorrow.
-            </p>
-            <p className="text-lg text-gray-300 leading-relaxed mt-6">
-              Our structured approach ensures the development of optimum solutions with best practices in place. With a strong commitment to methodical progression, we empower businesses with tailored software development services that drive innovation and efficiency.
-            </p>
-          </div>
-        </div>
-
-        {/* Background Decoration */}
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
-        </div>
+{/* Software Development Services Introduction Section */}
+<div className="relative py-20 pl-20 bg-[#1E293B]">
+  <div className="container px-4">
+    {/* Section Header with Image */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+      {/* Left side - Text Content */}
+      <div className="max-w-3xl">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+          Software Development Services
+        </h2>
+        <div className="w-24 h-1 bg-blue-500 mb-8"></div>
+        <p className="text-xl text-gray-300 leading-relaxed">
+          We deliver cutting-edge software solutions that empower businesses to thrive in the digital age. Our expertise spans across multiple domains and technologies.
+        </p>
       </div>
+
+      {/* Right side - Image */}
+      <div className="relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1E293B] via-[#1E293B]/80 to-transparent z-10" />
+        <div 
+          className="w-full h-[300px] rounded-lg shadow-xl bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url("https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80")',
+          }}
+        />
+      </div>
+    </div>
+
+    {/* Description Paragraph */}
+    <div className="max-w-4xl mb-16">
+      <p className="text-lg text-gray-300 leading-relaxed">
+        At Accord Innovations, we offer a comprehensive suite of Software Development Services that cater to the diverse needs of businesses in the digital era. Our services are the driving force behind transforming your ideas and concepts into tangible, high-performing software solutions. Our team of experts is driven by the desire to create software that not only meets your current needs but also prepares your business for the challenges of tomorrow.
+      </p>
+      <p className="text-lg text-gray-300 leading-relaxed mt-6">
+        Our structured approach ensures the development of optimum solutions with best practices in place. With a strong commitment to methodical progression, we empower businesses with tailored software development services that drive innovation and efficiency.
+      </p>
+    </div>
+  </div>
+
+  {/* Background Decoration */}
+  <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+    <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+    <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+  </div>
+</div>
 
       {/* Development Services Section */}
       <div className="container mx-auto px-4 py-16">
