@@ -3,21 +3,35 @@ import React from 'react';
 const AntiBriberyCorruption: React.FC = () => {
   return (
     <div>
-      <div className="relative h-96 mb-16">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")',
-          }}
-        >
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      {/* Hero Section */}
+      <section className="relative h-[600px] bg-[#0a3d62]">
+        {/* Background Image - Right Side */}
+        <div className="absolute right-0 w-3/5 h-full">
+          <div 
+            className="w-full h-full"
+            style={{
+              backgroundImage: `url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`,
+              backgroundPosition: 'center',
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat'
+            }}
+          >
+            <div className="absolute inset-0 bg-gradient-to-l from-black/10 to-[#0a3d62]/90"></div>
+          </div>
         </div>
-        <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
-          <h1 className="text-6xl font-bold text-white text-center">
-            Anti-Bribery and Anti-Corruption Policy
-          </h1>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+          <div className="flex flex-col justify-center h-full max-w-2xl">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
+              Anti-Bribery and<br />Anti-Corruption Policy
+            </h1>
+            <p className="text-xl md:text-2xl max-w-2xl text-white/90">
+              Our commitment to conducting business ethically and maintaining zero tolerance for bribery and corruption.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
 
       <div className="container mx-auto px-4 py-12 max-w-6xl">
         <div className="prose max-w-none">
