@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronRight, X, ChevronDown } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 interface MenuFeature {
   name: string;
@@ -255,6 +255,7 @@ const menuData: MenuData = {
 };
 
 const MegaMenu: React.FC<MegaMenuProps> = ({ onClose, activeSection = 'Products' }) => {
+  const navigate = useNavigate();
   const currentSection = menuData[activeSection] || menuData.Products;
   const categories = Object.keys(currentSection);
 
@@ -278,6 +279,11 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ onClose, activeSection = 'Products'
   if (!selectedCategoryData) {
     return null;
   }
+
+  const handleLinkClick = (link: string) => {
+    onClose();
+    navigate(link);
+  };
 
   return (
     <div className="w-full bg-[#0a3d62] shadow-2xl shadow-black/50 border-t border-gray-700 max-h-[85vh] md:max-h-[80vh] overflow-y-auto relative">
@@ -320,14 +326,18 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ onClose, activeSection = 'Products'
                 {expandedMobileCategory === category && (
                   <div className="pl-2 pt-2 pb-1">
                     <div className="grid grid-cols-1 gap-y-2">
-                      {currentSection[category].items.map((item,index) => (
-                        <Link
+                      {currentSection[category].items.map((item, index) => (
+                        <a
                           key={index}
-                          to={item.link}
+                          href={item.link}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            handleLinkClick(item.link);
+                          }}
                           className="block text-gray-300 hover:text-[#f47847] py-1 px-2 text-sm"
                         >
                           {item.name}
-                        </Link>
+                        </a>
                       ))}
                     </div>
                     
@@ -407,17 +417,21 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ onClose, activeSection = 'Products'
             {/* Right Column - Items Grid */}
             <div className="w-full md:w-2/3 xl:w-3/4 pl-0 md:pl-8 pt-6 md:pt-0">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6">
-                {selectedCategoryData.items.map((item,index) => (
-                  <Link
+                {selectedCategoryData.items.map((item, index) => (
+                  <a
                     key={index}
-                    to={item.link}
+                    href={item.link}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleLinkClick(item.link);
+                    }}
                     className="block group text-gray-200 hover:text-[#f47847] transition-colors duration-200"
                   >
                     <div className="font-medium">{item.name}</div>
                     <div className="text-sm text-gray-400 group-hover:text-gray-300">
                       Transform service management
                     </div>
-                  </Link>
+                  </a>
                 ))}
               </div>
 
