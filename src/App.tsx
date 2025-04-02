@@ -16,6 +16,7 @@ import PDPA from './pages/pdpa.tsx';
 import Sustainability from './pages/sustainability.tsx';
 import SoftwareDevelopmentServices from './pages/software-development-services.tsx';
 import VisionMission from './pages/vision-mission.tsx';
+import OurStory from './pages/our-story.tsx';
 function App() {
   const [isProductsOpen, setIsProductsOpen] = useState(false);
   const [activeSlide, setActiveSlide] = useState(0);
@@ -190,7 +191,7 @@ function App() {
     //   <CallToAction />
     //   <Footer />
     // </div>
-   <VisionMission />
+   <OurStory />
     
   );
 }
