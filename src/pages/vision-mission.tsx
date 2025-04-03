@@ -33,7 +33,7 @@ const VisionMission: React.FC = () => {
       {/* Vision & Mission Content */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Vision Section */}
+          {/* Vision Section - Content Left, Image Right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-16">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-8">
@@ -55,9 +55,16 @@ const VisionMission: React.FC = () => {
             </div>
           </div>
 
-          {/* Mission Section */}
+          {/* Mission Section - Image Left, Content Right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div>
+            <div className="relative order-2 md:order-1">
+              <img 
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
+                alt="Our Mission" 
+                className="rounded-lg shadow-xl w-[500px] h-[350px] object-cover"
+              />
+            </div>
+            <div className="order-1 md:order-2">
               <h2 className="text-4xl md:text-5xl font-bold mb-8">
                 <span className="text-[#f47847]">Our</span>{" "}
                 <span className="text-[#0a3d62]">Mission</span>
@@ -67,13 +74,6 @@ const VisionMission: React.FC = () => {
                   At Accord Innovations, our mission is to propel businesses towards excellence by crafting tailor-made, innovative solutions. We strive to blend coming-of-age technology, determination, and long-standing industry expertise to exceed the expectations of our esteemed clients. With a commitment to quality, cost-effectiveness, and global leadership, we aim to be the dependable partner that harnesses the power of technology to empower growth and transform challenges into opportunities.
                 </p>
               </div>
-            </div>
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
-                alt="Our Mission" 
-                className="rounded-lg shadow-xl w-[500px] h-[350px] object-cover"
-              />
             </div>
           </div>
         </div>
