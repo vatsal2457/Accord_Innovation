@@ -23,16 +23,7 @@ const CodeOfConduct: React.FC = () => {
             </p>
           </div>
           
-          {/* Right side - Image */}
-          <div className="absolute top-0 right-0 w-full lg:w-1/2 h-full">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0a3d62] via-[#0a3d62]/80 to-transparent z-10" />
-            <div 
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105 transition-transform duration-10000 hover:scale-100"
-              style={{
-                backgroundImage: 'url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")',
-              }}
-            />
-          </div>
+         
         </div>
       </section>
 
