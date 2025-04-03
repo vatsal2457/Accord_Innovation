@@ -681,7 +681,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
           <button className="bg-[#f47847] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#e56736] transition-colors duration-300">
             View Career Opportunities
           </button>
-        </div>
+      </div>
       </section>
     </div>
   );
