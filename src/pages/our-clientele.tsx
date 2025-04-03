@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const OurClientele: React.FC = () => {
   // Generate 72 client cards with placeholder data
@@ -8,6 +8,8 @@ const OurClientele: React.FC = () => {
     logo: `https://via.placeholder.com/150x80?text=Logo+${index + 1}`,
     industry: ['Technology', 'Finance', 'Healthcare', 'Manufacturing', 'Retail', 'Education'][index % 6],
   }));
+
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white">
@@ -51,28 +53,67 @@ const OurClientele: React.FC = () => {
             {clients.map((client) => (
               <div 
                 key={client.id}
-                className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden transform hover:scale-105"
+                className={`bg-white rounded-xl shadow-md overflow-hidden transform transition-all duration-300 ${
+                  hoveredCard === client.id 
+                    ? 'scale-105 shadow-xl border-2 border-[#f47847]' 
+                    : 'hover:shadow-lg border border-gray-100'
+                }`}
+                onMouseEnter={() => setHoveredCard(client.id)}
+                onMouseLeave={() => setHoveredCard(null)}
               >
                 <div className="p-4 flex flex-col items-center justify-center h-full">
-                  <div className="w-full h-20 flex items-center justify-center mb-3">
+                  <div className="w-full h-24 flex items-center justify-center mb-3 bg-gradient-to-b from-gray-50 to-white p-2 rounded-lg">
                     <img 
                       src={client.logo} 
                       alt={`${client.name} logo`} 
-                      className="max-h-full max-w-full object-contain"
+                      className="max-h-full max-w-full object-contain filter hover:brightness-110 transition-all duration-300"
                     />
                   </div>
-                  <h3 className="text-sm font-semibold text-[#0a3d62] text-center">{client.name}</h3>
-                  <p className="text-xs text-gray-500 mt-1">{client.industry}</p>
+                  <h3 className="text-sm font-bold text-[#0a3d62] text-center">{client.name}</h3>
+                  <div className="flex items-center mt-1">
+                    <span className={`inline-block w-2 h-2 rounded-full mr-1 ${
+                      client.industry === 'Technology' ? 'bg-blue-500' :
+                      client.industry === 'Finance' ? 'bg-green-500' :
+                      client.industry === 'Healthcare' ? 'bg-red-500' :
+                      client.industry === 'Manufacturing' ? 'bg-yellow-500' :
+                      client.industry === 'Retail' ? 'bg-purple-500' :
+                      'bg-indigo-500'
+                    }`}></span>
+                    <p className="text-xs text-gray-500">{client.industry}</p>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
           
           {/* Pagination or Load More Button */}
-          <div className="mt-12 text-center">
-            <button className="bg-[#0a3d62] text-white px-6 py-2 rounded-full hover:bg-[#f47847] transition-colors duration-300">
+          <div className="mt-16 text-center">
+            <button className="bg-[#0a3d62] text-white px-8 py-3 rounded-full hover:bg-[#f47847] transition-colors duration-300 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-semibold">
               View More Clients
             </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Industry Filter Section */}
+      <section className="py-12 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h3 className="text-2xl font-bold text-center text-[#0a3d62] mb-8">
+            Filter by Industry
+          </h3>
+          <div className="flex flex-wrap justify-center gap-3">
+            {['All', 'Technology', 'Finance', 'Healthcare', 'Manufacturing', 'Retail', 'Education'].map((industry) => (
+              <button 
+                key={industry}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  industry === 'All' 
+                    ? 'bg-[#0a3d62] text-white' 
+                    : 'bg-white text-[#0a3d62] border border-[#0a3d62] hover:bg-[#f47847] hover:text-white hover:border-[#f47847]'
+                }`}
+              >
+                {industry}
+              </button>
+            ))}
           </div>
         </div>
       </section>
