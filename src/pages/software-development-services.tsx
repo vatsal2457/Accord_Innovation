@@ -1,6 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const SoftwareDevelopmentServices: React.FC = () => {
+  const [flippedCards, setFlippedCards] = useState<{ [key: string]: boolean }>({
+    web: false,
+    app: false,
+    data: false,
+    backend: false,
+    tools: false,
+    embedded: false
+  });
+
+  const toggleCard = (cardId: string) => {
+    setFlippedCards(prev => ({
+      ...prev,
+      [cardId]: !prev[cardId]
+    }));
+  };
+
   return (
     <div>
       {/* Hero Section */}
@@ -96,7 +112,7 @@ const SoftwareDevelopmentServices: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Web Development */}
             <div className="group h-[350px] [perspective:1000px]">
-              <div className="relative h-full w-full rounded-2xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className={`relative h-full w-full rounded-2xl transition-all duration-500 [transform-style:preserve-3d] ${flippedCards.web ? '[transform:rotateY(180deg)]' : ''}`}>
                 {/* Front of the card */}
                 <div className="absolute inset-0 bg-[#2A3441]/90 rounded-2xl p-6 text-white shadow-md">
                   <div>
@@ -108,19 +124,37 @@ const SoftwareDevelopmentServices: React.FC = () => {
                     <h3 className="text-xl font-bold mb-3">Web Development</h3>
                     <p className="text-white/80 leading-relaxed text-sm">Our web development solutions are designed to create seamless, user-friendly, and visually appealing websites that captivate your audience and drive engagement.</p>
                   </div>
+                  <button 
+                    onClick={() => toggleCard('web')}
+                    className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-all duration-300"
+                    aria-label="Flip card"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </button>
                 </div>
                 {/* Back of the card */}
                 <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#313D4F]/90 p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] shadow-md">
                   <div className="flex flex-col h-full justify-center">
                     <p className="text-white/80 leading-relaxed text-sm">Our web development solutions are designed to create seamless, user-friendly, and visually appealing websites that captivate your audience and drive engagement. Whether it's building an e-commerce platform or a corporate website, we deliver results that leave a lasting impression.</p>
                   </div>
+                  <button 
+                    onClick={() => toggleCard('web')}
+                    className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-all duration-300"
+                    aria-label="Flip card back"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
 
             {/* App Development */}
             <div className="group h-[350px] [perspective:1000px]">
-              <div className="relative h-full w-full rounded-2xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className={`relative h-full w-full rounded-2xl transition-all duration-500 [transform-style:preserve-3d] ${flippedCards.app ? '[transform:rotateY(180deg)]' : ''}`}>
                 {/* Front of the card */}
                 <div className="absolute inset-0 bg-[#2A3441]/90 rounded-2xl p-6 text-white shadow-md">
                   <div>
@@ -132,19 +166,37 @@ const SoftwareDevelopmentServices: React.FC = () => {
                     <h3 className="text-xl font-bold mb-3">App Development</h3>
                     <p className="text-white/80 leading-relaxed text-sm">In an increasingly mobile-driven world, our mobile development services cater to both Android and iOS platforms.</p>
                   </div>
+                  <button 
+                    onClick={() => toggleCard('app')}
+                    className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-all duration-300"
+                    aria-label="Flip card"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </button>
                 </div>
                 {/* Back of the card */}
                 <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#313D4F]/90 p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] shadow-md">
                   <div className="flex flex-col h-full justify-center">
                     <p className="text-white/80 leading-relaxed text-sm">We craft mobile apps that are intuitive, feature-rich, and built to enhance user experiences, ensuring your business is accessible on the go.</p>
                   </div>
+                  <button 
+                    onClick={() => toggleCard('app')}
+                    className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-all duration-300"
+                    aria-label="Flip card back"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
 
             {/* Data Science */}
             <div className="group h-[350px] [perspective:1000px]">
-              <div className="relative h-full w-full rounded-2xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className={`relative h-full w-full rounded-2xl transition-all duration-500 [transform-style:preserve-3d] ${flippedCards.data ? '[transform:rotateY(180deg)]' : ''}`}>
                 {/* Front of the card */}
                 <div className="absolute inset-0 bg-[#2A3441]/90 rounded-2xl p-6 text-white shadow-md">
                   <div>
@@ -156,19 +208,37 @@ const SoftwareDevelopmentServices: React.FC = () => {
                     <h3 className="text-xl font-bold mb-3">Data Science</h3>
                     <p className="text-white/80 leading-relaxed text-sm">Leveraging the power of data, our data science solutions provide actionable insights that drive informed decision-making.</p>
                   </div>
+                  <button 
+                    onClick={() => toggleCard('data')}
+                    className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-all duration-300"
+                    aria-label="Flip card"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </button>
                 </div>
                 {/* Back of the card */}
                 <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#313D4F]/90 p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] shadow-md">
                   <div className="flex flex-col h-full justify-center">
                     <p className="text-white/80 leading-relaxed text-sm">From data collection and analysis to predictive modeling, we help businesses unlock the true potential of their data.</p>
                   </div>
+                  <button 
+                    onClick={() => toggleCard('data')}
+                    className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-all duration-300"
+                    aria-label="Flip card back"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
 
             {/* Back-end Development */}
             <div className="group h-[350px] [perspective:1000px]">
-              <div className="relative h-full w-full rounded-2xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className={`relative h-full w-full rounded-2xl transition-all duration-500 [transform-style:preserve-3d] ${flippedCards.backend ? '[transform:rotateY(180deg)]' : ''}`}>
                 {/* Front of the card */}
                 <div className="absolute inset-0 bg-[#2A3441]/90 rounded-2xl p-6 text-white shadow-md">
                   <div>
@@ -180,19 +250,37 @@ const SoftwareDevelopmentServices: React.FC = () => {
                     <h3 className="text-xl font-bold mb-3">Back-end Development</h3>
                     <p className="text-white/80 leading-relaxed text-sm">The backbone of any software system, our back-end development expertise ensures robust functionality, data management, and security.</p>
                   </div>
+                  <button 
+                    onClick={() => toggleCard('backend')}
+                    className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-all duration-300"
+                    aria-label="Flip card"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </button>
                 </div>
                 {/* Back of the card */}
                 <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#313D4F]/90 p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] shadow-md">
                   <div className="flex flex-col h-full justify-center">
                     <p className="text-white/80 leading-relaxed text-sm">We design the infrastructure that powers your applications, guaranteeing reliability and performance.</p>
                   </div>
+                  <button 
+                    onClick={() => toggleCard('backend')}
+                    className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-all duration-300"
+                    aria-label="Flip card back"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
 
             {/* Software Tools Development */}
             <div className="group h-[350px] [perspective:1000px]">
-              <div className="relative h-full w-full rounded-2xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className={`relative h-full w-full rounded-2xl transition-all duration-500 [transform-style:preserve-3d] ${flippedCards.tools ? '[transform:rotateY(180deg)]' : ''}`}>
                 {/* Front of the card */}
                 <div className="absolute inset-0 bg-[#2A3441]/90 rounded-2xl p-6 text-white shadow-md">
                   <div>
@@ -204,19 +292,37 @@ const SoftwareDevelopmentServices: React.FC = () => {
                     <h3 className="text-xl font-bold mb-3">Software Tools Development</h3>
                     <p className="text-white/80 leading-relaxed text-sm">Tailored software tools are essential for optimizing business processes.</p>
                   </div>
+                  <button 
+                    onClick={() => toggleCard('tools')}
+                    className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-all duration-300"
+                    aria-label="Flip card"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </button>
                 </div>
                 {/* Back of the card */}
                 <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#313D4F]/90 p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] shadow-md">
                   <div className="flex flex-col h-full justify-center">
                     <p className="text-white/80 leading-relaxed text-sm">Our solutions are custom-built to streamline operations, improve efficiency, and drive productivity across your organization.</p>
                   </div>
+                  <button 
+                    onClick={() => toggleCard('tools')}
+                    className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-all duration-300"
+                    aria-label="Flip card back"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
 
             {/* Embedded Systems */}
             <div className="group h-[350px] [perspective:1000px]">
-              <div className="relative h-full w-full rounded-2xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className={`relative h-full w-full rounded-2xl transition-all duration-500 [transform-style:preserve-3d] ${flippedCards.embedded ? '[transform:rotateY(180deg)]' : ''}`}>
                 {/* Front of the card */}
                 <div className="absolute inset-0 bg-[#2A3441]/90 rounded-2xl p-6 text-white shadow-md">
                   <div>
@@ -228,12 +334,30 @@ const SoftwareDevelopmentServices: React.FC = () => {
                     <h3 className="text-xl font-bold mb-3">Embedded Systems</h3>
                     <p className="text-white/80 leading-relaxed text-sm">Our embedded systems development services cater to industries where specialized hardware and software integration is essential.</p>
                   </div>
+                  <button 
+                    onClick={() => toggleCard('embedded')}
+                    className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-all duration-300"
+                    aria-label="Flip card"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </button>
                 </div>
                 {/* Back of the card */}
                 <div className="absolute inset-0 h-full w-full rounded-2xl bg-[#313D4F]/90 p-6 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] shadow-md">
                   <div className="flex flex-col h-full justify-center">
                     <p className="text-white/80 leading-relaxed text-sm">We design embedded solutions that are reliable, efficient, and tailored to your specific requirements.</p>
                   </div>
+                  <button 
+                    onClick={() => toggleCard('embedded')}
+                    className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-all duration-300"
+                    aria-label="Flip card back"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
