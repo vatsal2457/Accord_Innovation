@@ -10,27 +10,27 @@ const OurStory: React.FC = () => {
       image: '/images/aa1.png'
     },
     {
-      year: '2015',
-      title: 'Digital Transformation',
-      description: 'Expanded into digital solutions and software development services.',
+      year: '2012',
+      title: 'Inception of IT Services',
+      description: 'Became One stop IT service provider through our services in both recruitment and IT Services.Became One stop IT service provider through our services in both recruitment and IT Services.',
       image: '/images/digital-transformation.jpg'
     },
     {
-      year: '2018',
-      title: 'Global Expansion',
-      description: 'Established presence in multiple countries across Asia-Pacific region.',
+      year: '2014',
+      title: 'Inception of R&D Team',
+      description: 'Incepted R&D team to research about latest technologies to recommend and implement to clients.',
       image: '/images/global-expansion.jpg'
     },
     {
-      year: '2021',
-      title: 'Innovation Hub',
-      description: 'Launched our innovation hub to drive technological advancement and research.',
+      year: '2015',
+      title: 'Expanded Technologies',
+      description: 'Extended to Business Intelligence (BI), ETL, industrial IOT, Robotic Process Automation (RPA) to provide IT services and consulting services, Big Data and Data Analytics',
       image: '/images/innovation-hub.jpg'
     },
     {
-      year: '2023',
-      title: 'Industry Leadership',
-      description: 'Recognized as a leading technology solutions provider with over 1000 professionals.',
+      year: '2020',
+      title: 'Expanded Operations',
+      description: 'Expanding operations to Indonesia, India and Thailand.',
       image: '/images/industry-leadership.jpg'
     }
   ];
