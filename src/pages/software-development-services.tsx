@@ -53,24 +53,31 @@ const SoftwareDevelopmentServices: React.FC = () => {
         </div>
       </div>
 {/* Software Development Services Introduction Section */}
-<div className="relative py-20 pl-20 bg-white">
+<div className="relative py-20 bg-white">
   <div className="container px-4">
-    {/* Section Header with Image */}
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-      {/* Left side - Text Content */}
-      <div className="max-w-3xl">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-          Software Development Services
-        </h2>
-        <div className="w-24 h-1 bg-blue-500 mb-8"></div>
-        <p className="text-xl text-gray-700 leading-relaxed">
-          We deliver cutting-edge software solutions that empower businesses to thrive in the digital age. Our expertise spans across multiple domains and technologies.
-        </p>
-      </div>
+    {/* Section Header */}
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+        Software Development Services
+      </h2>
+      <div className="w-24 h-1 bg-blue-500 mx-auto mb-8"></div>
+    </div>
 
-      {/* Right side - Image */}
+    {/* First Part - Text Left, Image Right */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-16">
+      <div>
+        <h3 className="text-3xl font-bold text-gray-900 mb-6">Cutting-Edge Solutions</h3>
+        <div className="space-y-6">
+          <p className="text-lg text-gray-700 leading-relaxed">
+            We deliver cutting-edge software solutions that empower businesses to thrive in the digital age. Our expertise spans across multiple domains and technologies.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            At Accord Innovations, we offer a comprehensive suite of Software Development Services that cater to the diverse needs of businesses in the digital era. Our services are the driving force behind transforming your ideas and concepts into tangible, high-performing software solutions.
+          </p>
+        </div>
+      </div>
       <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0C4A6E] via-[#0C4A6E]/80 to-transparent z-10" />
         <div 
           className="w-full h-[300px] rounded-lg shadow-xl bg-cover bg-center bg-no-repeat"
           style={{
@@ -80,14 +87,28 @@ const SoftwareDevelopmentServices: React.FC = () => {
       </div>
     </div>
 
-    {/* Description Paragraph */}
-    <div className="max-w-4xl mb-16">
-      <p className="text-lg text-gray-700 leading-relaxed">
-        At Accord Innovations, we offer a comprehensive suite of Software Development Services that cater to the diverse needs of businesses in the digital era. Our services are the driving force behind transforming your ideas and concepts into tangible, high-performing software solutions. Our team of experts is driven by the desire to create software that not only meets your current needs but also prepares your business for the challenges of tomorrow.
-      </p>
-      <p className="text-lg text-gray-700 leading-relaxed mt-6">
-        Our structured approach ensures the development of optimum solutions with best practices in place. With a strong commitment to methodical progression, we empower businesses with tailored software development services that drive innovation and efficiency.
-      </p>
+    {/* Second Part - Image Left, Text Right */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-16">
+      <div className="md:order-2">
+        <h3 className="text-3xl font-bold text-gray-900 mb-6">Expert Team</h3>
+        <div className="space-y-6">
+          <p className="text-lg text-gray-700 leading-relaxed">
+            Our team of experts is driven by the desire to create software that not only meets your current needs but also prepares your business for the challenges of tomorrow.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            Our structured approach ensures the development of optimum solutions with best practices in place. With a strong commitment to methodical progression, we empower businesses with tailored software development services that drive innovation and efficiency.
+          </p>
+        </div>
+      </div>
+      <div className="relative md:order-1">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0C4A6E] via-[#0C4A6E]/80 to-transparent z-10" />
+        <div 
+          className="w-full h-[300px] rounded-lg shadow-xl bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80")',
+          }}
+        />
+      </div>
     </div>
   </div>
 
