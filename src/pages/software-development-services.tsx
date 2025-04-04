@@ -24,13 +24,17 @@ const SoftwareDevelopmentServices: React.FC = () => {
         <div className="container mx-auto px-4 h-screen flex items-center">
           {/* Left side - Text Content */}
           <div className="w-full lg:w-1/2 pl-20 relative z-10">
-            <h1 className="text-4xl py-20 md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              Transform Your Business with Expert Software Solutions
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <span className="text-white">Software</span>{" "}
+              <span className="text-[#f47847]">Development</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-12">
+            <p className="text-xl md:text-2xl max-w-3xl text-gray-300">
+              Transform Your Business with Expert Software Solutions
+            </p>
+            <p className="text-xl md:text-2xl max-w-3xl text-gray-300 mt-4">
               Enterprise-grade development services powering modern businesses forward
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <button className="px-8 py-4 bg-[#f47847] text-white text-lg font-semibold rounded-lg hover:bg-[#e66a3a] transition-colors duration-300">
                 Get Started
               </button>
