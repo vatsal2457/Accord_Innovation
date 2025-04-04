@@ -10,6 +10,8 @@ const ContactUs: React.FC = () => {
     mailingList: false
   });
 
+  const [activeLocation, setActiveLocation] = useState<number | null>(null);
+
   const handleInputFocus = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     e.target.parentElement?.classList.add('transform', 'scale-[1.02]');
   };
@@ -17,6 +19,73 @@ const ContactUs: React.FC = () => {
   const handleInputBlur = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     e.target.parentElement?.classList.remove('transform', 'scale-[1.02]');
   };
+
+  const locationData = [
+    {
+      country: 'Malaysia (HQ)',
+      company: 'ACCORD INNOVATIONS SDN BHD (1157399-V)',
+      address: [
+        'Suite 2.02, Level 2, Prima 9 Avenue 2,',
+        'Block 3547, Persiaran Apec 63000,',
+        'Cyberjaya Selangor,'
+      ],
+      email: 'contact.asia@accordinnovations.com',
+      phone: '+603 8322 7700',
+      fax: '+603 8322 7711'
+    },
+    {
+      country: 'Singapore',
+      company: 'ACCORD INNOVATIONS PTE. LTD.',
+      address: [
+        '320 serangoon road',
+        '#10-09 Centrium Square',
+        'Singapore 218108'
+      ],
+      email: 'contact.asia@accordinnovations.com'
+    },
+    {
+      country: 'Indonesia',
+      company: 'PT. ACCORD INNOVATIONS INDONESIA',
+      address: [
+        'Menara Anugrah Lantai 19-A Kantor Taman E.3.3 Jl. DR. Ide Anak Agung'
+      ],
+      email: 'contact.asia@accordinnovations.com',
+      phone: '+62 21 5785 3819',
+      fax: '+62 21 5087 1291'
+    },
+    {
+      country: 'Thailand',
+      company: 'ACCORD INNOVATIONS CO. LTD.',
+      address: [
+        '163, Rajapark Building, Floor 6, Sukhumvit 21 (Asoke)',
+        'Khlong Toei Nuea, Bangkok 10110.'
+      ],
+      email: 'contact.asia@accordinnovations.com',
+      phone: '+6621233601'
+    },
+    {
+      country: 'India',
+      company: 'ACCORDIA TECHNOLOGIES PRIVATE LIMITED',
+      address: [
+        '3rd Floor, Sita Nilayam, Above Fresh Choice Bakery, Waltair Main Rd,',
+        'Opposite Hsbc, Beside Raymond\'s Showroom, Waltair Uplands, Siripuram,',
+        'Visakhapatnam, Andhra Pradesh 530003, India'
+      ],
+      email: 'contact.asia@accordinnovations.com',
+      phone: '(+91) -8913102303'
+    },
+    {
+      country: 'USA',
+      company: 'ACCORD INNOVATIONS INC',
+      address: [
+        'Lakeline Tower 13809 Research Blvd, Suite 500',
+        'Austin, Texas 78750'
+      ],
+      email: 'contact.usa@accordinnovations.com',
+      phone: '(512)-399-3049',
+      fax: '(512)-399-3034'
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -142,46 +211,96 @@ const ContactUs: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-            {/* Left Column - Contact Information */}
+            {/* Left Column - Location Cards */}
             <motion.div
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="space-y-6"
             >
-              <div className="space-y-8">
-                <div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">Contact Information</h2>
-                  <div className="space-y-4">
-                    <motion.p 
-                      whileHover={{ x: 5 }}
-                      className="flex items-center text-gray-700 group"
-                    >
-                      <span className="font-semibold mr-2">Phone:</span>
-                      <a href="tel:+6.03 8322 7700" className="group-hover:text-[#f47847] transition-colors duration-300">+6.03 8322 7700</a>
-                    </motion.p>
-                    <motion.p 
-                      whileHover={{ x: 5 }}
-                      className="flex items-center text-gray-700 group"
-                    >
-                      <span className="font-semibold mr-2">Email:</span>
-                      <a href="mailto:contact@accordinnovations.com" className="group-hover:text-[#f47847] transition-colors duration-300">contact@accordinnovations.com</a>
-                    </motion.p>
-                  </div>
-                </div>
-
-                <div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">Office Location</h2>
-                  <motion.address 
-                    whileHover={{ x: 5 }}
-                    className="not-italic text-gray-700 hover:text-gray-900 transition-colors duration-300"
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Our Global Offices</h2>
+              
+              <div className="space-y-4">
+                {locationData.map((location, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.2 + index * 0.1 }}
+                    className={`bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer ${
+                      activeLocation === index ? 'ring-2 ring-[#f47847]' : ''
+                    }`}
+                    onClick={() => setActiveLocation(activeLocation === index ? null : index)}
+                    whileHover={{ y: -5 }}
                   >
-                    Level 13A-02, Vertical Business Suite II,<br />
-                    Bangsar South City,<br />
-                    No. 8, Jalan Kerinchi,<br />
-                    59200 Kuala Lumpur, Malaysia
-                  </motion.address>
-                </div>
+                    <div className="flex justify-between items-start">
+                      <h3 className="text-lg font-bold text-[#0a3d62]">{location.country}</h3>
+                      <motion.div
+                        animate={{ rotate: activeLocation === index ? 180 : 0 }}
+                        transition={{ duration: 0.3 }}
+                      >
+                        <svg 
+                          xmlns="http://www.w3.org/2000/svg" 
+                          className="h-5 w-5 text-[#f47847]" 
+                          fill="none" 
+                          viewBox="0 0 24 24" 
+                          stroke="currentColor"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </motion.div>
+                    </div>
+                    
+                    <p className="text-sm font-medium text-gray-700 mt-1">{location.company}</p>
+                    
+                    <AnimatePresence>
+                      {activeLocation === index && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: 'auto' }}
+                          exit={{ opacity: 0, height: 0 }}
+                          transition={{ duration: 0.3 }}
+                          className="mt-3 space-y-2 text-sm text-gray-600"
+                        >
+                          {location.address.map((line, i) => (
+                            <p key={i}>{line}</p>
+                          ))}
+                          
+                          <div className="pt-2 space-y-1">
+                            <p className="flex items-center">
+                              <svg className="w-4 h-4 mr-2 text-[#f47847]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                              </svg>
+                              <a href={`mailto:${location.email}`} className="hover:text-[#f47847] transition-colors duration-300">
+                                {location.email}
+                              </a>
+                            </p>
+                            
+                            {location.phone && (
+                              <p className="flex items-center">
+                                <svg className="w-4 h-4 mr-2 text-[#f47847]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                <a href={`tel:${location.phone}`} className="hover:text-[#f47847] transition-colors duration-300">
+                                  {location.phone}
+                                </a>
+                              </p>
+                            )}
+                            
+                            {location.fax && (
+                              <p className="flex items-center">
+                                <svg className="w-4 h-4 mr-2 text-[#f47847]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                                </svg>
+                                <span>{location.fax}</span>
+                              </p>
+                            )}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </motion.div>
+                ))}
               </div>
             </motion.div>
 
