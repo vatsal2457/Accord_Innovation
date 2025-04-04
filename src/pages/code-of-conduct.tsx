@@ -30,7 +30,7 @@ const CodeOfConduct: React.FC = () => {
             />
           </div>
         </div>
-      </section>
+        </section>
 
       {/* Main Content */}
       <section className="py-16 bg-gray-50">
@@ -126,8 +126,8 @@ const CodeOfConduct: React.FC = () => {
               </ul>
             </div>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
 
       {/* Report a Concern Section */}
       <section className="py-16 bg-[#0a3d62] text-white">
@@ -172,7 +172,7 @@ const CodeOfConduct: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
+        </section>
 
       {/* Footer */}
       <div className="bg-gray-50 py-8">

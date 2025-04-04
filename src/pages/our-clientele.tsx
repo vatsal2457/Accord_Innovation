@@ -261,6 +261,24 @@ const OurClientele: React.FC = () => {
             TRUSTED BY INDUSTRY LEADERS
           </h2>
           
+          {/* Industry Filter Section */}
+          <div className="mb-12">
+            <div className="flex flex-wrap justify-center gap-3">
+              {['All', 'Technology', 'Finance', 'Healthcare', 'Manufacturing', 'Retail'].map((industry) => (
+                <button 
+                  key={industry}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                    industry === 'All' 
+                      ? 'bg-[#0a3d62] text-white' 
+                      : 'bg-white text-[#0a3d62] border border-[#0a3d62] hover:bg-[#f47847] hover:text-white hover:border-[#f47847]'
+                  }`}
+                >
+                  {industry}
+                </button>
+              ))}
+            </div>
+          </div>
+          
           {/* Client Cards Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-8">
             {clients.slice(0, displayedClients).map((client) => (
@@ -308,29 +326,6 @@ const OurClientele: React.FC = () => {
                 View More Clients
               </button>
             )}
-          </div>
-        </div>
-      </section>
-
-      {/* Industry Filter Section */}
-      <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h3 className="text-2xl font-bold text-center text-[#0a3d62] mb-8">
-            Filter by Industry
-          </h3>
-          <div className="flex flex-wrap justify-center gap-3">
-            {['All', 'Technology', 'Finance', 'Healthcare', 'Manufacturing', 'Retail'].map((industry) => (
-              <button 
-                key={industry}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                  industry === 'All' 
-                    ? 'bg-[#0a3d62] text-white' 
-                    : 'bg-white text-[#0a3d62] border border-[#0a3d62] hover:bg-[#f47847] hover:text-white hover:border-[#f47847]'
-                }`}
-              >
-                {industry}
-              </button>
-            ))}
           </div>
         </div>
       </section>
