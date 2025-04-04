@@ -156,13 +156,113 @@ const SoftwareDevelopmentServices: React.FC = () => {
   </div>
 </div>
 
+      {/* End-to-End Capabilities Section */}
+      <div className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">
+              End-to-End Capabilities for Tailored Solutions
+            </h2>
+            <p className="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">
+              From concept to deployment, we provide comprehensive software development services that address every aspect of your project
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Planning & Analysis */}
+              <div className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Planning & Analysis</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  We begin with a thorough analysis of your requirements, business goals, and technical constraints. Our team develops a comprehensive project plan that aligns with your objectives and timeline.
+                </p>
+              </div>
+
+              {/* Design & Development */}
+              <div className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]">
+                <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Design & Development</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Our expert designers and developers create intuitive, scalable, and secure solutions. We follow industry best practices and agile methodologies to ensure high-quality code and efficient development.
+                </p>
+              </div>
+
+              {/* Testing & Deployment */}
+              <div className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Testing & Deployment</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  We conduct rigorous testing to identify and fix any issues before deployment. Our team handles the entire deployment process, ensuring a smooth transition to production with minimal disruption.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Development Process</h3>
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-8 h-8 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-4">1</div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Requirements Gathering</h4>
+                      <p className="text-gray-600">We work closely with you to understand your business needs, user requirements, and technical specifications.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-8 h-8 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-4">2</div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Design & Architecture</h4>
+                      <p className="text-gray-600">Our team creates detailed designs and architecture plans that serve as the blueprint for development.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-8 h-8 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-4">3</div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Development & Testing</h4>
+                      <p className="text-gray-600">We develop your solution using agile methodologies with continuous testing and feedback integration.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 w-8 h-8 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-4">4</div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Deployment & Support</h4>
+                      <p className="text-gray-600">We handle deployment and provide ongoing support to ensure your solution continues to perform optimally.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#0C4A6E] via-[#0C4A6E]/80 to-transparent z-10 rounded-xl" />
+                <div 
+                  className="w-full h-[400px] rounded-xl shadow-xl bg-cover bg-center bg-no-repeat"
+                  style={{
+                    backgroundImage: 'url("https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")',
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Development Services Section */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-16 bg-[#0C4A6E]">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-3">
+          <h2 className="text-4xl font-bold text-white mb-3">
            Software Development Offerings
           </h2>
-          <p className="text-xl text-gray-600 mb-12">
+          <p className="text-xl text-gray-300 mb-12">
             Explore our comprehensive tech solutions
           </p>
 

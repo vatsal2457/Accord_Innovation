@@ -16,6 +16,7 @@ import Sustainability from './pages/sustainability';
 import ValueProposition from './pages/value-proposition';
 import VisionMission from './pages/vision-mission';
 import ContactUs from './pages/contactus';
+import Career from './pages/carrer';
 
 const App: React.FC = () => (
   <Router>
@@ -34,6 +35,7 @@ const App: React.FC = () => (
         <Route path="/value-proposition" element={<ValueProposition/>}/>
         <Route path="/vision-mission" element={<VisionMission/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
+        <Route path="/career" element={<Career/>}/>
         {/* Add more routes as needed */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
