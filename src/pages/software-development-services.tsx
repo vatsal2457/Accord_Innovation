@@ -10,12 +10,45 @@ const SoftwareDevelopmentServices: React.FC = () => {
     embedded: false
   });
 
+  const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
+
   const toggleCard = (cardId: string) => {
     setFlippedCards(prev => ({
       ...prev,
       [cardId]: !prev[cardId]
     }));
   };
+
+  const toggleFaq = (index: number) => {
+    setExpandedFaq(expandedFaq === index ? null : index);
+  };
+
+  const faqData = [
+    {
+      question: "What types of software development services does Accord Innovations offer?",
+      answer: "Accord Innovations offers a comprehensive range of software development services including web development, mobile app development, data science solutions, back-end development, software tools development, and embedded systems. Our services are tailored to meet the specific needs of businesses across various industries."
+    },
+    {
+      question: "How long does it typically take to complete a software development project?",
+      answer: "Project timelines vary depending on complexity, scope, and requirements. Simple projects might take 4-8 weeks, while complex enterprise solutions could take 6-12 months. We provide detailed project timelines during our initial consultation and maintain transparent communication throughout the development process."
+    },
+    {
+      question: "What is your approach to software development?",
+      answer: "We follow an agile development methodology that emphasizes iterative progress, continuous feedback, and adaptability. Our process includes requirements gathering, planning, design, development, testing, deployment, and ongoing maintenance. This approach ensures we deliver high-quality solutions that meet your business needs."
+    },
+    {
+      question: "Do you provide ongoing support and maintenance after project completion?",
+      answer: "Yes, we offer comprehensive post-development support and maintenance services. This includes bug fixes, performance optimization, security updates, and feature enhancements. Our team is committed to ensuring your software continues to perform optimally long after initial deployment."
+    },
+    {
+      question: "How do you ensure the security of the software you develop?",
+      answer: "Security is a top priority in all our development projects. We implement industry best practices for secure coding, conduct regular security audits, perform penetration testing, and follow OWASP guidelines. We also ensure compliance with relevant data protection regulations such as GDPR, HIPAA, and PCI DSS where applicable."
+    },
+    {
+      question: "Can you work with our existing technology stack?",
+      answer: "Absolutely. We have experience with a wide range of technologies and can adapt to your existing tech stack. Whether you're using legacy systems or cutting-edge technologies, our team can integrate new solutions seamlessly with your current infrastructure."
+    }
+  ];
 
   return (
     <div>
@@ -385,6 +418,58 @@ const SoftwareDevelopmentServices: React.FC = () => {
                   </button>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FAQ Section */}
+      <div className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold text-gray-900 mb-3 text-center">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-xl text-gray-600 mb-12 text-center">
+              Find answers to common questions about our software development services
+            </p>
+
+            <div className="space-y-4">
+              {faqData.map((faq, index) => (
+                <div 
+                  key={index} 
+                  className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300"
+                >
+                  <button
+                    onClick={() => toggleFaq(index)}
+                    className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  >
+                    <h3 className="text-lg font-semibold text-gray-900">{faq.question}</h3>
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      className={`h-5 w-5 text-gray-500 transition-transform duration-300 ${expandedFaq === index ? 'transform rotate-180' : ''}`} 
+                      viewBox="0 0 20 20" 
+                      fill="currentColor"
+                    >
+                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </button>
+                  <div 
+                    className={`px-6 pb-4 transition-all duration-300 ${expandedFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}
+                  >
+                    <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-12 text-center">
+              <p className="text-gray-600 mb-6">
+                Still have questions? Our team is here to help.
+              </p>
+              <button className="px-8 py-4 bg-[#0C4A6E] text-white text-lg font-semibold rounded-lg hover:bg-[#0a3d62] transition-colors duration-300">
+                Contact Us
+              </button>
             </div>
           </div>
         </div>
