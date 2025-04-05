@@ -223,8 +223,8 @@ const Career: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">Sarah Johnson</h3>
-                    <p className="text-[#f47847]">Senior Software Engineer</p>
+                    <h3 className="text-xl font-bold text-gray-900">Krishna Chaitanya Sunkara</h3>
+                    <p className="text-[#f47847]">Group CEO & Founder</p>
                   </div>
                 </div>
                 <div className="mb-6">
@@ -258,8 +258,8 @@ const Career: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">Michael Chen</h3>
-                    <p className="text-[#f47847]">Data Scientist</p>
+                    <h3 className="text-xl font-bold text-gray-900">Suchitra Sunkara</h3>
+                    <p className="text-[#f47847]">Chief Executive Officer</p>
                   </div>
                 </div>
                 <div className="mb-6">
@@ -293,8 +293,8 @@ const Career: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">Priya Patel</h3>
-                    <p className="text-[#f47847]">UI/UX Designer</p>
+                    <h3 className="text-xl font-bold text-gray-900">Swathi Mula</h3>
+                    <p className="text-[#f47847]">Operations Director</p>
                   </div>
                 </div>
                 <div className="mb-6">
