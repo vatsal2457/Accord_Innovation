@@ -255,11 +255,11 @@ const SoftwareDevelopmentServices: React.FC = () => {
             {/* Web Development */}
             <div className="h-[350px]">
               <div className="relative h-full w-full rounded-2xl bg-transparent p-6 text-gray-900 shadow-md">
-                <div>
+                  <div>
                   <div className="w-12 h-12 mb-4 text-blue-600">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                    </svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                      </svg>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Web Development</h3>
                   <p className="text-gray-700 leading-relaxed text-sm">Our web development solutions are designed to create seamless, user-friendly, and visually appealing websites that captivate your audience and drive engagement.</p>
@@ -270,11 +270,11 @@ const SoftwareDevelopmentServices: React.FC = () => {
             {/* App Development */}
             <div className="h-[350px]">
               <div className="relative h-full w-full rounded-2xl bg-transparent p-6 text-gray-900 shadow-md">
-                <div>
+                  <div>
                   <div className="w-12 h-12 mb-4 text-indigo-600">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
-                    </svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
+                      </svg>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">App Development</h3>
                   <p className="text-gray-700 leading-relaxed text-sm">In an increasingly mobile-driven world, our mobile development services cater to both Android and iOS platforms. We craft mobile apps that are intuitive, feature-rich, and built to enhance user experiences, ensuring your business is accessible on the go.</p>
@@ -285,11 +285,11 @@ const SoftwareDevelopmentServices: React.FC = () => {
             {/* Data Science */}
             <div className="h-[350px]">
               <div className="relative h-full w-full rounded-2xl bg-transparent p-6 text-gray-900 shadow-md">
-                <div>
+                  <div>
                   <div className="w-12 h-12 mb-4 text-cyan-600">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>
-                    </svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>
+                      </svg>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Data Science</h3>
                   <p className="text-gray-700 leading-relaxed text-sm">Leveraging the power of data, our data science solutions provide actionable insights that drive informed decision-making. From data collection and analysis to predictive modeling, we help businesses unlock the true potential of their data.</p>
@@ -300,11 +300,11 @@ const SoftwareDevelopmentServices: React.FC = () => {
             {/* Back-end Development */}
             <div className="h-[350px]">
               <div className="relative h-full w-full rounded-2xl bg-transparent p-6 text-gray-900 shadow-md">
-                <div>
+                  <div>
                   <div className="w-12 h-12 mb-4 text-purple-600">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
                       <path d="M20 3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H4V5h16v14zM6 7h5v5H6zm7 0h5v5h-5zm-7 7h5v5H6zm7 0h5v5h-5z"/>
-                    </svg>
+                      </svg>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Back-end Development</h3>
                   <p className="text-gray-700 leading-relaxed text-sm">The backbone of any software system, our back-end development expertise ensures robust functionality, data management, and security. We design the infrastructure that powers your applications, guaranteeing reliability and performance.</p>
@@ -315,11 +315,11 @@ const SoftwareDevelopmentServices: React.FC = () => {
             {/* Software Tools Development */}
             <div className="h-[350px]">
               <div className="relative h-full w-full rounded-2xl bg-transparent p-6 text-gray-900 shadow-md">
-                <div>
+                  <div>
                   <div className="w-12 h-12 mb-4 text-teal-600">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
-                    </svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+                      </svg>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Software Tools Development</h3>
                   <p className="text-gray-700 leading-relaxed text-sm">Tailored software tools are essential for optimizing business processes. Our solutions are custom-built to streamline operations, improve efficiency, and drive productivity across your organization.</p>
@@ -330,11 +330,11 @@ const SoftwareDevelopmentServices: React.FC = () => {
             {/* Embedded Systems */}
             <div className="h-[350px]">
               <div className="relative h-full w-full rounded-2xl bg-transparent p-6 text-gray-900 shadow-md">
-                <div>
+                  <div>
                   <div className="w-12 h-12 mb-4 text-sky-600">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M22 10l-6-6H4c-1.1 0-2 .9-2 2v12.01c0 1.1.9 1.99 2 1.99h16c1.1 0 2-.9 2-2v-8zm-7-4.5l5.5 5.5H15V5.5z"/>
-                    </svg>
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22 10l-6-6H4c-1.1 0-2 .9-2 2v12.01c0 1.1.9 1.99 2 1.99h16c1.1 0 2-.9 2-2v-8zm-7-4.5l5.5 5.5H15V5.5z"/>
+                      </svg>
                   </div>
                   <h3 className="text-xl font-bold mb-3 text-gray-900">Embedded Systems</h3>
                   <p className="text-gray-700 leading-relaxed text-sm">Our embedded systems development services cater to industries where specialized hardware and software integration is essential. We design embedded solutions that are reliable, efficient, and tailored to your specific requirements.</p>
