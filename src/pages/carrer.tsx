@@ -120,7 +120,7 @@ const Career: React.FC = () => {
       <section className="py-20 bg-gradient-to-br from-[#0C4A6E] to-[#0C4A6E]/80 text-white">
         <div className="container mx-auto px-4">
           <div className={`text-center mb-16 transition-all duration-1000 ${isVisible.benefits ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="text-4xl font-bold mb-4">Benefits & Perks</h2>
+            <h2 className="text-4xl font-bold mb-4">Benefits & Perk</h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
               We offer comprehensive benefits to support your growth and well-being
             </p>
