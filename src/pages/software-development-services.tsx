@@ -345,6 +345,48 @@ const SoftwareDevelopmentServices: React.FC = () => {
         </div>
       </div>
 
+      {/* Video Section */}
+      <div className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+              {/* Left Column - Video */}
+              <div className="relative rounded-xl overflow-hidden shadow-xl">
+                <div className="aspect-w-16 aspect-h-9">
+                  <iframe
+                    src="https://www.youtube.com/embed/your-video-id"
+                    title="Software Development Solutions"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full rounded-xl"
+                  ></iframe>
+                </div>
+              </div>
+
+              {/* Right Column - Text Content */}
+              <div className="space-y-6">
+                <h2 className="text-3xl font-bold text-gray-900">
+                  Transforming Ideas into Digital Reality
+                </h2>
+                <div className="space-y-4">
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Watch how we transform complex business challenges into innovative software solutions. Our development process combines technical expertise with creative problem-solving to deliver exceptional results.
+                  </p>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    From concept to deployment, we ensure every aspect of your software solution is crafted with precision and care. Our team of experienced developers and designers work together to create solutions that drive business growth and innovation.
+                  </p>
+                </div>
+                <div className="pt-4">
+                  <button className="px-8 py-4 bg-[#0C4A6E] text-white text-lg font-semibold rounded-lg hover:bg-[#0a3d62] transition-colors duration-300">
+                    Start Your Project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* FAQ Section */}
       <div className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
