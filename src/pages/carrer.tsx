@@ -10,6 +10,42 @@ const Career: React.FC = () => {
     benefits: false
   });
 
+  const [showApplicationForm, setShowApplicationForm] = useState(false);
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    phone: '',
+    position: '',
+    experience: '',
+    resume: null as File | null,
+    coverLetter: ''
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, files } = e.target;
+    if (files && files[0]) {
+      setFormData(prev => ({
+        ...prev,
+        [name]: files[0]
+      }));
+    }
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log('Form submitted:', formData);
+    setShowApplicationForm(false);
+  };
+
   useEffect(() => {
     // Trigger animations when component mounts
     const timer1 = setTimeout(() => setIsVisible(prev => ({ ...prev, hero: true })), 100);
@@ -402,13 +438,171 @@ const Career: React.FC = () => {
             </div>
 
             <div className="mt-12 text-center">
-              <button className="px-8 py-4 bg-[#0C4A6E] text-white text-lg font-semibold rounded-lg hover:bg-[#0a3d62] transition-colors duration-300 transform hover:scale-105">
+              <button 
+                onClick={() => setShowApplicationForm(true)}
+                className="px-8 py-4 bg-[#0C4A6E] text-white text-lg font-semibold rounded-lg hover:bg-[#0a3d62] transition-colors duration-300 transform hover:scale-105"
+              >
                 Apply Now
               </button>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Application Form Modal */}
+      {showApplicationForm && (
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl transform transition-all duration-300">
+            <div className="p-8">
+              <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-6">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">Job Application</h3>
+                  <p className="text-gray-500 mt-1">Join our team at Accord Innovations</p>
+                </div>
+                <button 
+                  onClick={() => setShowApplicationForm(false)}
+                  className="text-gray-400 hover:text-gray-600 transition-colors duration-200"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              
+              <form onSubmit={handleSubmit} className="space-y-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="space-y-2">
+                    <label className="block text-sm font-medium text-gray-700">
+                      Full Name <span className="text-[#f47847]">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      name="fullName"
+                      value={formData.fullName}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50"
+                      placeholder="Enter your full name"
+                    />
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <label className="block text-sm font-medium text-gray-700">
+                      Email <span className="text-[#f47847]">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <label className="block text-sm font-medium text-gray-700">
+                      Phone Number <span className="text-[#f47847]">*</span>
+                    </label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50"
+                      placeholder="Enter your phone number"
+                    />
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <label className="block text-sm font-medium text-gray-700">
+                      Position Applied For <span className="text-[#f47847]">*</span>
+                    </label>
+                    <select
+                      name="position"
+                      value={formData.position}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50 appearance-none"
+                    >
+                      <option value="">Select a position</option>
+                      <option value="software-developer">Software Developer</option>
+                      <option value="data-scientist">Data Scientist</option>
+                      <option value="project-manager">Project Manager</option>
+                      <option value="ui-ux-designer">UI/UX Designer</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <label className="block text-sm font-medium text-gray-700">
+                    Years of Experience <span className="text-[#f47847]">*</span>
+                  </label>
+                  <input
+                    type="number"
+                    name="experience"
+                    value={formData.experience}
+                    onChange={handleInputChange}
+                    required
+                    min="0"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50"
+                    placeholder="Enter years of experience"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="block text-sm font-medium text-gray-700">
+                    Resume/CV <span className="text-[#f47847]">*</span>
+                  </label>
+                  <div className="relative">
+                    <input
+                      type="file"
+                      name="resume"
+                      onChange={handleFileChange}
+                      required
+                      accept=".pdf,.doc,.docx"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-[#0C4A6E]/10 file:text-[#0C4A6E] hover:file:bg-[#0C4A6E]/20"
+                    />
+                  </div>
+                  <p className="text-sm text-gray-500">Accepted formats: PDF, DOC, DOCX (Max 5MB)</p>
+                </div>
+
+                <div className="space-y-2">
+                  <label className="block text-sm font-medium text-gray-700">
+                    Cover Letter
+                  </label>
+                  <textarea
+                    name="coverLetter"
+                    value={formData.coverLetter}
+                    onChange={handleInputChange}
+                    rows={4}
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50 resize-none"
+                    placeholder="Tell us about yourself and why you're interested in this position"
+                  />
+                </div>
+
+                <div className="flex justify-end space-x-4 pt-4 border-t border-gray-100">
+                  <button
+                    type="button"
+                    onClick={() => setShowApplicationForm(false)}
+                    className="px-6 py-3 border border-gray-200 rounded-xl text-gray-700 hover:bg-gray-50 transition-all duration-200 font-medium"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    className="px-8 py-3 bg-[#0C4A6E] text-white rounded-xl hover:bg-[#0a3d62] transition-all duration-200 font-medium shadow-lg shadow-[#0C4A6E]/20 hover:shadow-xl hover:shadow-[#0C4A6E]/30 transform hover:-translate-y-0.5"
+                  >
+                    Submit Application
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
