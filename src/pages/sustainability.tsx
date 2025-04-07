@@ -40,7 +40,7 @@ const Sustainability: React.FC = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")',
+            backgroundImage: 'url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80")',
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -56,7 +56,7 @@ const Sustainability: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="w-full md:w-1/2">
             <img 
-              src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+              src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
               alt="Sustainable Progress"
               className="w-full h-[300px] object-cover rounded-lg shadow-lg"
             />
@@ -124,16 +124,15 @@ const Sustainability: React.FC = () => {
 
           {/* Card 3 - Ethical Partnership */}
           <div className="relative">
-            <div className="relative h-40 rounded-xl shadow-md bg-gray-100 overflow-hidden group mb-4">
-              
+            <div className="relative h-40 rounded-xl shadow-md bg-white overflow-hidden group mb-4 hover:shadow-lg transition-all duration-300">
               <div className="relative h-full flex flex-wrap items-center justify-between p-6">
-                <h3 className="text-2xl font-bold text-black text-center mb-6">Ethical Partnership</h3>
+                <h3 className="text-2xl font-bold text-[#0a3d62] text-center mb-6">Ethical Partnership</h3>
                 {renderToggleButton('partnership')}
               </div>
             </div>
             {expandedCards.partnership && (
-              <div className="bg-white rounded-xl flex flex-col gap-7 p-8 shadow-lg transform transition-all duration-300 ease-in-out">
-                <img className='h-[300px]' src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="img" />
+              <div className="bg-white rounded-xl flex flex-col gap-7 p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <img className='h-[300px] object-cover rounded-lg' src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="img" />
                 <p className="text-gray-700 leading-relaxed tracking-wide">
                   We carefully select partners who share our commitment to sustainability and ethical business practices. Together, we create value while upholding the highest standards of environmental and social responsibility.
                 </p>
@@ -143,17 +142,15 @@ const Sustainability: React.FC = () => {
 
           {/* Card 4 - Community Engagement */}
           <div className="relative">
-            <div className="relative h-40 shadow-md bg-gray-100 rounded-xl overflow-hidden group mb-4">
-              
+            <div className="relative h-40 shadow-md bg-white rounded-xl overflow-hidden group mb-4 hover:shadow-lg transition-all duration-300">
               <div className="relative h-full flex flex-wrap items-center justify-between p-6">
-                
-                <h3 className="text-2xl font-bold text-black text-center mb-6">Community Engagement</h3>
+                <h3 className="text-2xl font-bold text-[#0a3d62] text-center mb-6">Community Engagement</h3>
                 {renderToggleButton('community')}
               </div>
             </div>
             {expandedCards.community && (
-              <div className="bg-white rounded-xl p-8 shadow-lg flex flex-col gap-7 transform transition-all duration-300 ease-in-out">
-                <img className='h-[300px]' src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="img" />
+              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl flex flex-col gap-7 transition-all duration-300 transform hover:-translate-y-1">
+                <img className='h-[300px] object-cover rounded-lg' src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="img" />
                 <p className="text-gray-700 leading-relaxed tracking-wide">
                   Our commitment to community engagement goes beyond business. We actively participate in local initiatives, support sustainable development projects, and work closely with communities to create positive, lasting impact.
                 </p>
