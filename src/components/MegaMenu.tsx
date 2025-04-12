@@ -172,7 +172,16 @@ const menuData: MenuData = {
         { name: 'Professional & Managed Services', link: '/managed-services' },
         { name: 'Cloud Services', link: '/cloud-services' },
         { name: 'Infrastructure Management Services', link: '/infrastructure-management' },
-        { name: 'Artificial Intelligence', link: '/artificial-intelligence' }
+        { name: 'Artificial Intelligence', link: '/artificial-intelligence' },
+        { name: 'Monitoring & Observability', link: '/monitoring-observability' },
+        { name: 'ITSM', link: '/itsm' },
+        { name: 'BMC Suite', link: '/bmc-suite' },
+        { name: 'DevOps', link: '/devops' },
+        { name: 'Automation and Hyperautomation', link: '/automation-hyperautomation' },
+        { name: 'Mission Critical Facilities', link: '/cloud-migration' }
+        
+        
+
       ],
       description: 'Comprehensive technology services to drive your digital transformation journey.',
       cta: 'Explore Services',
