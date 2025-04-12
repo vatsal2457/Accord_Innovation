@@ -17,6 +17,21 @@ import ValueProposition from './pages/value-proposition';
 import VisionMission from './pages/vision-mission';
 import ContactUs from './pages/contactus';
 import Career from './pages/carrer';
+import BankingAndFinancialServices from './pages/banking-and-financial-services';
+import Software from './pages/software';
+import Manufacturing from './pages/manufacturing';
+import Energy from './pages/energy';
+import MedicalDevices from './pages/medical-devices';
+import Insurance from './pages/insurance';
+import Healthcare from './pages/healthcare';
+import Retail from './pages/retail';
+import TravelAndLogistics from './pages/travel-and-logistics';
+import Pharmaceutical from './pages/pharmaceutical';
+import Telecommunication from './pages/telecommunication';
+import AerospaceAndAviation from './pages/aerospace-and-aviation';
+import ConsumerElectronicsSector from './pages/consumer-electronics-sector';
+import LifeScience from './pages/life-science';
+import Automotive from './pages/automotive';
 
 const App: React.FC = () => (
   <Router>
@@ -36,6 +51,21 @@ const App: React.FC = () => (
         <Route path="/vision-mission" element={<VisionMission/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
         <Route path="/career" element={<Career/>}/>
+        <Route path="/banking-financial-services" element={<BankingAndFinancialServices/>}/>
+        <Route path="/software" element={<Software/>}/>
+        <Route path="/manufacturing" element={<Manufacturing/>}/>
+        <Route path="/energy" element={<Energy/>}/>
+        <Route path="/medical-devices" element={<MedicalDevices/>}/>
+        <Route path="/insurance" element={<Insurance/>}/>
+        <Route path="/healthcare" element={<Healthcare/>}/>
+        <Route path="/retail" element={<Retail/>}/>
+        <Route path="/travel-and-logistics" element={<TravelAndLogistics/>}/>
+        <Route path="/pharmaceutical" element={<Pharmaceutical/>}/>
+        <Route path="/telecommunication" element={<Telecommunication/>}/>
+        <Route path="/aerospace-and-aviation" element={<AerospaceAndAviation/>}/>
+        <Route path="/consumer-electronics-sector" element={<ConsumerElectronicsSector/>}/>
+        <Route path="/life-science" element={<LifeScience/>}/>
+        <Route path="/automotive" element={<Automotive/>}/>
         {/* Add more routes as needed */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
