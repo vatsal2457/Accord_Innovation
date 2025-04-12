@@ -38,6 +38,12 @@ import DataManagement from './pages/data-management';
 import WebTechnologies from './pages/web-technologies';
 import ErpCrm from './pages/erp-crm';
 import AiChatBot from './pages/ai-chat-bot';
+import MonitoringObservability from './pages/monitoring-observability';
+import ITSM from './pages/itsm';
+import BMCSuite from './pages/bmc-suite';
+import DevOps from './pages/devops';
+import AutomationHyperautomation from './pages/automation-hyperautomation';
+import MissionCriticalFacilities from './pages/mission-critical-facilities';
 
 const App: React.FC = () => (
   <Router>
@@ -78,6 +84,12 @@ const App: React.FC = () => (
         <Route path="/web-technologies" element={<WebTechnologies/>}/>
         <Route path="/erp-crm" element={<ErpCrm/>}/>
         <Route path="/ai-chat-bot" element={<AiChatBot/>}/>
+        <Route path="/monitoring-observability" element={<MonitoringObservability/>}/>
+        <Route path="/itsm" element={<ITSM/>}/>
+        <Route path="/bmc-suite" element={<BMCSuite/>}/>
+        <Route path="/devops" element={<DevOps/>}/>
+        <Route path="/automation-hyperautomation" element={<AutomationHyperautomation/>}/>
+        <Route path="/mission-critical-facilities" element={<MissionCriticalFacilities/>}/>
         {/* Add more routes as needed */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>

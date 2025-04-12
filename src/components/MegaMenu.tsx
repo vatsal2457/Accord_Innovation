@@ -178,7 +178,7 @@ const menuData: MenuData = {
         { name: 'BMC Suite', link: '/bmc-suite' },
         { name: 'DevOps', link: '/devops' },
         { name: 'Automation and Hyperautomation', link: '/automation-hyperautomation' },
-        { name: 'Mission Critical Facilities', link: '/cloud-migration' }
+        { name: 'Mission Critical Facilities', link: '/mission-critical-facilities' },
         
         
 
