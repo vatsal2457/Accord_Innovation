@@ -32,6 +32,12 @@ import AerospaceAndAviation from './pages/aerospace-and-aviation';
 import ConsumerElectronicsSector from './pages/consumer-electronics-sector';
 import LifeScience from './pages/life-science';
 import Automotive from './pages/automotive';
+import ProductEngineering from './pages/product-engineering';
+import SaasCloud from './pages/saas-cloud';
+import DataManagement from './pages/data-management';
+import WebTechnologies from './pages/web-technologies';
+import ErpCrm from './pages/erp-crm';
+import AiChatBot from './pages/ai-chat-bot';
 
 const App: React.FC = () => (
   <Router>
@@ -66,6 +72,12 @@ const App: React.FC = () => (
         <Route path="/consumer-electronics-sector" element={<ConsumerElectronicsSector/>}/>
         <Route path="/life-science" element={<LifeScience/>}/>
         <Route path="/automotive" element={<Automotive/>}/>
+        <Route path="/product-engineering" element={<ProductEngineering/>}/>
+        <Route path="/saas-cloud" element={<SaasCloud/>}/>
+        <Route path="/data-management" element={<DataManagement/>}/>
+        <Route path="/web-technologies" element={<WebTechnologies/>}/>
+        <Route path="/erp-crm" element={<ErpCrm/>}/>
+        <Route path="/ai-chat-bot" element={<AiChatBot/>}/>
         {/* Add more routes as needed */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
