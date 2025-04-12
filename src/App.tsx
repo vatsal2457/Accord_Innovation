@@ -44,6 +44,15 @@ import BMCSuite from './pages/bmc-suite';
 import DevOps from './pages/devops';
 import AutomationHyperautomation from './pages/automation-hyperautomation';
 import MissionCriticalFacilities from './pages/mission-critical-facilities';
+import DataAnalyticsBusinessIntelligence from './pages/data-analytics-business-intelligence';
+import QaTestingServices from './pages/qa-testing-services';
+import MobilitySolutions from './pages/mobility-solutions';
+import CloudServices from './pages/cloud-services';
+import InfrastructureManagementServices from './pages/infrastructure-management-services';
+import ArtificialIntelligence from './pages/artificial-intelligence';
+import IoT from './pages/iot';
+
+
 
 const App: React.FC = () => (
   <Router>
@@ -73,23 +82,31 @@ const App: React.FC = () => (
         <Route path="/retail" element={<Retail/>}/>
         <Route path="/travel-and-logistics" element={<TravelAndLogistics/>}/>
         <Route path="/pharmaceutical" element={<Pharmaceutical/>}/>
-        <Route path="/telecommunication" element={<Telecommunication/>}/>
+        <Route path="/telecommunications" element={<Telecommunication/>}/>
         <Route path="/aerospace-and-aviation" element={<AerospaceAndAviation/>}/>
         <Route path="/consumer-electronics-sector" element={<ConsumerElectronicsSector/>}/>
         <Route path="/life-science" element={<LifeScience/>}/>
         <Route path="/automotive" element={<Automotive/>}/>
         <Route path="/product-engineering" element={<ProductEngineering/>}/>
-        <Route path="/saas-cloud" element={<SaasCloud/>}/>
+        <Route path="/saas-cloud" element={<SaasCloud/>}/>  
         <Route path="/data-management" element={<DataManagement/>}/>
         <Route path="/web-technologies" element={<WebTechnologies/>}/>
         <Route path="/erp-crm" element={<ErpCrm/>}/>
         <Route path="/ai-chat-bot" element={<AiChatBot/>}/>
         <Route path="/monitoring-observability" element={<MonitoringObservability/>}/>
         <Route path="/itsm" element={<ITSM/>}/>
+        <Route path="/iot" element={<IoT/>}/>
         <Route path="/bmc-suite" element={<BMCSuite/>}/>
         <Route path="/devops" element={<DevOps/>}/>
         <Route path="/automation-hyperautomation" element={<AutomationHyperautomation/>}/>
         <Route path="/mission-critical-facilities" element={<MissionCriticalFacilities/>}/>
+        <Route path="/data-analytics-business-intelligence" element={<DataAnalyticsBusinessIntelligence/>}/>
+        <Route path="/qa-testing-services" element={<QaTestingServices/>}/>
+        <Route path="/mobility-solutions" element={<MobilitySolutions/>}/>
+        <Route path="/cloud-services" element={<CloudServices/>}/>
+        <Route path="/infrastructure-management-services" element={<InfrastructureManagementServices/>}/>
+        <Route path="/artificial-intelligence" element={<ArtificialIntelligence/>}/>
+        
         {/* Add more routes as needed */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
