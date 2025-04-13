@@ -23,10 +23,10 @@ function Hero({
 }: HeroProps) {
   return (
     <section className={`relative min-h-[60vh] bg-[${backgroundColor}]`}>
-      <div className="container mx-auto px-4 h-[60vh] flex items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[60vh] flex items-center">
         {/* Left side - Text Content */}
-        <div className="w-full lg:w-1/2 pl-20 relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className="w-full lg:w-1/2 pl-4 lg:pl-8 relative z-10">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 z-20" >
             {subtitle ? (
               <>
                 <span className={`text-[${textColor}]`}>{title}</span>{" "}
@@ -36,7 +36,7 @@ function Hero({
               <span className={`text-[${textColor}]`}>{title}</span>
             )}
           </h1>
-          <p className="text-xl md:text-2xl max-w-3xl text-gray-300">
+          <p className="text-xl md:text-2xl max-w-3xl text-gray-300 z-20">
             {description}
           </p>
         </div>
