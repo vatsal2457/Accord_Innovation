@@ -140,15 +140,6 @@ const Header: React.FC<HeaderProps> = () => {
 
             {/* Right side buttons - desktop */}
             <div className="hidden md:flex items-center space-x-2 lg:space-x-4">
-              <button className="text-gray-200 hover:text-[#f47847] p-1">
-                <Search className="h-5 w-5" />
-              </button>
-              <button className="text-gray-200 hover:text-[#f47847] p-1">
-                <Globe className="h-5 w-5" />
-              </button>
-              <button className="text-gray-200 hover:text-[#f47847] p-1">
-                <User className="h-5 w-5" />
-              </button>
               <button className="bg-[#f47847] text-white px-3 py-1.5 lg:px-4 lg:py-2 rounded-full text-sm font-medium hover:bg-opacity-90 transition-colors">
                 Get Started
               </button>
