@@ -117,7 +117,7 @@ const BankingAndFinancialServices: React.FC = () => {
         </div>
       </section>
 
-      <Legacy />
+      
     </div>
   );
 };
