@@ -23,16 +23,16 @@ const MonitoringObservability: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24">
             <div className="order-2 md:order-1">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#0a3d62]">Our</span>{" "}
-                <span className="text-[#f47847]">Approach</span>
+                <span className="text-[#0a3d62]">Monitoring And </span>{" "}
+                <span className="text-[#f47847]">Observability</span>
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  At Accord Innovations, we take a comprehensive approach to monitoring and observability that focuses on end-to-end visibility and proactive problem detection. Our team works closely with clients to understand their systems, applications, and monitoring requirements before designing a tailored solution.
-                </p>
+                Full stack IT is a complex environment of hardware, software, networking protocols and servers. Moreover, these subsets of IT infra-structure are highly interdependent. What makes it even more puzzling is their scattered relationship. In such a scenario, malfunctions, process bottlenecks, and hardware crashes can be catastrophic for any organization. And therefore Monitoring & Observability is the only solution to prevent such IT disasters.
+
+AI-GTS provides third party Monitoring & Observability solutions which prevents such mishaps by locating the pain points before it actually occurs and causes damage to the entire process flow. We offer a wide range of latest technology solutions related to ITSM as a one-stop shop for on-premises as well as on-cloud platforms but not limited to just these environments.                </p>
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  We follow an iterative implementation methodology that ensures continuous improvement and adaptation to changing requirements. This approach allows us to deliver monitoring solutions that not only meet current needs but also scale effectively as your systems grow.
-                </p>
+                AI-GTS provides third party Monitoring & Observability solutions which prevents such mishaps by locating the pain points before it actually occurs and causes damage to the entire process flow. We offer a wide range of latest technology solutions related to ITSM as a one-stop shop for on-premises as well as on-cloud platforms but not limited to just these environments.                </p>
               </div>
             </div>
             <div className="relative order-1 md:order-2">
@@ -60,11 +60,14 @@ const MonitoringObservability: React.FC = () => {
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  Accord Innovations provides comprehensive monitoring and observability solutions that transform how businesses manage their systems. Our expertise in monitoring tools, log management, and performance analytics helps organizations gain valuable insights and proactively address issues.
+                Our open source, enterprise monitoring solutions ( with & without licenses ) make sure the hybrid / cloud IT infrastructures, distributed applications and mail / internet services continue to offer optimized services.
                 </p>
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  We offer end-to-end monitoring services, from initial assessment and strategy development to implementation, integration, and ongoing management. Our solutions are built on industry-leading platforms and best practices, ensuring comprehensive visibility and optimal performance for your systems.
-                </p>
+                High service performance.
+Long term IT stability.
+Reduced application and processing degradation.
+Faster computation and optimization.
+We implement bespoke monitoring and observability solutions that are meaningful, can be easily interpreted and also offers hints to future outages in the form of logs / patterns. An optimized IT infrastructure automatically leads to increased productivity, profitability and greater employee retention.                </p>
               </div>
             </div>
           </div>

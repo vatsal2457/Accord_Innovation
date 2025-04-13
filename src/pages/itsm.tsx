@@ -23,13 +23,11 @@ const ITSM: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24">
             <div className="order-2 md:order-1">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#0a3d62]">Our</span>{" "}
-                <span className="text-[#f47847]">Approach</span>
+                <span className="text-[#0a3d62]">ITSM</span>{" "}
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  At Accord Innovations, we take a customer-centric approach to IT Service Management. We begin by understanding your organization's unique service delivery challenges and requirements, then develop a tailored ITSM strategy that aligns with your business objectives.
-                </p>
+                E-Commerce, streaming platforms, industrial hubs and services industries rely heavily on IT infrastructure. IT forms the back bone of processes and services provided by these entities. Nonetheless, malfunction, bottlenecks and service disruption can spell disaster in terms of efficiency, sales and customer service. AI-GTS, is here to offer its clients monitoring and automation services which includes on-premises as well as on-cloud set-ups.                </p>
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                   Our methodology focuses on implementing industry best practices like ITIL, while leveraging modern ITSM tools and automation to streamline service delivery processes. We emphasize continuous improvement and user satisfaction throughout the implementation journey.
                 </p>
@@ -106,8 +104,13 @@ const ITSM: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Incident Management</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                Our incident management services help you quickly restore normal service operations while minimizing impact on business activities.
-              </p>
+              We implement cutting edge tools and technologies to -
+
+Reduce productivity outages.
+Improve lead time for every IT ticket life cycle.
+Manage and monitor SLA ( Service Level Agreements ). Make sure that they strictly adhere to defined parameters.
+Reduce processing timeline.
+Improve efficiency of agents and support system.              </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
 
@@ -119,8 +122,9 @@ const ITSM: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Change Management</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                We help you implement structured processes for managing changes to your IT infrastructure and services, ensuring minimal disruption.
-              </p>
+              Reduce IT infrastructure and operating costs.
+Provide cost effectiveness through innovative monitoring and management.
+Offer state of the art environment that allows organisations to scale or make changes quickly and effectively.              </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
 
@@ -130,10 +134,9 @@ const ITSM: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <BookOpen size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Service Catalog</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Service Request Management </h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                We help you create and maintain a comprehensive service catalog that clearly defines and presents your IT service offerings to users.
-              </p>
+              Customer requests are an integral part of any commercial / manufacturing and start up entity. This can include a gamut of demands. Our easily implementable tools help big and small organisations fulfil these obligations efficiently and within the stipulated time frame. Our request fulfilment tool not just resolves service requests but generates / manages the entire lifecycle of such demands.              </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
           </div>
