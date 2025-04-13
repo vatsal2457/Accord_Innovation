@@ -78,7 +78,7 @@ const Energy: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              <span className="text-[#0a3d62]">Banking & Financial Services</span>{" "}
+              <span className="text-[#0a3d62]">Energy </span>{" "}
               <span className="text-[#f47847]">OFFERINGS</span>
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
@@ -93,9 +93,9 @@ const Energy: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Shield size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Robust Data Security Solutions</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Digital Customer Experience</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                In an industry where data security is paramount, we provide cutting-edge solutions to safeguard your sensitive financial data. Our comprehensive suite of security measures includes threat detection, encryption, and real-time monitoring to ensure your operations remain resilient against cyber threats.
+              Transform customer interactions and satisfaction with personalized digital experiences.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -106,9 +106,9 @@ const Energy: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <CreditCard size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Efficient Risk Management Systems</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Internet of Things</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                The BFSI sector faces ever-evolving risks. Our advanced risk management systems leverage data analytics and AI to provide real-time risk assessment and mitigation strategies. Stay ahead of risks, optimize decision-making, and enhance regulatory compliance with our solutions.
+              Harness IoT for data-driven insights, predictive maintenance, and operational efficiency.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -119,9 +119,9 @@ const Energy: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <LineChart size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Customer-Centric Digital Platforms</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Cybersecurity Solutions</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                Enhance customer experiences with our customer-centric digital platforms. From intuitive mobile banking apps to personalized financial advisory tools, we help you create digital solutions that resonate with your clients, increasing engagement and satisfaction.
+              Safeguard your critical energy infrastructure with robust cybersecurity measures.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -132,9 +132,9 @@ const Energy: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Database size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Compliance and Regulatory Support</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Enterprise Asset Management</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                Regulatory compliance is non-negotiable in finance. We offer comprehensive solutions to automate compliance processes, ensuring that your institution remains in line with the latest regulations. Stay agile and adapt to changing compliance requirements effortlessly with Accord Innovations.
+              Optimize asset lifecycles, reduce downtime, and enhance resource allocation.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>

@@ -92,9 +92,9 @@ const TravelAndLogistics: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Shield size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Robust Data Security Solutions</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Real-time Tracking and Visibility</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                In an industry where data security is paramount, we provide cutting-edge solutions to safeguard your sensitive financial data. Our comprehensive suite of security measures includes threat detection, encryption, and real-time monitoring to ensure your operations remain resilient against cyber threats.
+              Gain full visibility into your logistics operations with real-time tracking solutions, ensuring on-time deliveries and improved efficiency.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -105,9 +105,9 @@ const TravelAndLogistics: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <CreditCard size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Efficient Risk Management Systems</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Supply Chain Optimization</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                The BFSI sector faces ever-evolving risks. Our advanced risk management systems leverage data analytics and AI to provide real-time risk assessment and mitigation strategies. Stay ahead of risks, optimize decision-making, and enhance regulatory compliance with our solutions.
+              Streamline your supply chain processes, reduce costs, and minimize bottlenecks with our advanced optimization tools.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -118,9 +118,9 @@ const TravelAndLogistics: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <LineChart size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Customer-Centric Digital Platforms</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Customer Experience Enhancement</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                Enhance customer experiences with our customer-centric digital platforms. From intuitive mobile banking apps to personalized financial advisory tools, we help you create digital solutions that resonate with your clients, increasing engagement and satisfaction.
+              Elevate your customer service game with intuitive booking platforms, personalized experiences, and 24/7 support.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -131,9 +131,9 @@ const TravelAndLogistics: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Database size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Compliance and Regulatory Support</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Data Analytics and Predictive Insights</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                Regulatory compliance is non-negotiable in finance. We offer comprehensive solutions to automate compliance processes, ensuring that your institution remains in line with the latest regulations. Stay agile and adapt to changing compliance requirements effortlessly with Accord Innovations.
+              Leverage the power of data analytics and AI to make data-driven decisions, forecast demand, and enhance resource allocation for improved profitability.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
