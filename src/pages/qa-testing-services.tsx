@@ -23,16 +23,12 @@ const QATestingServices: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24">
             <div className="order-2 md:order-1">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#0a3d62]">Our</span>{" "}
-                <span className="text-[#f47847]">Approach</span>
+                <span className="text-[#0a3d62]">Domain Expertise</span>{" "}
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  At Accord Innovations, we take a comprehensive approach to QA testing. We begin by understanding your software requirements, user expectations, and business objectives to develop a tailored testing strategy.
-                </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  Our methodology combines automated and manual testing techniques, continuous integration, and agile practices to ensure thorough coverage and early defect detection. We emphasize collaboration with development teams and stakeholders throughout the testing process.
-                </p>
+                QA testing extends beyond evaluating functionality; it demands a profound understanding of the domain in which the software operates. Our seasoned experts possess domain-specific knowledge across various industries. Whether your software is related to data warehousing, microservices, big data, or blockchain, we have the expertise to ensure its seamless performance.                </p>
+                
               </div>
             </div>
             <div className="relative order-1 md:order-2">
@@ -55,16 +51,15 @@ const QATestingServices: React.FC = () => {
             </div>
             <div className="order-2">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#f47847]">Accord Innovations'</span>{" "}
+                <span className="text-[#f47847]">Comprehensive Testing for Enhanced Software Reliability</span>{" "}
                 <span className="text-[#0a3d62]">Contribution</span>
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  Accord Innovations delivers comprehensive QA testing services that ensure software quality and reliability. Our expertise in various testing methodologies, automation tools, and quality assurance processes helps businesses deliver exceptional software products.
-                </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  We provide end-to-end testing services, from requirements analysis and test planning to execution, reporting, and ongoing support. Our solutions are built on industry best practices and cutting-edge tools, ensuring that your software meets the highest quality standards.
-                </p>
+                Our QA Testing services go beyond routine functional testing. We perform an exhaustive range of testing activities, including automated and manual testing, functional testing, performance testing, penetration testing, load/stress testing, regression testing, and configuration testing. This comprehensive approach guarantees that your software aligns seamlessly with your requirements and anticipations.Through our rigorous testing processes, our goal is to identify and rectify potential issues and vulnerabilities in your software. This ensures the reliability, stability, and security of your software in real-world scenarios. We strive to deliver software that not only functions flawlessly but also withstands the test of time and user interactions.
+
+</p>
+               
               </div>
             </div>
           </div>
@@ -91,9 +86,9 @@ const QATestingServices: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <CheckCircle size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Functional Testing</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Automated and Manual Testing</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                We verify that your software functions correctly according to specifications, ensuring all features work as expected across different environments.
+              We employ both automated and manual testing methods to ensure comprehensive software quality assessment, combining human expertise with efficient tools for meticulous evaluation.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -104,9 +99,9 @@ const QATestingServices: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Activity size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Performance Testing</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Functional Testing</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                Our performance testing services evaluate your software's speed, scalability, and stability under various load conditions to ensure optimal user experience.
+              Our experts rigorously evaluate your software's functionality to ensure it performs as intended, identifying and rectifying any deviations from expected behavior.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -117,9 +112,9 @@ const QATestingServices: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Shield size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Security Testing</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Performance Testing</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                We identify vulnerabilities and security risks in your software through comprehensive security testing, ensuring protection against potential threats.
+              We assess your software's performance under various conditions to ensure it meets speed, scalability, and responsiveness requirements.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -130,9 +125,9 @@ const QATestingServices: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Code size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Automated Testing</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Penetration Testing</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                We develop and implement automated testing solutions that increase testing efficiency, coverage, and consistency while reducing manual effort.
+              We simulate cyberattacks to uncover vulnerabilities and strengthen your software's security, safeguarding it against potential threats.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>

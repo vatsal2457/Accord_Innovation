@@ -23,16 +23,19 @@ const ProfessionalManagedServices: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24">
             <div className="order-2 md:order-1">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#0a3d62]">Our</span>{" "}
-                <span className="text-[#f47847]">Approach</span>
+                <span className="text-[#0a3d62]">Streamlined Resource Management and Enhanced Efficiency</span>{" "}
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  At Accord Innovations, we take a proactive approach to managed services. We begin by conducting a thorough assessment of your IT environment, identifying areas for improvement, and developing a customized service plan.
-                </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  Our methodology focuses on continuous monitoring, preventive maintenance, and rapid response to issues. We implement industry best practices and leverage advanced tools to ensure your IT infrastructure operates at peak performance while minimizing downtime and security risks.
-                </p>
+                Managing an IT infrastructure and ensuring its seamless operation can be a daunting task, diverting valuable resources and attention away from core business functions.
+
+With Accord Innovations as your IT partner, you can focus on what you do best—growing your business—while we handle the intricacies of IT management. Our Professional Managed Services provide peace of mind, knowing that your technology is in capable hands, allowing you to stay competitive, agile, and secure in an increasingly digital world.
+
+Accord Innovations' Professional Managed Services are designed to alleviate the burdens and complexities associated with IT management.
+
+We offer a tailored approach, understanding that each business has unique IT requirements and challenges. Our team of certified IT professionals brings a wealth of expertise to the table, ensuring that your IT environment remains secure, efficient, and optimized for your specific needs.
+</p>
+               
               </div>
             </div>
             <div className="relative order-1 md:order-2">
@@ -60,11 +63,10 @@ const ProfessionalManagedServices: React.FC = () => {
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  Accord Innovations delivers comprehensive managed services that transform how organizations maintain and optimize their IT environments. Our expertise in infrastructure management, security, and service delivery helps businesses ensure reliable, secure, and efficient operations.
-                </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  We provide end-to-end managed services, from assessment and planning to implementation, monitoring, and ongoing support. Our solutions are built on industry-leading platforms and best practices, ensuring that your IT infrastructure evolves alongside your business needs while maintaining optimal performance and security.
-                </p>
+                In the realm of information technology, project-driven demands often lead to fluctuations in workforce requirements. We offer a flexible outsourcing service that empowers you to secure contract-based resources precisely when your projects necessitate them. Under our stewardship, you can entrust the entire candidate selection process to us, complete with an assurance that covers the entire duration of the contract. This flexibility not only optimizes your resource allocation but also streamlines your project management, enabling you to adapt swiftly to evolving project scopes.
+
+</p>
+               
               </div>
             </div>
           </div>
@@ -91,9 +93,9 @@ const ProfessionalManagedServices: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Server size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Infrastructure Management</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">24/7 Monitoring and Support</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                We provide comprehensive infrastructure management services that ensure optimal performance, security, and availability of your IT systems.
+              We provide round-the-clock monitoring of your IT systems to identify and address issues before they disrupt your operations. Our team is always available to provide immediate support when you need it.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -106,8 +108,8 @@ const ProfessionalManagedServices: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Security Management</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                Our security management services protect your IT environment from threats through continuous monitoring, vulnerability assessment, and incident response.
-              </p>
+              Data security is paramount in today's digital landscape. We implement robust security measures to protect your sensitive information and ensure compliance with industry regulations.
+             </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
 
@@ -117,9 +119,10 @@ const ProfessionalManagedServices: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Headphones size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Service Desk</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Proactive Maintenance
+              </h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                We provide a dedicated service desk that serves as a single point of contact for all IT support needs, ensuring quick resolution of issues.
+              We take a proactive approach to IT maintenance, addressing potential problems and optimizing your systems to improve performance and reliability.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -130,9 +133,9 @@ const ProfessionalManagedServices: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Zap size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Performance Optimization</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Scalability</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                Our performance optimization services help you maximize the efficiency and reliability of your IT infrastructure through continuous monitoring and tuning.
+              As your business grows, your IT needs change. We ensure that your IT infrastructure can scale seamlessly to accommodate your evolving requirements.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>

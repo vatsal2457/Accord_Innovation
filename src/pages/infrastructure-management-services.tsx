@@ -23,16 +23,14 @@ const InfrastructureManagementServices: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24">
             <div className="order-2 md:order-1">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#0a3d62]">Our</span>{" "}
-                <span className="text-[#f47847]">Approach</span>
+                <span className="text-[#0a3d62]">Infrastructure Management Services</span>{" "}
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  At Accord Innovations, we take a proactive approach to infrastructure management. We begin by conducting a thorough assessment of your current infrastructure to identify areas for improvement, potential risks, and optimization opportunities.
-                </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  Our methodology focuses on continuous monitoring, preventive maintenance, and rapid response to issues. We implement industry best practices and leverage advanced tools to ensure your infrastructure operates at peak performance while minimizing downtime and security risks.
-                </p>
+                It encompasses the end-to-end oversight, maintenance, and optimization of your entire IT environment, from servers and networks to storage and cloud resources. At Accord Innovations, we understand that each business has unique infrastructure needs, which is why our IMS solutions are tailored to align perfectly with your specific requirements. Our seasoned experts take a proactive approach, continuously monitoring, managing, and enhancing your infrastructure to keep it in peak condition.
+
+</p>
+              
               </div>
             </div>
             <div className="relative order-1 md:order-2">
@@ -55,13 +53,13 @@ const InfrastructureManagementServices: React.FC = () => {
             </div>
             <div className="order-2">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#f47847]">Accord Innovations'</span>{" "}
-                <span className="text-[#0a3d62]">Contribution</span>
+                <span className="text-[#f47847]">How We Do It: Expertise That Sets Us Apart</span>{" "}
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  Accord Innovations delivers comprehensive infrastructure management services that transform how organizations maintain and optimize their IT environments. Our expertise in server management, network administration, and security helps businesses ensure reliable, secure, and efficient operations.
-                </p>
+                Accord Innovations boasts a team of highly skilled and certified professionals with deep expertise in diverse technologies, platforms, and industry best practices. Our IMS experts leverage cutting-edge tools and methodologies to provide round-the-clock monitoring and management of your infrastructure. We employ predictive analytics and proactive maintenance to identify and address potential issues before they impact your operations. From on-premises data centers to hybrid and cloud environments, we offer a comprehensive suite of IMS solutions that ensure your infrastructure remains agile, secure, and scalable.
+
+</p>
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                   We provide end-to-end infrastructure services, from assessment and planning to implementation, monitoring, and ongoing support. Our solutions are built on industry-leading platforms and best practices, ensuring that your infrastructure evolves alongside your business needs while maintaining optimal performance and security.
                 </p>
@@ -91,9 +89,9 @@ const InfrastructureManagementServices: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Server size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Server Management</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Strategic Transformation Implementation</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                We provide comprehensive server management services that ensure optimal performance, security, and availability. Our solutions include monitoring, maintenance, and optimization of your server infrastructure.
+              Our approach involves evaluating and enhancing the existing business foundation through consultative analysis and meticulous due diligence. This process defines both the immediate and long-term requirements, setting the stage for a successful transformation journey.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -104,9 +102,9 @@ const InfrastructureManagementServices: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Network size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Network Administration</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Transformation Advisory and Global Systems Integration</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                Our network administration services ensure secure, efficient, and reliable network operations. We help you design, implement, and maintain network infrastructure that supports your business needs.
+              Within Accord Innovations, we address our clients' immediate and strategic business objectives. This practice maps out a clear transformation pathway, ensuring the development of appropriate IT infrastructure to meet both current and future requirements.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -117,9 +115,9 @@ const InfrastructureManagementServices: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Shield size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Security Management</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Holistic Business Service Management</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                We implement comprehensive security measures to protect your infrastructure from threats. Our security management services include vulnerability assessment, threat detection, and incident response.
+              Our BSM practice encompasses the entire spectrum of BSM adoption, from consultative services focused on refining service management processes to the implementation of cutting-edge tools and frameworks. We also provide ongoing managed services to support the tools we deploy.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -130,9 +128,9 @@ const InfrastructureManagementServices: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Zap size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Performance Optimization</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Comprehensive IT Security Solutions</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                Our performance optimization services help you maximize the efficiency and reliability of your infrastructure. We analyze, tune, and enhance your systems to ensure optimal performance and resource utilization.
+              Our seasoned team delivers industry-leading assessments and security strategies to some of the world's largest enterprises, including vital strategies like the zero-trust approach.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>

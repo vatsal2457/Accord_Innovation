@@ -30,9 +30,7 @@ const IoT: React.FC = () => {
                 Accord's AI and IoT solutions are designed to cater to a wide range of industries and use cases. From Smart Homes, where automation and enhanced security redefine daily living, to the cutting-edge technology in Self-Driving Cars, improving safety and efficiency on the roads, our expertise spans diverse domains. In Retail Analytics, we empower retailers with data-driven insights into customer behavior, inventory management, and personalized shopping experiences. Our AI and IoT solutions also fortify Security Devices, making surveillance smarter and more responsive. Moreover, we revolutionize urban living with Smart Cities and Traffic Management solutions, optimizing traffic flow, reducing congestion, and enhancing public safety through real-time data analysis and AI-driven decision-making.
 
 </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  We follow an iterative development methodology that ensures continuous improvement and adaptation to changing requirements. This approach allows us to deliver IoT solutions that not only meet current needs but also scale effectively as your business grows.
-                </p>
+               
               </div>
             </div>
             <div className="relative order-1 md:order-2">

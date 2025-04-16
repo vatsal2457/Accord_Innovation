@@ -51,7 +51,7 @@ import CloudServices from './pages/cloud-services';
 import InfrastructureManagementServices from './pages/infrastructure-management-services';
 import ArtificialIntelligence from './pages/artificial-intelligence';
 import IoT from './pages/iot';
-
+import ProfessionalManagedServices from './pages/professional-managed-services';
 
 
 const App: React.FC = () => (
@@ -106,6 +106,7 @@ const App: React.FC = () => (
         <Route path="/cloud-services" element={<CloudServices/>}/>
         <Route path="/infrastructure-management-services" element={<InfrastructureManagementServices/>}/>
         <Route path="/artificial-intelligence" element={<ArtificialIntelligence/>}/>
+        <Route path="/professional-managed-services" element={<ProfessionalManagedServices/>}/>
         
         
         {/* Add more routes as needed */}

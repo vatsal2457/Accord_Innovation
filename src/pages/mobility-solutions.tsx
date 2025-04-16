@@ -23,16 +23,14 @@ const MobilitySolutions: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24">
             <div className="order-2 md:order-1">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#0a3d62]">Our</span>{" "}
-                <span className="text-[#f47847]">Approach</span>
+                <span className="text-[#0a3d62]">The Significance of Mobility in the Digital Age</span>{" "}
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  At Accord Innovations, we take a user-centric approach to mobility solutions that prioritizes seamless experiences across devices and platforms. Our team works closely with clients to understand their workforce needs, business processes, and mobility challenges before designing tailored solutions.
-                </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  We follow an agile development methodology that ensures rapid delivery of high-quality mobile applications. This approach allows for continuous feedback and iteration, resulting in solutions that truly meet the needs of your mobile workforce.
-                </p>
+                The advent of mobile devices, such as smartphones and tablets, has fundamentally altered the way businesses operate. Mobility solutions empower organizations to extend their reach, streamline processes, and engage with customers and employees like never before. With the increasing reliance on mobile devices for networking, purchasing, and communication, businesses that embrace mobility gain a competitive edge. It's no longer just a convenience; it's a strategic imperative.
+
+</p>
+                
               </div>
             </div>
             <div className="relative order-1 md:order-2">
@@ -55,16 +53,14 @@ const MobilitySolutions: React.FC = () => {
             </div>
             <div className="order-2">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#f47847]">Accord Innovations'</span>{" "}
-                <span className="text-[#0a3d62]">Contribution</span>
+                <span className="text-[#f47847]">Accord Innovations Advantage</span>{" "}
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  Accord Innovations provides comprehensive mobility solutions that transform how businesses operate. Our expertise in mobile app development, enterprise mobility management, and mobile security helps organizations leverage the full potential of mobile technologies.
-                </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  We offer end-to-end mobility services, from strategy and design to development, deployment, and ongoing support. Our solutions are built on industry-leading platforms and best practices, ensuring seamless integration with your existing systems and optimal performance for your mobile workforce.
-                </p>
+                Accord Innovations specializes in tailoring Mobility Solutions that cater to your specific business needs. Our frameworks are designed to empower your enterprise to navigate the mobile landscape with agility and foresight. Our Mobility Solutions encompass a wide range of services, including mobile app development, enterprise mobility management, mobile security, and user experience design. We prioritize seamless user experiences across the board, ensuring that your employees and customers can access critical information and services on the go. Our solutions minimize downtime, enhance ROI predictability, and drive higher adoption rates, amplifying productivity to new heights.
+
+</p>
+              
               </div>
             </div>
           </div>
@@ -91,9 +87,9 @@ const MobilitySolutions: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Smartphone size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Mobile App Development</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Service Desk</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                We develop custom mobile applications that address your specific business needs. Our mobile apps are built with user experience in mind, ensuring intuitive interfaces and seamless functionality across all devices.
+              Our Service Desk ensures prompt and efficient IT support, addressing technical issues and inquiries to minimize downtime and keep your operations running smoothly.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -104,9 +100,9 @@ const MobilitySolutions: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Settings size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Enterprise Mobility Management</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Mobility Consulting</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                Our enterprise mobility management solutions help you secure and manage your mobile devices, applications, and data. We implement comprehensive policies and controls to ensure compliance and protect your corporate assets.
+              Our Mobility Consulting services provide expert guidance on leveraging mobile technology to optimize your business processes, enhance customer engagement, and stay competitive in the digital landscape.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -117,9 +113,9 @@ const MobilitySolutions: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Link size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Mobile Integration</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Mobile Application Development</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                We ensure seamless integration between your mobile applications and existing enterprise systems. Our integration services eliminate data silos and enable real-time access to critical business information on mobile devices.
+              We specialize in creating custom mobile applications tailored to your business needs, delivering intuitive user experiences and expanding your reach to mobile users.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -130,9 +126,9 @@ const MobilitySolutions: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Shield size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Mobile Security</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Integrations</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                We implement comprehensive security measures to protect your mobile applications and data. Our security solutions include encryption, authentication, and threat detection to ensure your mobile ecosystem remains secure.
+              Our integration solutions seamlessly connect and synchronize your diverse software applications, allowing for real-time data exchange and improved workflow automation.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
