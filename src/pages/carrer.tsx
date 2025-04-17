@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { ChevronDown, Upload, Briefcase, Mail, Phone, User, Calendar, FileText, Send, Globe, Linkedin, Info } from 'lucide-react';
 
 const Career: React.FC = () => {
   const [isVisible, setIsVisible] = useState({
     hero: false,
-    jobCategories: false,
     whyJoinUs: false,
     testimonials: false,
     applicationProcess: false,
     benefits: false
   });
 
-  const [showApplicationForm, setShowApplicationForm] = useState(false);
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -18,7 +18,9 @@ const Career: React.FC = () => {
     position: '',
     experience: '',
     resume: null as File | null,
-    coverLetter: ''
+    coverLetter: '',
+    portfolio: '',
+    linkedin: ''
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -43,17 +45,14 @@ const Career: React.FC = () => {
     e.preventDefault();
     // Handle form submission logic here
     console.log('Form submitted:', formData);
-    setShowApplicationForm(false);
   };
 
   useEffect(() => {
-    // Trigger animations when component mounts
     const timer1 = setTimeout(() => setIsVisible(prev => ({ ...prev, hero: true })), 100);
-    const timer2 = setTimeout(() => setIsVisible(prev => ({ ...prev, jobCategories: true })), 300);
-    const timer3 = setTimeout(() => setIsVisible(prev => ({ ...prev, whyJoinUs: true })), 500);
-    const timer4 = setTimeout(() => setIsVisible(prev => ({ ...prev, testimonials: true })), 700);
-    const timer5 = setTimeout(() => setIsVisible(prev => ({ ...prev, applicationProcess: true })), 900);
-    const timer6 = setTimeout(() => setIsVisible(prev => ({ ...prev, benefits: true })), 1100);
+    const timer2 = setTimeout(() => setIsVisible(prev => ({ ...prev, whyJoinUs: true })), 300);
+    const timer3 = setTimeout(() => setIsVisible(prev => ({ ...prev, testimonials: true })), 500);
+    const timer4 = setTimeout(() => setIsVisible(prev => ({ ...prev, applicationProcess: true })), 700);
+    const timer5 = setTimeout(() => setIsVisible(prev => ({ ...prev, benefits: true })), 900);
 
     return () => {
       clearTimeout(timer1);
@@ -61,149 +60,94 @@ const Career: React.FC = () => {
       clearTimeout(timer3);
       clearTimeout(timer4);
       clearTimeout(timer5);
-      clearTimeout(timer6);
     };
   }, []);
 
   return (
-    <div>
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div className={`relative min-h-[70vh] bg-gradient-to-br from-[#0C4A6E] to-[#0a3d62] transition-all duration-1000 ${isVisible.hero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-20"></div>
         <div className="container mx-auto px-4 h-[70vh] flex items-center relative z-10">
-          {/* Left side - Text Content */}
           <div className="w-full lg:w-1/2 pl-4 lg:pl-20">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+            >
               <span className="text-white">Join Our</span>{" "}
               <span className="text-[#f47847]">Team</span>
-            </h1>
-            <p className="text-xl md:text-2xl max-w-3xl text-gray-200">
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-xl md:text-2xl max-w-3xl text-gray-200"
+            >
               Build Your Career with Accord Innovations
-            </p>
-            <p className="text-xl md:text-2xl max-w-3xl text-gray-200 mt-3">
+            </motion.p>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="text-xl md:text-2xl max-w-3xl text-gray-200 mt-3"
+            >
               Join a dynamic team of innovators and shape the future of technology
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 mt-6">
-              <button className="px-8 py-3 bg-[#f47847] text-white text-lg font-semibold rounded-lg hover:bg-[#e66a3a] transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
-                View Openings
-              </button>
-              <button className="px-8 py-3 bg-white text-gray-900 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            </motion.p>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="flex flex-col sm:flex-row gap-4 mt-8"
+            >
+              <a href="#application-form" className="px-8 py-3 bg-[#f47847] text-white text-lg font-semibold rounded-lg hover:bg-[#e66a3a] transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center justify-center">
+                Apply Now
+                <Send className="w-5 h-5 ml-2" />
+              </a>
+              <button className="px-8 py-3 bg-white text-gray-900 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center justify-center">
                 Learn More
+                <ChevronDown className="w-5 h-5 ml-2" />
               </button>
-            </div>
+            </motion.div>
           </div>
           
-          {/* Right side - Decorative Elements */}
           <div className="hidden lg:block w-1/2 relative">
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-[#f47847]/20 rounded-full blur-3xl"></div>
-            <div className="absolute top-1/3 right-1/4 w-32 h-32 bg-[#0C4A6E]/30 rounded-full blur-2xl"></div>
-            <div className="absolute bottom-1/4 left-1/3 w-24 h-24 bg-white/20 rounded-full blur-xl"></div>
+            <motion.div 
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-[#f47847]/20 rounded-full blur-3xl"
+            ></motion.div>
+            <motion.div 
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 1, delay: 0.7 }}
+              className="absolute top-1/3 right-1/4 w-32 h-32 bg-[#0C4A6E]/30 rounded-full blur-2xl"
+            ></motion.div>
+            <motion.div 
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 1, delay: 0.9 }}
+              className="absolute bottom-1/4 left-1/3 w-24 h-24 bg-white/20 rounded-full blur-xl"
+            ></motion.div>
           </div>
         </div>
       </div>
 
-      {/* Career Opportunities Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className={`text-center mb-16 transition-all duration-1000 ${isVisible.jobCategories ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Career Opportunities</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Join our team of passionate professionals and help shape the future of technology
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Software Development',
-                description: 'Build innovative solutions using cutting-edge technologies',
-                icon: '💻',
-                delay: 300
-              },
-              {
-                title: 'Data Science',
-                description: 'Transform data into actionable insights and drive business growth',
-                icon: '📊',
-                delay: 400
-              },
-              {
-                title: 'Project Management',
-                description: 'Lead teams and deliver successful projects on time',
-                icon: '🎯',
-                delay: 500
-              }
-            ].map((category, index) => (
-              <div
-                key={index}
-                className={`bg-white rounded-xl shadow-lg p-8 transition-all duration-1000 hover:shadow-xl hover:-translate-y-2 ${
-                  isVisible.jobCategories ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                }`}
-                style={{ transitionDelay: `${category.delay}ms` }}
-              >
-                <div className="text-4xl mb-4">{category.icon}</div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">{category.title}</h3>
-                <p className="text-gray-600 mb-6">{category.description}</p>
-                <button className="bg-[#0C4A6E] text-white px-6 py-3 rounded-lg hover:bg-[#0C4A6E]/90 transition-colors duration-300">
-                  View Positions
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits & Perks Section */}
-      <section className="py-20 bg-gradient-to-br from-[#0C4A6E] to-[#0C4A6E]/80 text-white">
-        <div className="container mx-auto px-4">
-          <div className={`text-center mb-16 transition-all duration-1000 ${isVisible.benefits ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="text-4xl font-bold mb-4">Benefits & Perk</h2>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              We offer comprehensive benefits to support your growth and well-being
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                title: 'Health & Wellness',
-                description: 'Comprehensive health coverage, wellness programs, and mental health support',
-                icon: '🏥',
-                delay: 300
-              },
-              {
-                title: 'Learning & Development',
-                description: 'Continuous learning opportunities, certifications, and skill development programs',
-                icon: '📚',
-                delay: 400
-              },
-              {
-                title: 'Work-Life Balance',
-                description: 'Flexible work hours, remote work options, and generous time off',
-                icon: '⚖️',
-                delay: 500
-              },
-              {
-                title: 'Team Building',
-                description: 'Regular team events, social activities, and community engagement',
-                icon: '🤝',
-                delay: 600
-              }
-            ].map((benefit, index) => (
-              <div
-                key={index}
-                className={`bg-white/10 backdrop-blur-lg rounded-xl p-8 transition-all duration-1000 hover:bg-white/20 ${
-                  isVisible.benefits ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                }`}
-                style={{ transitionDelay: `${benefit.delay}ms` }}
-              >
-                <div className="text-4xl mb-4">{benefit.icon}</div>
-                <h3 className="text-2xl font-bold mb-4">{benefit.title}</h3>
-                <p className="text-white/80">{benefit.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Scroll Down Indicator */}
+      <motion.div 
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white flex flex-col items-center cursor-pointer"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ repeat: Infinity, duration: 1.5 }}
+        onClick={() => {
+          const element = document.getElementById('application-form');
+          element?.scrollIntoView({ behavior: 'smooth' });
+        }}
+      >
+        <ChevronDown size={30} />
+        <span className="text-sm mt-2">Scroll Down</span>
+      </motion.div>
 
       {/* Why Join Us Section */}
       <div className={`bg-[#0C4A6E] rounded-2xl p-12 text-white transition-all duration-1000 ${isVisible.whyJoinUs ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -449,160 +393,247 @@ const Career: React.FC = () => {
         </div>
       </div>
 
-      {/* Application Form Modal */}
-      {showApplicationForm && (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl transform transition-all duration-300">
-            <div className="p-8">
-              <div className="flex justify-between items-center mb-8 border-b border-gray-100 pb-6">
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900">Job Application</h3>
-                  <p className="text-gray-500 mt-1">Join our team at Accord Innovations</p>
-                </div>
-                <button 
-                  onClick={() => setShowApplicationForm(false)}
-                  className="text-gray-400 hover:text-gray-600 transition-colors duration-200"
-                >
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-              
-              <form onSubmit={handleSubmit} className="space-y-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="space-y-2">
-                    <label className="block text-sm font-medium text-gray-700">
-                      Full Name <span className="text-[#f47847]">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      name="fullName"
-                      value={formData.fullName}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50"
-                      placeholder="Enter your full name"
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <label className="block text-sm font-medium text-gray-700">
-                      Email <span className="text-[#f47847]">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50"
-                      placeholder="Enter your email"
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <label className="block text-sm font-medium text-gray-700">
-                      Phone Number <span className="text-[#f47847]">*</span>
-                    </label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50"
-                      placeholder="Enter your phone number"
-                    />
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <label className="block text-sm font-medium text-gray-700">
-                      Position Applied For <span className="text-[#f47847]">*</span>
-                    </label>
-                    <select
-                      name="position"
-                      value={formData.position}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50 appearance-none"
-                    >
-                      <option value="">Select a position</option>
-                      <option value="software-developer">Software Developer</option>
-                      <option value="data-scientist">Data Scientist</option>
-                      <option value="project-manager">Project Manager</option>
-                      <option value="ui-ux-designer">UI/UX Designer</option>
-                    </select>
-                  </div>
-                </div>
+      {/* Application Form Section */}
+      <section id="application-form" className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Apply Now</h2>
+              <p className="text-xl text-gray-600">Take the first step towards your next great opportunity</p>
+            </div>
 
+            <form onSubmit={handleSubmit} className="space-y-8 bg-white rounded-2xl p-8 shadow-xl">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Full Name */}
                 <div className="space-y-2">
-                  <label className="block text-sm font-medium text-gray-700">
-                    Years of Experience <span className="text-[#f47847]">*</span>
+                  <label className="flex items-center text-sm font-medium text-gray-700">
+                    <User className="w-4 h-4 mr-2 text-[#0C4A6E]" />
+                    Full Name <span className="text-[#f47847] ml-1">*</span>
                   </label>
                   <input
-                    type="number"
-                    name="experience"
-                    value={formData.experience}
+                    type="text"
+                    name="fullName"
+                    value={formData.fullName}
                     onChange={handleInputChange}
                     required
-                    min="0"
                     className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50"
-                    placeholder="Enter years of experience"
+                    placeholder="Enter your full name"
                   />
                 </div>
 
+                {/* Email */}
                 <div className="space-y-2">
-                  <label className="block text-sm font-medium text-gray-700">
-                    Resume/CV <span className="text-[#f47847]">*</span>
+                  <label className="flex items-center text-sm font-medium text-gray-700">
+                    <Mail className="w-4 h-4 mr-2 text-[#0C4A6E]" />
+                    Email <span className="text-[#f47847] ml-1">*</span>
                   </label>
-                  <div className="relative">
-                    <input
-                      type="file"
-                      name="resume"
-                      onChange={handleFileChange}
-                      required
-                      accept=".pdf,.doc,.docx"
-                      className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-[#0C4A6E]/10 file:text-[#0C4A6E] hover:file:bg-[#0C4A6E]/20"
-                    />
-                  </div>
-                  <p className="text-sm text-gray-500">Accepted formats: PDF, DOC, DOCX (Max 5MB)</p>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="block text-sm font-medium text-gray-700">
-                    Cover Letter
-                  </label>
-                  <textarea
-                    name="coverLetter"
-                    value={formData.coverLetter}
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
                     onChange={handleInputChange}
-                    rows={4}
-                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50 resize-none"
-                    placeholder="Tell us about yourself and why you're interested in this position"
+                    required
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50"
+                    placeholder="Enter your email"
                   />
                 </div>
 
-                <div className="flex justify-end space-x-4 pt-4 border-t border-gray-100">
-                  <button
-                    type="button"
-                    onClick={() => setShowApplicationForm(false)}
-                    className="px-6 py-3 border border-gray-200 rounded-xl text-gray-700 hover:bg-gray-50 transition-all duration-200 font-medium"
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    type="submit"
-                    className="px-8 py-3 bg-[#0C4A6E] text-white rounded-xl hover:bg-[#0a3d62] transition-all duration-200 font-medium shadow-lg shadow-[#0C4A6E]/20 hover:shadow-xl hover:shadow-[#0C4A6E]/30 transform hover:-translate-y-0.5"
-                  >
-                    Submit Application
-                  </button>
+                {/* Phone */}
+                <div className="space-y-2">
+                  <label className="flex items-center text-sm font-medium text-gray-700">
+                    <Phone className="w-4 h-4 mr-2 text-[#0C4A6E]" />
+                    Phone Number <span className="text-[#f47847] ml-1">*</span>
+                  </label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50"
+                    placeholder="Enter your phone number"
+                  />
                 </div>
-              </form>
+
+                {/* Position */}
+                <div className="space-y-2">
+                  <label className="flex items-center text-sm font-medium text-gray-700">
+                    <Briefcase className="w-4 h-4 mr-2 text-[#0C4A6E]" />
+                    Position Applied For <span className="text-[#f47847] ml-1">*</span>
+                  </label>
+                  <select
+                    name="position"
+                    value={formData.position}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50"
+                  >
+                    <option value="">Select a position</option>
+                    <option value="software-developer">Software Developer</option>
+                    <option value="data-scientist">Data Scientist</option>
+                    <option value="project-manager">Project Manager</option>
+                    <option value="ui-ux-designer">UI/UX Designer</option>
+                    <option value="devops-engineer">DevOps Engineer</option>
+                    <option value="business-analyst">Business Analyst</option>
+                  </select>
+                </div>
+              </div>
+
+              {/* Experience */}
+              <div className="space-y-2">
+                <label className="flex items-center text-sm font-medium text-gray-700">
+                  <Calendar className="w-4 h-4 mr-2 text-[#0C4A6E]" />
+                  Years of Experience <span className="text-[#f47847] ml-1">*</span>
+                </label>
+                <input
+                  type="number"
+                  name="experience"
+                  value={formData.experience}
+                  onChange={handleInputChange}
+                  required
+                  min="0"
+                  className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50"
+                  placeholder="Enter years of experience"
+                />
+              </div>
+
+              {/* Portfolio & LinkedIn */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="space-y-2">
+                  <label className="flex items-center text-sm font-medium text-gray-700">
+                    <Globe className="w-4 h-4 mr-2 text-[#0C4A6E]" />
+                    Portfolio URL
+                  </label>
+                  <input
+                    type="url"
+                    name="portfolio"
+                    value={formData.portfolio}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50"
+                    placeholder="https://your-portfolio.com"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="flex items-center text-sm font-medium text-gray-700">
+                    <Linkedin className="w-4 h-4 mr-2 text-[#0C4A6E]" />
+                    LinkedIn Profile
+                  </label>
+                  <input
+                    type="url"
+                    name="linkedin"
+                    value={formData.linkedin}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50"
+                    placeholder="https://linkedin.com/in/your-profile"
+                  />
+                </div>
+              </div>
+
+              {/* Resume Upload */}
+              <div className="space-y-2">
+                <label className="flex items-center text-sm font-medium text-gray-700">
+                  <FileText className="w-4 h-4 mr-2 text-[#0C4A6E]" />
+                  Resume/CV <span className="text-[#f47847] ml-1">*</span>
+                </label>
+                <div className="relative">
+                  <input
+                    type="file"
+                    name="resume"
+                    onChange={handleFileChange}
+                    required
+                    accept=".pdf,.doc,.docx"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-[#0C4A6E]/10 file:text-[#0C4A6E] hover:file:bg-[#0C4A6E]/20"
+                  />
+                  <Upload className="absolute right-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
+                </div>
+                <p className="text-sm text-gray-500 flex items-center mt-2">
+                  <Info className="w-4 h-4 mr-1" />
+                  Accepted formats: PDF, DOC, DOCX (Max 5MB)
+                </p>
+              </div>
+
+              {/* Cover Letter */}
+              <div className="space-y-2">
+                <label className="flex items-center text-sm font-medium text-gray-700">
+                  <FileText className="w-4 h-4 mr-2 text-[#0C4A6E]" />
+                  Cover Letter
+                </label>
+                <textarea
+                  name="coverLetter"
+                  value={formData.coverLetter}
+                  onChange={handleInputChange}
+                  rows={4}
+                  className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#0C4A6E]/20 focus:border-[#0C4A6E] transition-all duration-200 bg-gray-50/50 resize-none"
+                  placeholder="Tell us about yourself and why you're interested in this position"
+                />
+              </div>
+
+              {/* Submit Button */}
+              <div className="flex justify-end">
+                <motion.button
+                  type="submit"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="px-8 py-4 bg-[#0C4A6E] text-white rounded-xl hover:bg-[#0a3d62] transition-all duration-200 font-medium shadow-lg shadow-[#0C4A6E]/20 hover:shadow-xl hover:shadow-[#0C4A6E]/30 flex items-center justify-center space-x-2"
+                >
+                  <span>Submit Application</span>
+                  <Send className="w-5 h-5" />
+                </motion.button>
+              </div>
+            </form>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <div className={`bg-[#0C4A6E] rounded-2xl p-12 text-white transition-all duration-1000 ${isVisible.benefits ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <h2 className="text-3xl font-bold mb-8 text-center">Benefits of Working at Accord Innovations</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="text-center transform hover:scale-105 transition-all duration-300">
+            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
             </div>
+            <h3 className="text-xl font-semibold mb-2">Work-Life Balance</h3>
+            <p className="text-gray-300">Flexible working hours and remote work options</p>
+          </div>
+          <div className="text-center transform hover:scale-105 transition-all duration-300">
+            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Career Growth</h3>
+            <p className="text-gray-300">Continuous learning and advancement opportunities</p>
+          </div>
+          <div className="text-center transform hover:scale-105 transition-all duration-300">
+            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Collaborative Culture</h3>
+            <p className="text-gray-300">Work with talented professionals in a supportive environment</p>
+          </div>
+          <div className="text-center transform hover:scale-105 transition-all duration-300">
+            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold mb-2">Competitive Benefits</h3>
+            <p className="text-gray-300">Health insurance, retirement plans, and performance bonuses</p>
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 };
