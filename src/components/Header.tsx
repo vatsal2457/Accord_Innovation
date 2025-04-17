@@ -86,6 +86,7 @@ const Header: React.FC<HeaderProps> = () => {
                   </svg>
                 </div>
                 {/* Text logo */}
+                <img src="" alt="" className="w-10 h-10" />
                 <span className="text-xl sm:text-2xl font-bold text-white whitespace-nowrap">
                   Accord<span className="text-[#f47847]"> Innovations</span>
                 </span>

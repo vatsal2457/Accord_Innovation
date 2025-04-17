@@ -32,7 +32,7 @@ const AutomationHyperautomation: React.FC = () => {
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  At Accord Innovations, we take a comprehensive approach to automation and hyperautomation. We begin by analyzing your business processes to identify opportunities for automation, focusing on high-impact areas that can deliver immediate value.
+                At AI-GTS we enable enterprises to automate, optimize, and innovate by leveraging cutting-edge Automation & Hyper-Automation solutions. Our expertise spans across enterprise and open-source automation tools, RPA platforms, AI-driven automation, and intelligent process orchestration, helping organizations achieve maximum efficiency, scalability, and cost savings.  
                 </p>
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                   Our methodology combines process mining, robotic process automation (RPA), and intelligent automation technologies to create end-to-end solutions. We emphasize scalability, maintainability, and continuous improvement throughout the automation journey.
@@ -95,10 +95,9 @@ const AutomationHyperautomation: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Bot size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Robotic Process Automation</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Automation Consulting & Strategy</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                We implement RPA solutions that automate repetitive tasks and workflows, freeing up your team to focus on higher-value activities.
-              </p>
+              Our automation specialists assess your business processes, identify automation opportunities, and define a tailored roadmap to accelerate your automation journey using the best-fit RPA, AI, and low-code/no-code solutions              </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
 
@@ -121,9 +120,13 @@ const AutomationHyperautomation: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <GitBranch size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Workflow Automation</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Intelligent Process Automation (IPA)</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                We help you automate business workflows and processes, ensuring consistent execution and improved visibility across your organization.
+              We combine AI, ML, and RPA to drive intelligent decision-making and process automation. Our IPA solutions include:  
+AI-driven workflow automation <br />
+Cognitive document processing (IDP) <br />
+Smart chatbots and virtual assistants <br />
+Predictive analytics & self-healing automation
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -134,9 +137,13 @@ const AutomationHyperautomation: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <FileText size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Document Processing Automation</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Robotic Process Automation (RPA)</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                Our document processing automation solutions extract, validate, and route information from various document types, reducing manual data entry and errors.
+              AI-GTS specializes in enterprise-grade RPA implementation using leading platforms such as:  
+UiPath End-to-end automation and AI-driven bots  <br />
+Automation Anywhere  Intelligent automation at scale  <br />
+Blue Prism  Secure, enterprise-level RPA solutions  <br />
+Open-source RPA  Cost-effective and flexible automation  
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>

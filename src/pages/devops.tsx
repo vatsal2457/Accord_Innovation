@@ -28,8 +28,7 @@ const DevOps: React.FC = () => {
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  At Accord Innovations, we embrace a culture-first approach to DevOps implementation. We believe that successful DevOps transformation starts with people, processes, and tools working in harmony. Our team works closely with your organization to understand your unique challenges and goals.
-                </p>
+                Is your organization stuck in the past vis-à-vis IT development and operations? Yes, then AI-GTS can help you implement new philosophies, practices and technologies that will offer instant boost to how your organisation delivers software applications and associated development services. Get your application development, delivery and maintenance aligned to boost profitability.                </p>
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                   We follow an iterative, continuous improvement methodology that emphasizes automation, collaboration, and measurement. This approach enables us to deliver DevOps solutions that drive efficiency, reduce time-to-market, and enhance product quality while maintaining security and compliance.
                 </p>
@@ -60,11 +59,21 @@ const DevOps: React.FC = () => {
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  Accord Innovations delivers comprehensive DevOps solutions that transform how organizations develop, test, and deploy software. Our expertise in CI/CD pipelines, infrastructure as code, and automated testing helps businesses achieve faster delivery cycles and higher quality products.
+                AI-GTS implements renowned DevOps infrastructure that results in -
+Improved speed at which products are developed and delivered.
+Organisations stuck with traditional ways ( segregated & disconnected ) generally lack in co-ordination and collaboration. AI-GTS implements tools that align development and IT operations.
+Automation is the key to any DevOps implementation. Our services ensure not just software development automation but also for the entire infrastructure landscape.
+DevOps – A set of tools to faster product development and rendering services -
+AI-GTS integrates third party DevOps process / system that can be synched with local IT infrastructure. However we also provide well known third part DevOps brands which are cloud-based where you can design and develop prototype, test and deliver. Our Cloud-based DevOps integration also allows organisations to maintain a new generation of agile business applications.
+
+Our DevOps integration and standalone cloud-based version reduces redundancy, improves efficiency and also the quality of the product delivered.
+
+Application Development & Delivery through Automation -
+AI-GTS analyses your organisation’s current setup, its cultural pain points and based the assessment offers best solution for DevOps adoption. From infrastructure change to full application lifecycle, and from changing vintage perspectives / philosophies to deployment of automated development environment which is also repeatable are some of the DevOps solutions offered by AI-GTS.
+
+‘DevOps’ is a combination of two words ‘Development’ and ‘Operations’ and interestingly AI-GTS covers a gamut of technology integration services which not only covers these areas but also a rainbow of IT infrastructure subsets.
                 </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  We provide end-to-end DevOps services, from assessment and strategy development to implementation, training, and ongoing support. Our solutions are built on industry best practices and cutting-edge tools, ensuring seamless integration with your existing systems and processes.
-                </p>
+               
               </div>
             </div>
           </div>

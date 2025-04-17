@@ -28,11 +28,9 @@ const MissionCriticalFacilities: React.FC = () => {
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  At Accord Innovations, we take a proactive approach to mission critical facilities management. We begin by conducting a thorough assessment of your facility's infrastructure, identifying potential risks, and developing a comprehensive management strategy.
+                  In today's rapidly advancing digital age, data cepters from the backbone of modern infrastructure. As demand grows for scalable, effcient and sustainable solution, we lead in providing specialized engineering and consultancy services for this dynamic sector. 
                 </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  Our methodology focuses on preventive maintenance, continuous monitoring, and rapid response to issues. We implement industry best practices and leverage advanced technologies to ensure your mission critical facilities operate at peak performance with maximum uptime.
-                </p>
+               
               </div>
             </div>
             <div className="relative order-1 md:order-2">
@@ -60,11 +58,11 @@ const MissionCriticalFacilities: React.FC = () => {
               </h2>
               <div className="space-y-4 md:space-y-6">
                 <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  Accord Innovations delivers comprehensive mission critical facilities management solutions that ensure uninterrupted operations. Our expertise in infrastructure management, monitoring, and maintenance helps businesses maximize uptime, efficiency, and reliability.
+                  From design to commissioning, we deliver seamless, energy-efficient and resillent project solutions. Our expertise includes modular data center design, ensuring rapid deployment and future scalability. With a focuse on AI trends and the vital role of data centers, we are your tusted partner in shaping tomorrow's digital infrastructure.
+
+                  
                 </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  We provide end-to-end facilities management services, from assessment and planning to implementation, monitoring, and ongoing support. Our solutions are built on industry best practices and cutting-edge technologies, ensuring that your mission critical facilities operate at peak performance.
-                </p>
+               
               </div>
             </div>
           </div>
@@ -91,9 +89,9 @@ const MissionCriticalFacilities: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Server size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Infrastructure Management</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Reliablity</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                We provide comprehensive infrastructure management services that ensure optimal performance, reliability, and efficiency of your mission critical facilities.
+                Following industry standardized protocols and methodologies
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -104,9 +102,9 @@ const MissionCriticalFacilities: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Activity size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Monitoring & Alerting</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">EXPERIENCE</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                Our monitoring and alerting solutions provide real-time visibility into your facility's performance, enabling proactive issue detection and rapid response.
+                We manage hyper-scale projects and give you ease of Compliance
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -117,9 +115,9 @@ const MissionCriticalFacilities: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <Wrench size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Preventive Maintenance</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">CONFIDENCE</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                We implement preventive maintenance programs that minimize downtime, extend equipment life, and ensure optimal performance of your mission critical facilities.
+                You will have high Uptime & reliability and avoid Integration Problems
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -130,9 +128,9 @@ const MissionCriticalFacilities: React.FC = () => {
               <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0a3d62]/10 to-[#f47847]/10 mb-6 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">
                 <AlertTriangle size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">Emergency Response</h3>
+              <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">PEACE OF MIND</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-                Our emergency response services ensure rapid resolution of issues, minimizing downtime and ensuring business continuity in mission critical environments.
+                  Abosolute Peace of maind knowing you are working with highly skilled professionals with decades of experience in th Data Center Industry
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
