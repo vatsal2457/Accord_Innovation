@@ -135,21 +135,6 @@ const AboutAccord: React.FC = () => {
                   <p className="text-sm">Leading the way in Hyper Automation and AI technologies</p>
                 </div>
               </motion.div>
-              <motion.div 
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-                className="rounded-lg shadow-xl overflow-hidden"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                  alt="Enterprise Service Management"
-                  className="w-full h-auto"
-                />
-                <div className="p-4 bg-[#0a3d62] text-white">
-                  <h3 className="text-lg font-semibold">Enterprise Service Management</h3>
-                  <p className="text-sm">Comprehensive ESM services for optimized operations</p>
-                </div>
-              </motion.div>
             </motion.div>
           </div>
         </div>
