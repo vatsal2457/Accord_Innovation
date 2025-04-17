@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import Legacy from '../components/Legacy';
+
 import { Code, Cpu, Box, Zap } from 'lucide-react';
 
 const ProductEngineering: React.FC = () => {
@@ -22,18 +22,18 @@ const ProductEngineering: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Our Approach Section - Content Left, Image Right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24">
-            <div className="order-2 md:order-1">
+            <div className="order-2 md:order-1 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
                 <span className="text-[#0a3d62]">Our</span>{" "}
                 <span className="text-[#f47847]">Approach</span>
               </h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                Accord Innovations harnesses the potential of Artificial Intelligence (AI) to drive innovation in product engineering. Our AI-powered solutions empower you to create, sustain, and enhance exceptional products. We employ AI technologies to facilitate data-driven decision-making, improve product performance, and keep you ahead in dynamic markets. Moreover, our focus on elevating product quality ensures not only meeting but exceeding customer expectations, fostering increased satisfaction and brand loyalty.                </p>
-               
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                  Accord Innovations harnesses the potential of Artificial Intelligence (AI) to drive innovation in product engineering. Our AI-powered solutions empower you to create, sustain, and enhance exceptional products. We employ AI technologies to facilitate data-driven decision-making, improve product performance, and keep you ahead in dynamic markets. Moreover, our focus on elevating product quality ensures not only meeting but exceeding customer expectations, fostering increased satisfaction and brand loyalty.
+                </p>
               </div>
             </div>
-            <div className="relative order-1 md:order-2">
+            <div className="relative order-1 md:order-2 flex items-center justify-center h-full">
               <img 
                 src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Our Approach" 
@@ -44,24 +44,23 @@ const ProductEngineering: React.FC = () => {
 
           {/* Our Solutions Section - Image Left, Content Right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-            <div className="relative order-1">
+            <div className="relative order-1 flex items-center justify-center h-full">
               <img 
                 src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Our Solutions" 
                 className="rounded-lg shadow-xl w-full h-[300px] md:h-[350px] object-cover"
               />
             </div>
-            <div className="order-2">
+            <div className="order-2 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
                 <span className="text-[#f47847]">Efficient Oversight and</span>{" "}
                 <span className="text-[#0a3d62]">Scalable Solutions</span>
               </h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                Our commitment to product engineering excellence extends to efficient project management and adaptable solutions. We provide seamless project oversight, allowing you to closely monitor every aspect of your product's development, ensuring on-time delivery and cost-effective outcomes. Recognizing the evolving nature of your product engineering needs, our services are designed for scalability and flexibility. Whether launching new products, enhancing existing ones, or exploring new market opportunities, we offer support that aligns with your growth and innovation strategies.
-
-</p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                  Our commitment to product engineering excellence extends to efficient project management and adaptable solutions. We provide seamless project oversight, allowing you to closely monitor every aspect of your product's development, ensuring on-time delivery and cost-effective outcomes. Recognizing the evolving nature of your product engineering needs, our services are designed for scalability and flexibility. Whether launching new products, enhancing existing ones, or exploring new market opportunities, we offer support that aligns with your growth and innovation strategies.
+                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   Our team leverages cutting-edge technologies and best practices to build scalable, secure, and innovative products. Whether you need a custom software solution, IoT device, or complex system integration, we have the expertise to bring your product vision to life.
                 </p>
               </div>
@@ -138,8 +137,6 @@ const ProductEngineering: React.FC = () => {
           </div>
         </div>
       </section>
-
-     
     </div>
   );
 };
