@@ -176,6 +176,8 @@ const menuData: MenuData = {
         { name: 'Artificial Intelligence', link: '/artificial-intelligence' },
         { name: 'Monitoring & Observability', link: '/monitoring-observability' },
         { name: 'ITSM', link: '/itsm' },
+        { name: 'ServiceNow Offerings by AI-GTS', link: '/service-now-offerings-by-ai-gts' },
+        { name: 'Gen-AI Solution Offerings by AI-GTS ', link: '/gen-ai-solution-offerings-by-ai-gts' },
         { name: 'BMC Suite', link: '/bmc-suite' },
         { name: 'DevOps', link: '/devops' },
         { name: 'Automation and Hyperautomation', link: '/automation-hyperautomation' },

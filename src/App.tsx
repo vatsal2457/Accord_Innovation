@@ -53,6 +53,8 @@ import ArtificialIntelligence from './pages/artificial-intelligence';
 import IoT from './pages/iot';
 import ProfessionalManagedServices from './pages/professional-managed-services';
 import AboutAccord from './pages/about-accord';
+import ServiceNowOfferings from './pages/servicenow-offerings';
+import GenAISolutions from './pages/gen-ai-solutions';
 
 const App: React.FC = () => (
   <Router>
@@ -108,6 +110,10 @@ const App: React.FC = () => (
         <Route path="/artificial-intelligence" element={<ArtificialIntelligence/>}/>
         <Route path="/professional-managed-services" element={<ProfessionalManagedServices/>}/>
         <Route path="/about-accord" element={<AboutAccord/>}/>
+        <Route path="/servicenow-offerings" element={<ServiceNowOfferings/>}/>
+        <Route path="/gen-ai-solutions" element={<GenAISolutions/>}/>
+        <Route path="/service-now-offerings-by-ai-gts" element={<ServiceNowOfferings/>}/>
+        <Route path="/gen-ai-solution-offerings-by-ai-gts" element={<GenAISolutions/>}/>
         
         {/* Add more routes as needed */}
         <Route path="*" element={<Navigate to="/" replace />} />
