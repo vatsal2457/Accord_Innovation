@@ -86,7 +86,7 @@ const Header: React.FC<HeaderProps> = () => {
                   </svg>
                 </div>
                 {/* Text logo */}
-                <img src="" alt="" className="w-10 h-10" />
+                <img src="./public/images/accordlogo.png" alt="" className="w-12 h-12 mr-2" />
                 <span className="text-xl sm:text-2xl font-bold text-white whitespace-nowrap">
                   Accord<span className="text-[#f47847]"> Innovations</span>
                 </span>
@@ -97,7 +97,7 @@ const Header: React.FC<HeaderProps> = () => {
             <div className="md:hidden flex items-center">
               <button 
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-gray-200 hover:text-[#f47847] focus:outline-none p-1 "
+                className="text-gray-200 hover:text-[#f47847] focus:outline-none p-1"
                 aria-label="Toggle menu"
               >
                 {mobileMenuOpen ? (
@@ -119,7 +119,7 @@ const Header: React.FC<HeaderProps> = () => {
                     onClick={() => {
                       handleMenuClick(item.label);
                       if (item.label === 'Career' || item.label === 'Contact Us') {
-                      handleNavigation(item.label)
+                        handleNavigation(item.label);
                       }
                     }}
                     className={`inline-flex items-center px-1 py-2 text-sm font-medium transition-colors ${

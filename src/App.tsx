@@ -52,7 +52,7 @@ import InfrastructureManagementServices from './pages/infrastructure-management-
 import ArtificialIntelligence from './pages/artificial-intelligence';
 import IoT from './pages/iot';
 import ProfessionalManagedServices from './pages/professional-managed-services';
-
+import AboutAccord from './pages/about-accord';
 
 const App: React.FC = () => (
   <Router>
@@ -107,7 +107,7 @@ const App: React.FC = () => (
         <Route path="/infrastructure-management-services" element={<InfrastructureManagementServices/>}/>
         <Route path="/artificial-intelligence" element={<ArtificialIntelligence/>}/>
         <Route path="/professional-managed-services" element={<ProfessionalManagedServices/>}/>
-        
+        <Route path="/about-accord" element={<AboutAccord/>}/>
         
         {/* Add more routes as needed */}
         <Route path="*" element={<Navigate to="/" replace />} />
