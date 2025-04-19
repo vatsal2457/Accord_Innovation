@@ -603,14 +603,14 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/Kirti.png"
+                    src="/images/Kriti.png"
                     alt="Kirti Sharma"
                     className="w-full h-80 object-cover object-center"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-8 flex-grow bg-gradient-to-b from-white to-gray-50">
-                  <h3 className="text-2xl text-[#0a3d62] font-bold mb-2">Kirti Sharma</h3>
+                  <h3 className="text-2xl text-[#0a3d62] font-bold mb-2">Kriti Sharma</h3>
                   <p className="text-lg text-[#f47847] font-semibold mb-4">Vice President - HR & OPERATIONS</p>
                   <div className="flex gap-4 mb-4">
                     <a 
