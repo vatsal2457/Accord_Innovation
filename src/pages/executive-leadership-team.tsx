@@ -73,7 +73,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/Accord Innovations_files/krishna.png"
+                    src="/images/Krishna.png"
                     alt="Krishna Chaitanya Sunkara"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -126,7 +126,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/Accord Innovations_files/suchitra.png"
+                    src="/images/suchitra.png"
                     alt="Suchitra Sunkara"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -179,7 +179,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/Accord Innovations_files/swathi.png"
+                    src="/images/swathi.png"
                     alt="Swathi Mula"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -232,7 +232,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/Accord Innovations_files/alisha.png"
+                    src="/images/Alissha.png"
                     alt="Alisha Siddiqa Binti Sanmugam"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -285,7 +285,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/Accord Innovations_files/rohith.png"
+                    src="public/images/rohit.png"
                     alt="Rohith Krupal"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -338,7 +338,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/Accord Innovations_files/ambika.png"
+                    src="/images/ambika.png"
                     alt="Ambika Ayeappan"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -391,7 +391,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/Accord Innovations_files/kumar.png"
+                    src="/images/kumar.png"
                     alt="Kumar Nityanand"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -444,7 +444,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/Accord Innovations_files/abhishek.png"
+                    src="/images/abhishek.png"
                     alt="Abhishek Gupta"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -497,7 +497,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/Accord Innovations_files/deepika.png"
+                    src="/images/deepika.png"
                     alt="Deepika Parashar"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -550,7 +550,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/Accord Innovations_files/rupal.png"
+                    src="/images/rupal.png"
                     alt="Rupal Pandey"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -603,7 +603,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/Accord Innovations_files/kirti.png"
+                    src="public/images/kriti.png"
                     alt="Kirti Sharma"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -640,7 +640,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/Accord Innovations_files/santhosh.png"
+                    src="/images/santhosh.png"
                     alt="Santhosh Kumar Pamula"
                     className="w-full h-80 object-cover object-center"
                   />
