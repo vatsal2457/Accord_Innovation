@@ -267,11 +267,10 @@ const Services: React.FC = () => {
         <div className="text-center mb-16 md:mb-24">
           <span className="inline-block px-3 py-1 bg-gradient-to-r from-[#f47847]/20 to-[#f47847]/40 text-[#f47847] rounded-full text-sm font-semibold tracking-wider mb-4">OUR EXPERTISE</span>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Integrated Services Ecosystem
+          Delivering Excellence Through Our Services  
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Our interconnected suite of services creates a comprehensive ecosystem to address your business challenges from every angle, ensuring cohesive and transformative solutions.
-          </p>
+          At Accord Innovations, we offer business solutions that are based on advanced machine learning tools with automated feature engineering capabilities. These allow smooth operations and smarter data-based decision-making.          </p>
         </div>
         
         {/* Hexagonal grid services */}

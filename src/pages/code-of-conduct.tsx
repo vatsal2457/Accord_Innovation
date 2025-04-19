@@ -45,10 +45,11 @@ const CodeOfConduct: React.FC = () => {
               />
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-[#0a3d62] mb-8">Our Commitment</h2>
+              <h2 className="text-4xl font-bold text-[#0a3d62] mb-8">Ethical Commitment and Sustainability Initiatives</h2>
               <p className="text-lg text-gray-700 mb-6">
-                We are committed to fostering an inclusive environment where creativity thrives and innovation flourishes. Our code of conduct ensures that every member of our community feels respected and valued.
-              </p>
+              We, Accord Innovations, proudly align ourselves with the Responsible Business Alliance (RBA) Code of Conduct. This commitment extends throughout our ethos and operations, reflecting our steadfast commitment to environmental, social, and ethical standards in the electronics and technology industry.
+
+The RBA Code of Conduct serves as our guiding framework, encompassing a comprehensive range of international norms and standards. These include the ILO International Labor Standards, Universal Declaration of Human Rights, ISO, OECD Guidelines for Multinational Enterprises, SA standards, and more. By adhering to the RBA Code of Conduct, we ensure that our entire ecosystem operates ethically and sustainably, promoting trust, accountability, and positive impacts.              </p>
             </div>
           </div>
 
@@ -58,23 +59,23 @@ const CodeOfConduct: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-8">
               {[
                 {
-                  title: "Integrity",
-                  description: "We maintain the highest standards of professional integrity in all our interactions.",
+                  title: "Shared Responsibility",
+                  description: "In this step towards ethical practices, we believe in shared responsibility, hence, we expect the same unwavering commitment to these practices from all our employees, business partners and suppliers.",
                   icon: "M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                 },
                 {
-                  title: "Respect",
-                  description: "We treat everyone with dignity and embrace diverse perspectives.",
+                  title: "Sustainability and Positive Impact",
+                  description: "Our alignment with the RBA Code of Conduct goes beyond compliance—it reflects our dedication to sustainability and positive social impact. We actively work towards minimizing environmental impacts, fostering fair labor practices, and creating a net-positive effect on the communities we are associated with.",
                   icon: "M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"
                 },
                 {
-                  title: "Collaboration",
-                  description: "We work together to achieve common goals and support each other.",
+                  title: "Continuous Improvement",
+                  description: "Accord Innovations is committed to continuous improvement in our ethical practices. We regularly assess our ethos and operations and identify areas for improvement, ensuring that our commitment to ethical business remains dynamic and effective.",
                   icon: "M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"
                 },
                 {
-                  title: "Excellence",
-                  description: "We strive for excellence in everything we do.",
+                  title: "Trust and Accountability",
+                  description: "Accord Innovations' commitment to ethical business practices and the RBA Code of Conduct underscores our commitment to building trust with our stakeholders. By upholding these standards, we prioritize accountability.",
                   icon: "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                 }
               ].map((value, index) => (

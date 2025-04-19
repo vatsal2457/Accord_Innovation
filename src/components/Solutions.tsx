@@ -49,12 +49,11 @@ const Solutions: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex flex-col items-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-6 relative">
-            One platform, any industry
+          Elevated Business Solutions
             <span className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-[#f47847]"></span>
           </h2>
           <p className="text-center text-gray-600 max-w-3xl mt-4">
-            Powerful solutions tailored to your specific business needs, industry challenges, and growth objectives.
-          </p>
+          At Accord Innovations, we offer business solutions that are based on advanced machine learning tools with automated feature engineering capabilities. These allow smooth operations and smarter data-based decision-making.          </p>
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-12">

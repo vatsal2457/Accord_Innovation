@@ -121,8 +121,9 @@ const TechStack: React.FC = () => {
             <span className="text-black">Tailored</span> <span className="text-[#f47847]">Stack</span>
           </h2>
           <p className="text-lg text-gray-600 mt-4 max-w-4xl">
-            We closely work with our clients to understand their business, needs, and goals. 
-            Harnessing the power of our unique tech stack, we ensure the delivery of best-suited and optimal software solutions.
+          We closely work with our clients to understand their business, needs, and goals. Harnessing the power of our unique tech stack, we ensure the delivery of best-suited and optimal software solutions. Our exclusive tech stack is capable of efficiently catering to frontend and backend development, RPA, AI solutions, encompassing the entire SDLC cycle.
+
+Our commitment to delivering precisely tailored solutions begins with a deep partnership with our clients which ensures we completely comprehend your business intricacies, needs, and aspirations. Our unique tech stack is the foundation of our ability to provide you with optimal software solutions. It spans the entire spectrum of development, from frontend to backend, and extends into cutting-edge domains like Robotic Process Automation (RPA) and Artificial Intelligence (AI).
           </p>
         </div>
         
