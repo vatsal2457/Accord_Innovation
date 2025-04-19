@@ -285,14 +285,14 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/rohit.png"
+                    src="/images/Rohit.png"
                     alt="Rohit Krupal"
                     className="w-full h-80 object-cover object-center"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-8 flex-grow bg-gradient-to-b from-white to-gray-50">
-                  <h3 className="text-2xl text-[#0a3d62] font-bold mb-2">Rohith Krupal</h3>
+                  <h3 className="text-2xl text-[#0a3d62] font-bold mb-2">Rohit Krupal</h3>
                   <p className="text-lg text-[#f47847] font-semibold mb-4">Group CTO / Country Head - Malaysia</p>
                   <div className="flex gap-4 mb-4">
                     <a 
@@ -444,7 +444,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/abhishek.png"
+                    src="/images/Abhishek.png"
                     alt="Abhishek Gupta"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -497,7 +497,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/deepika.png"
+                    src="/images/Deepika.png"
                     alt="Deepika Parashar"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -550,7 +550,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/rupal.png"
+                    src="/images/Rupal.png"
                     alt="Rupal Pandey"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -603,7 +603,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/kriti.png"
+                    src="/images/Kirti.png"
                     alt="Kirti Sharma"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -640,7 +640,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/santhosh.png"
+                    src="/images/Santhosh.png"
                     alt="Santhosh Kumar Pamula"
                     className="w-full h-80 object-cover object-center"
                   />
