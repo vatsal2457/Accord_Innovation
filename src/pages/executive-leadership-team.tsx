@@ -73,7 +73,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/Krishna.png"
+                    src="public/images/Krishna.png"
                     alt="Krishna Chaitanya Sunkara"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -126,7 +126,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/suchitra.png"
+                    src="public/images/suchitra.png"
                     alt="Suchitra Sunkara"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -179,7 +179,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/swathi.png"
+                    src="public/images/swathi.png"
                     alt="Swathi Mula"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -232,7 +232,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/Alissha.png"
+                    src="public/images/Alissha.png"
                     alt="Alisha Siddiqa Binti Sanmugam"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -286,7 +286,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
                 <div className="relative">
                   <img 
                     src="public/images/rohit.png"
-                    alt="Rohith Krupal"
+                    alt="Rohit Krupal"
                     className="w-full h-80 object-cover object-center"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -338,7 +338,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/ambika.png"
+                    src="public/images/ambika.png"
                     alt="Ambika Ayeappan"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -391,7 +391,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/kumar.png"
+                    src="public/images/kumar.png"
                     alt="Kumar Nityanand"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -444,7 +444,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/abhishek.png"
+                    src="public/images/abhishek.png"
                     alt="Abhishek Gupta"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -497,7 +497,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/deepika.png"
+                    src="public/images/deepika.png"
                     alt="Deepika Parashar"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -550,7 +550,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/rupal.png"
+                    src="public/images/rupal.png"
                     alt="Rupal Pandey"
                     className="w-full h-80 object-cover object-center"
                   />
@@ -640,7 +640,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
               <div className="flex flex-col h-full">
                 <div className="relative">
                   <img 
-                    src="/images/santhosh.png"
+                    src="public/images/santhosh.png"
                     alt="Santhosh Kumar Pamula"
                     className="w-full h-80 object-cover object-center"
                   />
