@@ -21,19 +21,17 @@ const InfrastructureManagementServices: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Our Approach Section - Content Left, Image Right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24">
-            <div className="order-2 md:order-1">
+            <div className="order-2 md:order-1 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
                 <span className="text-[#0a3d62]">Infrastructure Management Services</span>{" "}
               </h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
                 It encompasses the end-to-end oversight, maintenance, and optimization of your entire IT environment, from servers and networks to storage and cloud resources. At Accord Innovations, we understand that each business has unique infrastructure needs, which is why our IMS solutions are tailored to align perfectly with your specific requirements. Our seasoned experts take a proactive approach, continuously monitoring, managing, and enhancing your infrastructure to keep it in peak condition.
-
-</p>
-              
+                </p>
               </div>
             </div>
-            <div className="relative order-1 md:order-2">
+            <div className="relative order-1 md:order-2 flex items-center justify-center h-full">
               <img 
                 src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Our Approach" 
@@ -44,23 +42,22 @@ const InfrastructureManagementServices: React.FC = () => {
 
           {/* Our Solutions Section - Image Left, Content Right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-            <div className="relative order-1">
+            <div className="relative order-1 flex items-center justify-center h-full">
               <img 
                 src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Our Solutions" 
                 className="rounded-lg shadow-xl w-full h-[300px] md:h-[350px] object-cover"
               />
             </div>
-            <div className="order-2">
+            <div className="order-2 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
                 <span className="text-[#f47847]">How We Do It: Expertise That Sets Us Apart</span>{" "}
               </h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
                 Accord Innovations boasts a team of highly skilled and certified professionals with deep expertise in diverse technologies, platforms, and industry best practices. Our IMS experts leverage cutting-edge tools and methodologies to provide round-the-clock monitoring and management of your infrastructure. We employ predictive analytics and proactive maintenance to identify and address potential issues before they impact your operations. From on-premises data centers to hybrid and cloud environments, we offer a comprehensive suite of IMS solutions that ensure your infrastructure remains agile, secure, and scalable.
-
-</p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   We provide end-to-end infrastructure services, from assessment and planning to implementation, monitoring, and ongoing support. Our solutions are built on industry-leading platforms and best practices, ensuring that your infrastructure evolves alongside your business needs while maintaining optimal performance and security.
                 </p>
               </div>

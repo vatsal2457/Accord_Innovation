@@ -21,21 +21,21 @@ const DataAnalyticsBusinessIntelligence: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Our Approach Section - Content Left, Image Right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24">
-            <div className="order-2 md:order-1">
+            <div className="order-2 md:order-1 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
                 <span className="text-[#0a3d62]">Our</span>{" "}
                 <span className="text-[#f47847]">Approach</span>
               </h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   At Accord Innovations, we take a comprehensive approach to data analytics and business intelligence. We begin by understanding your business objectives, data sources, and key performance indicators to design a tailored analytics strategy.
                 </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   Our methodology focuses on data quality, integration, and visualization to ensure that your analytics solutions provide actionable insights. We follow an iterative process that allows for continuous refinement and adaptation to changing business needs.
                 </p>
               </div>
             </div>
-            <div className="relative order-1 md:order-2">
+            <div className="relative order-1 md:order-2 flex items-center justify-center h-full">
               <img 
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Our Approach" 
@@ -46,23 +46,23 @@ const DataAnalyticsBusinessIntelligence: React.FC = () => {
 
           {/* Our Solutions Section - Image Left, Content Right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-            <div className="relative order-1">
+            <div className="relative order-1 flex items-center justify-center h-full">
               <img 
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Our Solutions" 
                 className="rounded-lg shadow-xl w-full h-[300px] md:h-[350px] object-cover"
               />
             </div>
-            <div className="order-2">
+            <div className="order-2 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
                 <span className="text-[#f47847]">Accord Innovations'</span>{" "}
                 <span className="text-[#0a3d62]">Contribution</span>
               </h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   Accord Innovations delivers comprehensive data analytics and business intelligence solutions that transform how organizations make decisions. Our expertise in data integration, visualization, and predictive analytics helps businesses uncover valuable insights and drive growth.
                 </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   We provide end-to-end analytics services, from data assessment and strategy development to implementation, training, and ongoing support. Our solutions are built on industry-leading platforms and best practices, ensuring that your analytics capabilities evolve alongside your business needs.
                 </p>
               </div>

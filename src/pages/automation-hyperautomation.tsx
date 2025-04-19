@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
-  import {  Brain, GitBranch, FileText,Bot } from 'lucide-react';
+import {  Brain, GitBranch, FileText,Bot } from 'lucide-react';
 
 
 
@@ -25,21 +25,21 @@ const AutomationHyperautomation: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Our Approach Section - Content Left, Image Right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24">
-            <div className="order-2 md:order-1">
+            <div className="order-2 md:order-1 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
                 <span className="text-[#0a3d62]">Our</span>{" "}
                 <span className="text-[#f47847]">Approach</span>
               </h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                At AI-GTS we enable enterprises to automate, optimize, and innovate by leveraging cutting-edge Automation & Hyper-Automation solutions. Our expertise spans across enterprise and open-source automation tools, RPA platforms, AI-driven automation, and intelligent process orchestration, helping organizations achieve maximum efficiency, scalability, and cost savings.  
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                At AI-GTS we enable enterprises to automate, optimize, and innovate by leveraging cutting-edge Automation & Hyper-Automation solutions. Our expertise spans across enterprise and open-source automation tools, RPA platforms, AI-driven automation, and intelligent process orchestration, helping organizations achieve maximum efficiency, scalability, and cost savings.
                 </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  Our methodology combines process mining, robotic process automation (RPA), and intelligent automation technologies to create end-to-end solutions. We emphasize scalability, maintainability, and continuous improvement throughout the automation journey.
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                Our methodology combines process mining, robotic process automation (RPA), and intelligent automation technologies to create end-to-end solutions. We emphasize scalability, maintainability, and continuous improvement throughout the automation journey.
                 </p>
               </div>
             </div>
-            <div className="relative order-1 md:order-2">
+            <div className="relative order-1 md:order-2 flex items-center justify-center h-full">
               <img 
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Our Approach" 
@@ -50,24 +50,24 @@ const AutomationHyperautomation: React.FC = () => {
 
           {/* Our Solutions Section - Image Left, Content Right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-            <div className="relative order-1">
+            <div className="relative order-1 flex items-center justify-center h-full">
               <img 
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Our Solutions" 
                 className="rounded-lg shadow-xl w-full h-[300px] md:h-[350px] object-cover"
               />
             </div>
-            <div className="order-2">
+            <div className="order-2 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
                 <span className="text-[#f47847]">Accord Innovations'</span>{" "}
                 <span className="text-[#0a3d62]">Contribution</span>
               </h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  Accord Innovations delivers comprehensive automation and hyperautomation solutions that transform how organizations operate. Our expertise in RPA, workflow automation, and intelligent process automation helps businesses achieve significant efficiency gains and cost savings.
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                Accord Innovations delivers comprehensive automation and hyperautomation solutions that transform how organizations operate. Our expertise in RPA, workflow automation, and intelligent process automation helps businesses achieve significant efficiency gains and cost savings.
                 </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  We provide end-to-end automation services, from process assessment and strategy development to implementation, training, and ongoing support. Our solutions are built on industry-leading platforms and best practices, ensuring that your automation capabilities evolve alongside your business needs.
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                We provide end-to-end automation services, from process assessment and strategy development to implementation, training, and ongoing support. Our solutions are built on industry-leading platforms and best practices, ensuring that your automation capabilities evolve alongside your business needs.
                 </p>
               </div>
             </div>

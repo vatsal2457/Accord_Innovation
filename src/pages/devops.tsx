@@ -16,25 +16,28 @@ const DevOps: React.FC = () => {
         accentColor="#f47847"
       />
 
-      {/* DevOps Content */}
+      {/* Our Approach Section */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Our Approach Section - Content Left, Image Right */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24">
-            <div className="order-2 md:order-1">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#0a3d62]">Our</span>{" "}
-                <span className="text-[#f47847]">Approach</span>
-              </h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                Is your organization stuck in the past vis-à-vis IT development and operations? Yes, then AI-GTS can help you implement new philosophies, practices and technologies that will offer instant boost to how your organisation delivers software applications and associated development services. Get your application development, delivery and maintenance aligned to boost profitability.                </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              <span className="text-[#0a3d62]">Our</span>{" "}
+              <span className="text-[#f47847]">Approach</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+            <div className="order-2 md:order-1 flex flex-col justify-center h-full">
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                  Is your organization stuck in the past vis-à-vis IT development and operations? Yes, then AI-GTS can help you implement new philosophies, practices and technologies that will offer instant boost to how your organisation delivers software applications and associated development services. Get your application development, delivery and maintenance aligned to boost profitability.
+                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   We follow an iterative, continuous improvement methodology that emphasizes automation, collaboration, and measurement. This approach enables us to deliver DevOps solutions that drive efficiency, reduce time-to-market, and enhance product quality while maintaining security and compliance.
                 </p>
               </div>
             </div>
-            <div className="relative order-1 md:order-2">
+            <div className="relative order-1 md:order-2 flex items-center justify-center h-full">
               <img 
                 src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Our Approach" 
@@ -42,38 +45,55 @@ const DevOps: React.FC = () => {
               />
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Our Solutions Section - Image Left, Content Right */}
+      {/* Our Solutions Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              <span className="text-[#f47847]">Accord Innovations'</span>{" "}
+              <span className="text-[#0a3d62]">Contribution</span>
+            </h2>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-            <div className="relative order-1">
+            <div className="relative order-1 flex items-center justify-center h-full">
               <img 
                 src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Our Solutions" 
                 className="rounded-lg shadow-xl w-full h-[300px] md:h-[350px] object-cover"
               />
             </div>
-            <div className="order-2">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#f47847]">Accord Innovations'</span>{" "}
-                <span className="text-[#0a3d62]">Contribution</span>
-              </h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                AI-GTS implements renowned DevOps infrastructure that results in -
-Improved speed at which products are developed and delivered.
-Organisations stuck with traditional ways ( segregated & disconnected ) generally lack in co-ordination and collaboration. AI-GTS implements tools that align development and IT operations.
-Automation is the key to any DevOps implementation. Our services ensure not just software development automation but also for the entire infrastructure landscape.
-DevOps – A set of tools to faster product development and rendering services -
-AI-GTS integrates third party DevOps process / system that can be synched with local IT infrastructure. However we also provide well known third part DevOps brands which are cloud-based where you can design and develop prototype, test and deliver. Our Cloud-based DevOps integration also allows organisations to maintain a new generation of agile business applications.
-
-Our DevOps integration and standalone cloud-based version reduces redundancy, improves efficiency and also the quality of the product delivered.
-
-Application Development & Delivery through Automation -
-AI-GTS analyses your organisation’s current setup, its cultural pain points and based the assessment offers best solution for DevOps adoption. From infrastructure change to full application lifecycle, and from changing vintage perspectives / philosophies to deployment of automated development environment which is also repeatable are some of the DevOps solutions offered by AI-GTS.
-
-‘DevOps’ is a combination of two words ‘Development’ and ‘Operations’ and interestingly AI-GTS covers a gamut of technology integration services which not only covers these areas but also a rainbow of IT infrastructure subsets.
+            <div className="order-2 flex flex-col justify-center h-full">
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                  AI-GTS implements renowned DevOps infrastructure that results in:
                 </p>
-               
+                <ul className="list-disc pl-6 space-y-2 text-base md:text-lg leading-relaxed tracking-normal">
+                  <li>Improved speed at which products are developed and delivered.</li>
+                  <li>Organisations stuck with traditional ways (segregated & disconnected) generally lack in co-ordination and collaboration. AI-GTS implements tools that align development and IT operations.</li>
+                  <li>Automation is the key to any DevOps implementation. Our services ensure not just software development automation but also for the entire infrastructure landscape.</li>
+                </ul>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                  DevOps – A set of tools to faster product development and rendering services:
+                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                  AI-GTS integrates third party DevOps process / system that can be synched with local IT infrastructure. However we also provide well known third part DevOps brands which are cloud-based where you can design and develop prototype, test and deliver. Our Cloud-based DevOps integration also allows organisations to maintain a new generation of agile business applications.
+                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                  Our DevOps integration and standalone cloud-based version reduces redundancy, improves efficiency and also the quality of the product delivered.
+                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                  Application Development & Delivery through Automation:
+                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                  AI-GTS analyses your organisation's current setup, its cultural pain points and based the assessment offers best solution for DevOps adoption. From infrastructure change to full application lifecycle, and from changing vintage perspectives / philosophies to deployment of automated development environment which is also repeatable are some of the DevOps solutions offered by AI-GTS.
+                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                  'DevOps' is a combination of two words 'Development' and 'Operations' and interestingly AI-GTS covers a gamut of technology integration services which not only covers these areas but also a rainbow of IT infrastructure subsets.
+                </p>
               </div>
             </div>
           </div>

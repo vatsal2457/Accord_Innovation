@@ -21,20 +21,21 @@ const BMCSuite: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Our Approach Section - Content Left, Image Right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24">
-            <div className="order-2 md:order-1">
+            <div className="order-2 md:order-1 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
                 <span className="text-[#0a3d62]">Our</span>{" "}
                 <span className="text-[#f47847]">Approach</span>
               </h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                we empower enterprises with BMC Automation Solutions, helping organizations streamline IT operations, improve efficiency, and reduce costs through intelligent automation. Leveraging BMC’s industry-leading automation tools, we deliver end-to-end solutions that enhance IT service management, operations, and security.                </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                we empower enterprises with BMC Automation Solutions, helping organizations streamline IT operations, improve efficiency, and reduce costs through intelligent automation. Leveraging BMC's industry-leading automation tools, we deliver end-to-end solutions that enhance IT service management, operations, and security.
+                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   Our methodology focuses on aligning BMC Suite capabilities with your business objectives, ensuring seamless integration with existing systems, and providing comprehensive training and support. We emphasize best practices in IT service management to maximize the value of your BMC Suite investment.
                 </p>
               </div>
             </div>
-            <div className="relative order-1 md:order-2">
+            <div className="relative order-1 md:order-2 flex items-center justify-center h-full">
               <img 
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Our Approach" 
@@ -45,23 +46,23 @@ const BMCSuite: React.FC = () => {
 
           {/* Our Solutions Section - Image Left, Content Right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-            <div className="relative order-1">
+            <div className="relative order-1 flex items-center justify-center h-full">
               <img 
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Our Solutions" 
                 className="rounded-lg shadow-xl w-full h-[300px] md:h-[350px] object-cover"
               />
             </div>
-            <div className="order-2">
+            <div className="order-2 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
                 <span className="text-[#f47847]">Accord Innovations'</span>{" "}
                 <span className="text-[#0a3d62]">Contribution</span>
               </h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   Accord Innovations delivers comprehensive BMC Suite solutions that transform how organizations manage their IT services. Our expertise in BMC products helps businesses streamline operations, improve service delivery, and ensure business continuity.
                 </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   We provide end-to-end BMC Suite services, from assessment and planning to implementation, customization, and ongoing support. Our solutions are built on industry best practices and deep expertise in BMC products, ensuring that your IT service management capabilities evolve alongside your business needs.
                 </p>
               </div>
@@ -92,7 +93,8 @@ const BMCSuite: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300"> BMC Consulting & Advisory Services</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-              Our experts assess your IT landscape and provide strategic guidance on leveraging BMC’s automation solutions to drive efficiency and innovation. We help define roadmaps, best practices, and implementation strategies tailored to your business needs              </p>
+                Our experts assess your IT landscape and provide strategic guidance on leveraging BMC's automation solutions to drive efficiency and innovation. We help define roadmaps, best practices, and implementation strategies tailored to your business needs.
+              </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
 
@@ -104,12 +106,7 @@ const BMCSuite: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">BMC Implementation & Integration</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-              We specialize in seamless deployment and integration of BMC automation solutions into your existing IT ecosystem. Our expertise includes:  
-BMC Helix ITSM & Digital Workplace for intelligent IT service management  <br />
-BMC Control-M for workflow orchestration and job scheduling   <br />
-BMC Helix Operations Management (ITOM) for proactive monitoring and AI-driven automation   <br />
-BMC TrueSight & Helix AIOps for predictive analytics and automated remediation   <br />
-BMC Atrium CMDB for centralized IT asset management  
+                We specialize in seamless deployment and integration of BMC automation solutions into your existing IT ecosystem. Our expertise includes BMC Helix ITSM & Digital Workplace for intelligent IT service management, BMC Control-M for workflow orchestration and job scheduling, BMC Helix Operations Management (ITOM) for proactive monitoring and AI-driven automation, BMC TrueSight & Helix AIOps for predictive analytics and automated remediation, and BMC Atrium CMDB for centralized IT asset management.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -122,11 +119,7 @@ BMC Atrium CMDB for centralized IT asset management
               </div>
               <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">BMC Workflow & Process Automation</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-              AI-GTS helps organizations automate complex business processes, enabling:  
- Automated incident and change management 
- End-to-end workload automation with Control-M 
- Self-healing IT operations powered by AI & ML
- Intelligent chatbot and virtual agent integration
+                AI-GTS helps organizations automate complex business processes, enabling automated incident and change management, end-to-end workload automation with Control-M, self-healing IT operations powered by AI & ML, and intelligent chatbot and virtual agent integration.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
@@ -139,11 +132,7 @@ BMC Atrium CMDB for centralized IT asset management
               </div>
               <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">BMC Managed Services</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-              Our BMC Managed Services ensure that your automation platform operates at peak performance. We provide:  
-- 24/7 monitoring and support  
-- Performance tuning and optimization  
-- Compliance and security management  
-- Continuous upgrades and enhancements  
+                Our BMC Managed Services ensure that your automation platform operates at peak performance. We provide 24/7 monitoring and support, performance tuning and optimization, compliance and security management, and continuous upgrades and enhancements.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>

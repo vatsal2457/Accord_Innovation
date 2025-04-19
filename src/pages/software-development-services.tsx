@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Hero from '../components/Hero';
+import { ClipboardList, Code, CheckCircle, Users, Cpu, Database, Globe, Shield } from 'lucide-react';
 
 const SoftwareDevelopmentServices: React.FC = () => {
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
@@ -36,213 +38,309 @@ const SoftwareDevelopmentServices: React.FC = () => {
 
   return (
     <div>
-      {/* Hero Section */}
-      <div className="relative min-h-screen bg-[#0C4A6E]">
-        <div className="container mx-auto px-4 h-screen flex items-center">
-          {/* Left side - Text Content */}
-          <div className="w-full lg:w-1/2 pl-20 relative z-10">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-white">Software</span>{" "}
-              <span className="text-[#f47847]">Development</span>
-            </h1>
-            <p className="text-xl md:text-2xl max-w-3xl text-gray-300">
-              Transform Your Business with Expert Software Solutions
-            </p>
-            <p className="text-xl md:text-2xl max-w-3xl text-gray-300 mt-4">
-              Enterprise-grade development services powering modern businesses forward
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 mt-8">
-              <button className="px-8 py-4 bg-[#f47847] text-white text-lg font-semibold rounded-lg hover:bg-[#e66a3a] transition-colors duration-300">
-                Get Started
-              </button>
-              <button className="px-8 py-4 bg-white text-gray-900 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300">
-                Learn More
-              </button>
+      <Hero
+        title="Software"
+        subtitle="Development"
+        description="Transform Your Business with Expert Software Solutions. Enterprise-grade development services powering modern businesses forward."
+        backgroundImage="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        backgroundColor="#0C4A6E"
+        gradientColor="#0C4A6E"
+        textColor="white"
+        accentColor="#f47847"
+      />
+
+      {/* Our Approach Section */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              <span className="text-[#0C4A6E]">Our</span>{" "}
+              <span className="text-[#f47847]">Approach</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+            <div className="order-2 md:order-1 flex flex-col justify-center h-full">
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                  We deliver cutting-edge software solutions that empower businesses to thrive in the digital age. Our expertise spans across multiple domains and technologies.
+                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                  At Accord Innovations, we offer a comprehensive suite of Software Development Services that cater to the diverse needs of businesses in the digital era. Our services are the driving force behind transforming your ideas and concepts into tangible, high-performing software solutions.
+                </p>
+              </div>
+            </div>
+            <div className="relative order-1 md:order-2 flex items-center justify-center h-full">
+              <img 
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
+                alt="Our Approach" 
+                className="rounded-lg shadow-xl w-full h-[300px] md:h-[350px] object-cover"
+              />
             </div>
           </div>
-          
-          {/* Right side - Image */}
-          <div className="absolute top-0 right-0 w-full lg:w-1/2 h-full">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0C4A6E] via-[#0C4A6E]/80 to-transparent z-10" />
-            <div 
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-              style={{
-                backgroundImage: 'url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")',
-              }}
-            />
-          </div>
         </div>
-      </div>
-      {/* Software Development Services Introduction Section */}
-<div className="relative py-20 bg-white">
-        <div className="container px-4">
-          {/* Section Header */}
-    <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Software Development Services
+      </section>
+
+      {/* Our Solutions Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              <span className="text-[#f47847]">Expert</span>{" "}
+              <span className="text-[#0C4A6E]">Team</span>
             </h2>
-      <div className="w-24 h-1 bg-blue-500 mx-auto mb-8"></div>
-    </div>
-
-    {/* First Part - Text Left, Image Right */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-16">
-      <div>
-        <h3 className="text-3xl font-bold text-gray-900 mb-6">Cutting-Edge Solutions</h3>
-        <div className="space-y-6">
-          <p className="text-lg text-gray-700 leading-relaxed">
-              We deliver cutting-edge software solutions that empower businesses to thrive in the digital age. Our expertise spans across multiple domains and technologies.
-            </p>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            At Accord Innovations, we offer a comprehensive suite of Software Development Services that cater to the diverse needs of businesses in the digital era. Our services are the driving force behind transforming your ideas and concepts into tangible, high-performing software solutions.
-          </p>
-        </div>
-      </div>
-      <div className="relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0C4A6E] via-[#0C4A6E]/80 to-transparent z-10" />
-        <div 
-          className="w-full h-[300px] rounded-lg shadow-xl bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80")',
-          }}
-        />
-      </div>
           </div>
 
-    {/* Second Part - Image Left, Text Right */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-16">
-      <div className="md:order-2">
-        <h3 className="text-3xl font-bold text-gray-900 mb-6">Expert Team</h3>
-        <div className="space-y-6">
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Our team of experts is driven by the desire to create software that not only meets your current needs but also prepares your business for the challenges of tomorrow.
-          </p>
-          <p className="text-lg text-gray-700 leading-relaxed">
-              Our structured approach ensures the development of optimum solutions with best practices in place. With a strong commitment to methodical progression, we empower businesses with tailored software development services that drive innovation and efficiency.
-            </p>
-        </div>
-      </div>
-      <div className="relative md:order-1">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0C4A6E] via-[#0C4A6E]/80 to-transparent z-10" />
-        <div 
-          className="w-full h-[300px] rounded-lg shadow-xl bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80")',
-          }}
-        />
-      </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+            <div className="relative order-1 flex items-center justify-center h-full">
+              <img 
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
+                alt="Our Solutions" 
+                className="rounded-lg shadow-xl w-full h-[300px] md:h-[350px] object-cover"
+              />
+            </div>
+            <div className="order-2 flex flex-col justify-center h-full">
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                  Our team of experts is driven by the desire to create software that not only meets your current needs but also prepares your business for the challenges of tomorrow.
+                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                  Our structured approach ensures the development of optimum solutions with best practices in place. With a strong commitment to methodical progression, we empower businesses with tailored software development services that drive innovation and efficiency.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-
-        {/* Background Decoration */}
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-    <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
-    <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
-  </div>
-</div>
+      </section>
 
       {/* End-to-End Capabilities Section */}
-      <div className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">
-              End-to-End Capabilities for Tailored Solutions
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              <span className="text-[#0C4A6E]">End-to-End</span>{" "}
+              <span className="text-[#f47847]">Capabilities</span>
             </h2>
-            <p className="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
               From concept to deployment, we provide comprehensive software development services that address every aspect of your project
             </p>
+          </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Planning & Analysis */}
-              <div className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Planning & Analysis</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  We begin with a thorough analysis of your requirements, business goals, and technical constraints. Our team develops a comprehensive project plan that aligns with your objectives and timeline.
-                </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Planning & Analysis */}
+            <div className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border-t-4 border-[#0C4A6E] overflow-hidden relative group h-full flex flex-col">
+              <div className="absolute -right-20 -bottom-20 w-48 h-48 rounded-full bg-gradient-to-br from-[#0C4A6E]/5 to-[#f47847]/5 transition-all duration-500 group-hover:scale-150"></div>
+              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0C4A6E]/10 to-[#f47847]/10 mb-6 text-[#0C4A6E] group-hover:text-[#f47847] transition-colors duration-300">
+                <ClipboardList size={32} />
               </div>
-
-              {/* Design & Development */}
-              <div className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]">
-                <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Design & Development</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Our expert designers and developers create intuitive, scalable, and secure solutions. We follow industry best practices and agile methodologies to ensure high-quality code and efficient development.
-                </p>
-              </div>
-
-              {/* Testing & Deployment */}
-              <div className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px]">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Testing & Deployment</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  We conduct rigorous testing to identify and fix any issues before deployment. Our team handles the entire deployment process, ensuring a smooth transition to production with minimal disruption.
-                </p>
-              </div>
+              <h3 className="text-xl font-bold mb-4 text-[#0C4A6E] group-hover:text-[#f47847] transition-colors duration-300">Planning & Analysis</h3>
+              <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
+                We begin with a thorough analysis of your requirements, business goals, and technical constraints. Our team develops a comprehensive project plan that aligns with your objectives and timeline.
+              </p>
+              <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
 
-            <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Development Process</h3>
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 w-8 h-8 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-4">1</div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Requirements Gathering</h4>
-                      <p className="text-gray-600">We work closely with you to understand your business needs, user requirements, and technical specifications.</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 w-8 h-8 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-4">2</div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Design & Architecture</h4>
-                      <p className="text-gray-600">Our team creates detailed designs and architecture plans that serve as the blueprint for development.</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 w-8 h-8 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-4">3</div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Development & Testing</h4>
-                      <p className="text-gray-600">We develop your solution using agile methodologies with continuous testing and feedback integration.</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 w-8 h-8 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-4">4</div>
-                    <div>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Deployment & Support</h4>
-                      <p className="text-gray-600">We handle deployment and provide ongoing support to ensure your solution continues to perform optimally.</p>
-                    </div>
-                  </div>
-                </div>
+            {/* Design & Development */}
+            <div className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border-t-4 border-[#0C4A6E] overflow-hidden relative group h-full flex flex-col">
+              <div className="absolute -right-20 -bottom-20 w-48 h-48 rounded-full bg-gradient-to-br from-[#0C4A6E]/5 to-[#f47847]/5 transition-all duration-500 group-hover:scale-150"></div>
+              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0C4A6E]/10 to-[#f47847]/10 mb-6 text-[#0C4A6E] group-hover:text-[#f47847] transition-colors duration-300">
+                <Code size={32} />
               </div>
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#0C4A6E] via-[#0C4A6E]/80 to-transparent z-10 rounded-xl" />
-                <div 
-                  className="w-full h-[400px] rounded-xl shadow-xl bg-cover bg-center bg-no-repeat"
-                  style={{
-                    backgroundImage: 'url("https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")',
-                  }}
-                />
+              <h3 className="text-xl font-bold mb-4 text-[#0C4A6E] group-hover:text-[#f47847] transition-colors duration-300">Design & Development</h3>
+              <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
+                Our expert designers and developers create intuitive, scalable, and secure solutions. We follow industry best practices and agile methodologies to ensure high-quality code and efficient development.
+              </p>
+              <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
+            </div>
+
+            {/* Testing & Deployment */}
+            <div className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border-t-4 border-[#0C4A6E] overflow-hidden relative group h-full flex flex-col">
+              <div className="absolute -right-20 -bottom-20 w-48 h-48 rounded-full bg-gradient-to-br from-[#0C4A6E]/5 to-[#f47847]/5 transition-all duration-500 group-hover:scale-150"></div>
+              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0C4A6E]/10 to-[#f47847]/10 mb-6 text-[#0C4A6E] group-hover:text-[#f47847] transition-colors duration-300">
+                <CheckCircle size={32} />
               </div>
+              <h3 className="text-xl font-bold mb-4 text-[#0C4A6E] group-hover:text-[#f47847] transition-colors duration-300">Testing & Deployment</h3>
+              <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
+                We conduct rigorous testing to identify and fix any issues before deployment. Our team handles the entire deployment process, ensuring a smooth transition to production with minimal disruption.
+              </p>
+              <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      
-           
+      {/* Development Process Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              <span className="text-[#0C4A6E]">Our Development</span>{" "}
+              <span className="text-[#f47847]">Process</span>
+            </h2>
+          </div>
 
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+            <div className="order-2 md:order-1 flex flex-col justify-center h-full">
+              <div className="space-y-6 max-w-prose">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 w-10 h-10 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-4">1</div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Requirements Gathering</h4>
+                    <p className="text-base text-gray-600 leading-relaxed">We work closely with you to understand your business needs, user requirements, and technical specifications.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 w-10 h-10 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-4">2</div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Design & Architecture</h4>
+                    <p className="text-base text-gray-600 leading-relaxed">Our team creates detailed designs and architecture plans that serve as the blueprint for development.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 w-10 h-10 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-4">3</div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Development & Testing</h4>
+                    <p className="text-base text-gray-600 leading-relaxed">We develop your solution using agile methodologies with continuous testing and feedback integration.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 w-10 h-10 bg-[#0C4A6E] rounded-full flex items-center justify-center text-white font-bold mr-4">4</div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Deployment & Support</h4>
+                    <p className="text-base text-gray-600 leading-relaxed">We handle deployment and provide ongoing support to ensure your solution continues to perform optimally.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative order-1 md:order-2 flex items-center justify-center h-full">
+              <img 
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                alt="Development Process" 
+                className="rounded-lg shadow-xl w-full h-[300px] md:h-[350px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Software Development Services */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              <span className="text-[#0C4A6E]">Software Development</span>{" "}
+              <span className="text-[#f47847]">Services</span>
+            </h2>
+            <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
+              Comprehensive software development services tailored to meet your business needs
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Web Development */}
+            <div className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border-t-4 border-[#0C4A6E] overflow-hidden relative group h-full flex flex-col">
+              <div className="absolute -right-20 -bottom-20 w-48 h-48 rounded-full bg-gradient-to-br from-[#0C4A6E]/5 to-[#f47847]/5 transition-all duration-500 group-hover:scale-150"></div>
+              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0C4A6E]/10 to-[#f47847]/10 mb-6 text-[#0C4A6E] group-hover:text-[#f47847] transition-colors duration-300">
+                <Globe size={32} />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-[#0C4A6E] group-hover:text-[#f47847] transition-colors duration-300">Web Development</h3>
+              <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
+                Custom web applications built with modern technologies to provide seamless user experiences and robust functionality.
+              </p>
+              <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
+            </div>
+
+            {/* Mobile App Development */}
+            <div className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border-t-4 border-[#0C4A6E] overflow-hidden relative group h-full flex flex-col">
+              <div className="absolute -right-20 -bottom-20 w-48 h-48 rounded-full bg-gradient-to-br from-[#0C4A6E]/5 to-[#f47847]/5 transition-all duration-500 group-hover:scale-150"></div>
+              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0C4A6E]/10 to-[#f47847]/10 mb-6 text-[#0C4A6E] group-hover:text-[#f47847] transition-colors duration-300">
+                <Cpu size={32} />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-[#0C4A6E] group-hover:text-[#f47847] transition-colors duration-300">Mobile App Development</h3>
+              <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
+                Native and cross-platform mobile applications that deliver exceptional user experiences across all devices.
+              </p>
+              <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
+            </div>
+
+            {/* Backend Development */}
+            <div className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border-t-4 border-[#0C4A6E] overflow-hidden relative group h-full flex flex-col">
+              <div className="absolute -right-20 -bottom-20 w-48 h-48 rounded-full bg-gradient-to-br from-[#0C4A6E]/5 to-[#f47847]/5 transition-all duration-500 group-hover:scale-150"></div>
+              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0C4A6E]/10 to-[#f47847]/10 mb-6 text-[#0C4A6E] group-hover:text-[#f47847] transition-colors duration-300">
+                <Database size={32} />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-[#0C4A6E] group-hover:text-[#f47847] transition-colors duration-300">Backend Development</h3>
+              <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
+                Scalable and secure backend systems that power your applications with robust APIs and efficient data management.
+              </p>
+              <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
+            </div>
+
+            {/* Security & Compliance */}
+            <div className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border-t-4 border-[#0C4A6E] overflow-hidden relative group h-full flex flex-col">
+              <div className="absolute -right-20 -bottom-20 w-48 h-48 rounded-full bg-gradient-to-br from-[#0C4A6E]/5 to-[#f47847]/5 transition-all duration-500 group-hover:scale-150"></div>
+              <div className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-[#0C4A6E]/10 to-[#f47847]/10 mb-6 text-[#0C4A6E] group-hover:text-[#f47847] transition-colors duration-300">
+                <Shield size={32} />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-[#0C4A6E] group-hover:text-[#f47847] transition-colors duration-300">Security & Compliance</h3>
+              <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
+                Comprehensive security measures and compliance solutions to protect your applications and data from threats.
+              </p>
+              <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              <span className="text-[#0C4A6E]">Frequently Asked</span>{" "}
+              <span className="text-[#f47847]">Questions</span>
+            </h2>
+            <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
+              Find answers to common questions about our software development services
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto">
+            {faqData.map((faq, index) => (
+              <div key={index} className="mb-6 border border-gray-200 rounded-lg overflow-hidden">
+                <button
+                  className="w-full px-6 py-4 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition-colors duration-300"
+                  onClick={() => toggleFaq(index)}
+                >
+                  <span className="font-semibold text-gray-900">{faq.question}</span>
+                  <svg
+                    className={`w-5 h-5 text-gray-500 transform transition-transform duration-300 ${
+                      expandedFaq === index ? "rotate-180" : ""
+                    }`}
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div
+                  className={`px-6 py-4 bg-gray-50 transition-all duration-300 ${
+                    expandedFaq === index ? "block" : "hidden"
+                  }`}
+                >
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

@@ -24,7 +24,6 @@ const ServiceNowOfferings: React.FC = () => {
               <span className="text-[#f47847]">Our</span>{" "}
               <span className="text-[#0a3d62]">Approach</span>
             </h2>
-            
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
@@ -38,7 +37,8 @@ const ServiceNowOfferings: React.FC = () => {
             <div className="order-2 flex flex-col justify-center h-full">
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                At AI-GTS, we leverage the power of ServiceNow, a leading cloud-based workflow and automation platform, to help organizations streamline enterprise service operations, enhance productivity, and modernize their IT landscape                </p>
+                  At AI-GTS, we leverage the power of ServiceNow, a leading cloud-based workflow and automation platform, to help organizations streamline enterprise service operations, enhance productivity, and modernize their IT landscape.
+                </p>
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   We combine industry best practices with ServiceNow expertise to deliver solutions that drive real business value. Our team of certified ServiceNow professionals works closely with you throughout the implementation process, ensuring seamless integration and optimal performance.
                 </p>
@@ -56,14 +56,14 @@ const ServiceNowOfferings: React.FC = () => {
               <span className="text-[#f47847]">Our</span>{" "}
               <span className="text-[#0a3d62]">Solutions</span>
             </h2>
-            
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
             <div className="order-2 md:order-1 flex flex-col justify-center h-full">
               <div className="space-y-6 max-w-prose text-justify text-gray-700">
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
-                Our comprehensive ServiceNow solutions empower businesses to integrate strategy, design, transition, and operations into a unified system, ensuring seamless service delivery and operational efficiency                </p>
+                  Our comprehensive ServiceNow solutions empower businesses to integrate strategy, design, transition, and operations into a unified system, ensuring seamless service delivery and operational efficiency.
+                </p>
                 <p className="text-base md:text-lg leading-relaxed tracking-normal">
                   Our team of ServiceNow experts works closely with you to understand your unique challenges and develop customized solutions that deliver measurable results. We ensure seamless integration with your existing systems and provide ongoing support to optimize performance and drive continuous improvement.
                 </p>
@@ -102,7 +102,8 @@ const ServiceNowOfferings: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">ServiceNow Consulting</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-              Our experts provide strategic guidance to help organizations maximize the value of their ServiceNow investment. From roadmap planning to best practices implementation, we ensure that your business objectives align with the platform’s capabilities.              </p>
+                Our experts provide strategic guidance to help organizations maximize the value of their ServiceNow investment. From roadmap planning to best practices implementation, we ensure that your business objectives align with the platform's capabilities.
+              </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
 
@@ -114,7 +115,8 @@ const ServiceNowOfferings: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">ServiceNow Implementation</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-              AI-GTS specializes in end-to-end ServiceNow implementation across various business functions. We ensure a smooth and efficient deployment tailored to your enterprise needs, accelerating your digital transformation journey              </p>
+                AI-GTS specializes in end-to-end ServiceNow implementation across various business functions. We ensure a smooth and efficient deployment tailored to your enterprise needs, accelerating your digital transformation journey.
+              </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
 
@@ -126,7 +128,8 @@ const ServiceNowOfferings: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">ServiceNow Integration</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-              Seamlessly integrate ServiceNow with your existing enterprise systems, applications, and third-party tools to enhance data flow and operational efficiency. Our expertise covers integration with ITSM, ERP, CRM, HR, and other critical platforms.               </p>
+                Seamlessly integrate ServiceNow with your existing enterprise systems, applications, and third-party tools to enhance data flow and operational efficiency. Our expertise covers integration with ITSM, ERP, CRM, HR, and other critical platforms.
+              </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>
 
@@ -138,7 +141,7 @@ const ServiceNowOfferings: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 text-[#0a3d62] group-hover:text-[#f47847] transition-colors duration-300">ServiceNow Managed Services</h3>
               <p className="text-base text-gray-600 relative z-10 leading-relaxed flex-grow">
-              We provide comprehensive ServiceNow-managed services, ensuring continuous platform optimization, performance monitoring, compliance management, and proactive maintenance, allowing your team to focus on core business priorities. 
+                We provide comprehensive ServiceNow-managed services, ensuring continuous platform optimization, performance monitoring, compliance management, and proactive maintenance, allowing your team to focus on core business priorities.
               </p>
               <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#f47847] group-hover:w-full transition-all duration-700 ease-out"></div>
             </div>

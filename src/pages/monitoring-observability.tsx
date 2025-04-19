@@ -21,21 +21,21 @@ const MonitoringObservability: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Our Approach Section - Content Left, Image Right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24">
-            <div className="order-2 md:order-1">
+            <div className="order-2 md:order-1 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#0a3d62]">Monitoring And </span>{" "}
+                <span className="text-[#0a3d62]">Monitoring And</span>{" "}
                 <span className="text-[#f47847]">Observability</span>
               </h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
                 Full stack IT is a complex environment of hardware, software, networking protocols and servers. Moreover, these subsets of IT infra-structure are highly interdependent. What makes it even more puzzling is their scattered relationship. In such a scenario, malfunctions, process bottlenecks, and hardware crashes can be catastrophic for any organization. And therefore Monitoring & Observability is the only solution to prevent such IT disasters.
-
-AI-GTS provides third party Monitoring & Observability solutions which prevents such mishaps by locating the pain points before it actually occurs and causes damage to the entire process flow. We offer a wide range of latest technology solutions related to ITSM as a one-stop shop for on-premises as well as on-cloud platforms but not limited to just these environments.                </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                AI-GTS provides third party Monitoring & Observability solutions which prevents such mishaps by locating the pain points before it actually occurs and causes damage to the entire process flow. We offer a wide range of latest technology solutions related to ITSM as a one-stop shop for on-premises as well as on-cloud platforms but not limited to just these environments.                </p>
+                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                AI-GTS provides third party Monitoring & Observability solutions which prevents such mishaps by locating the pain points before it actually occurs and causes damage to the entire process flow. We offer a wide range of latest technology solutions related to ITSM as a one-stop shop for on-premises as well as on-cloud platforms but not limited to just these environments.
+                </p>
               </div>
             </div>
-            <div className="relative order-1 md:order-2">
+            <div className="relative order-1 md:order-2 flex items-center justify-center h-full">
               <img 
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Our Approach" 
@@ -46,28 +46,28 @@ AI-GTS provides third party Monitoring & Observability solutions which prevents 
 
           {/* Our Solutions Section - Image Left, Content Right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-            <div className="relative order-1">
+            <div className="relative order-1 flex items-center justify-center h-full">
               <img 
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Our Solutions" 
                 className="rounded-lg shadow-xl w-full h-[300px] md:h-[350px] object-cover"
               />
             </div>
-            <div className="order-2">
+            <div className="order-2 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
                 <span className="text-[#f47847]">Accord Innovations'</span>{" "}
                 <span className="text-[#0a3d62]">Contribution</span>
               </h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
                 Our open source, enterprise monitoring solutions ( with & without licenses ) make sure the hybrid / cloud IT infrastructures, distributed applications and mail / internet services continue to offer optimized services.
                 </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                High service performance.
-Long term IT stability.
-Reduced application and processing degradation.
-Faster computation and optimization.
-We implement bespoke monitoring and observability solutions that are meaningful, can be easily interpreted and also offers hints to future outages in the form of logs / patterns. An optimized IT infrastructure automatically leads to increased productivity, profitability and greater employee retention.                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                High service performance. Long term IT stability. Reduced application and processing degradation. Faster computation and optimization.
+                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                We implement bespoke monitoring and observability solutions that are meaningful, can be easily interpreted and also offers hints to future outages in the form of logs / patterns. An optimized IT infrastructure automatically leads to increased productivity, profitability and greater employee retention.
+                </p>
               </div>
             </div>
           </div>

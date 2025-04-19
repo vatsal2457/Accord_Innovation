@@ -21,19 +21,24 @@ const CloudServices: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Our Approach Section - Content Left, Image Right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center mb-16 md:mb-24">
-            <div className="order-2 md:order-1">
+            <div className="order-2 md:order-1 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#0a3d62]">Foundations of Cloud Infrastructure</span>{" "}
+                <span className="text-[#0a3d62]">Foundations of</span>{" "}
+                <span className="text-[#f47847]">Cloud Infrastructure</span>
               </h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                Cloud infrastructure is underpinned by a multifaceted framework that enables its functionality. Central to this framework is network infrastructure, a vital component that third-party service providers establish and uphold to facilitate the delivery of cloud resources via the internet. Networking plays a pivotal role in ensuring seamless connectivity and data transmission within the cloud ecosystem.Another cornerstone of cloud infrastructure is servers. These dedicated devices or computers are intricately programmed to cater to the needs of customers or users. In private cloud setups, companies often employ dedicated servers to safeguard their data. In contrast, public cloud providers adopt a multi-tenant model, utilizing the same servers to serve multiple customers efficiently. This duality in server utilization exemplifies the versatility of cloud infrastructure.                </p>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                  We follow a phased implementation methodology that ensures smooth transitions and minimal disruption to your operations. This approach allows for iterative improvements and ensures that your cloud infrastructure evolves alongside your business needs.
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                Cloud infrastructure is underpinned by a multifaceted framework that enables its functionality. Central to this framework is network infrastructure, a vital component that third-party service providers establish and uphold to facilitate the delivery of cloud resources via the internet. Networking plays a pivotal role in ensuring seamless connectivity and data transmission within the cloud ecosystem.
+                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                Another cornerstone of cloud infrastructure is servers. These dedicated devices or computers are intricately programmed to cater to the needs of customers or users. In private cloud setups, companies often employ dedicated servers to safeguard their data. In contrast, public cloud providers adopt a multi-tenant model, utilizing the same servers to serve multiple customers efficiently. This duality in server utilization exemplifies the versatility of cloud infrastructure.
+                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                We follow a phased implementation methodology that ensures smooth transitions and minimal disruption to your operations. This approach allows for iterative improvements and ensures that your cloud infrastructure evolves alongside your business needs.
                 </p>
               </div>
             </div>
-            <div className="relative order-1 md:order-2">
+            <div className="relative order-1 md:order-2 flex items-center justify-center h-full">
               <img 
                 src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Our Approach" 
@@ -44,21 +49,25 @@ const CloudServices: React.FC = () => {
 
           {/* Our Solutions Section - Image Left, Content Right */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-            <div className="relative order-1">
+            <div className="relative order-1 flex items-center justify-center h-full">
               <img 
                 src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Our Solutions" 
                 className="rounded-lg shadow-xl w-full h-[300px] md:h-[350px] object-cover"
               />
             </div>
-            <div className="order-2">
+            <div className="order-2 flex flex-col justify-center h-full">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-                <span className="text-[#f47847]">Storage and Virtualization in the Cloud</span>{" "}
+                <span className="text-[#f47847]">Storage and</span>{" "}
+                <span className="text-[#0a3d62]">Virtualization</span>
               </h2>
-              <div className="space-y-4 md:space-y-6">
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                In the cloud landscape, storage is a game-changer. Cloud storage services empower companies to eschew the construction of on-premises data centers, offering the convenience of storing and managing data on remote file servers. Esteemed third-party cloud storage providers such as Microsoft Azure, Amazon Simple Storage Service (S3), and Google Cloud Storage take on the responsibility of data management and remote backups, providing businesses with a robust and scalable solution.Virtualization stands as the linchpin of cloud infrastructure. This critical software abstraction decouples data storage and computing power from the underlying hardware, granting users access to their cloud resources through an intuitive graphical interface. Virtualization's transformative capabilities empower businesses to harness the full potential of cloud infrastructure, enabling agility, scalability, and efficient resource management.
-</p>
+              <div className="space-y-6 max-w-prose text-justify text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                In the cloud landscape, storage is a game-changer. Cloud storage services empower companies to eschew the construction of on-premises data centers, offering the convenience of storing and managing data on remote file servers. Esteemed third-party cloud storage providers such as Microsoft Azure, Amazon Simple Storage Service (S3), and Google Cloud Storage take on the responsibility of data management and remote backups, providing businesses with a robust and scalable solution.
+                </p>
+                <p className="text-base md:text-lg leading-relaxed tracking-normal">
+                Virtualization stands as the linchpin of cloud infrastructure. This critical software abstraction decouples data storage and computing power from the underlying hardware, granting users access to their cloud resources through an intuitive graphical interface. Virtualization's transformative capabilities empower businesses to harness the full potential of cloud infrastructure, enabling agility, scalability, and efficient resource management.
+                </p>
               </div>
             </div>
           </div>
