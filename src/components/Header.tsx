@@ -86,7 +86,7 @@ const Header: React.FC<HeaderProps> = () => {
                   </svg>
                 </div>
                 {/* Text logo */}
-                <img src="./public/images/accordlogo.png" alt="" className="w-12 h-12 mr-2" />
+                <img src="/images/accordlogo.png" alt="Accord Innovations" className="w-12 h-12 mr-2" />
                 <span className="text-xl sm:text-2xl font-bold text-white whitespace-nowrap">
                   Accord<span className="text-[#f47847]"> Innovations</span>
                 </span>
