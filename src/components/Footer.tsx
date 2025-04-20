@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface FooterColumnProps {
   title: string;
@@ -25,31 +26,31 @@ const Footer: React.FC = () => {
           
           <FooterColumn title="Main Links">
             <ul>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Home</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white">About Us</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Industry</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Code of Conduct</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Value Proposition</a></li>
+              <li className="mb-2"><Link to="/" className="text-gray-400 hover:text-white">Home</Link></li>
+              <li className="mb-2"><Link to="/about-accord" className="text-gray-400 hover:text-white">About Us</Link></li>
+              <li className="mb-2"><Link to="/banking-financial-services" className="text-gray-400 hover:text-white">Industry</Link></li>
+              <li className="mb-2"><Link to="/code-of-conduct" className="text-gray-400 hover:text-white">Code of Conduct</Link></li>
+              <li className="mb-2"><Link to="/value-proposition" className="text-gray-400 hover:text-white">Value Proposition</Link></li>
             </ul>
           </FooterColumn>
           
           <FooterColumn title="Services">
             <ul>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white">IoT</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Software Development</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white">QA Testing Services</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Mobility Solutions</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Cloud Services</a></li>
+              <li className="mb-2"><Link to="/iot" className="text-gray-400 hover:text-white">IoT</Link></li>
+              <li className="mb-2"><Link to="/software-development" className="text-gray-400 hover:text-white">Software Development</Link></li>
+              <li className="mb-2"><Link to="/qa-testing-services" className="text-gray-400 hover:text-white">QA Testing Services</Link></li>
+              <li className="mb-2"><Link to="/mobility-solutions" className="text-gray-400 hover:text-white">Mobility Solutions</Link></li>
+              <li className="mb-2"><Link to="/cloud-services" className="text-gray-400 hover:text-white">Cloud Services</Link></li>
             </ul>
           </FooterColumn>
           
           <FooterColumn title="IT Solutions">
             <ul>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Product Engineering</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white">SaaS & Cloud</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Data Management</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white">Web Technologies</a></li>
-              <li className="mb-2"><a href="#" className="text-gray-400 hover:text-white">ERP & CRM</a></li>
+              <li className="mb-2"><Link to="/product-engineering" className="text-gray-400 hover:text-white">Product Engineering</Link></li>
+              <li className="mb-2"><Link to="/saas-cloud" className="text-gray-400 hover:text-white">SaaS & Cloud</Link></li>
+              <li className="mb-2"><Link to="/data-analytics-business-intelligence" className="text-gray-400 hover:text-white">Data Management</Link></li>
+              <li className="mb-2"><Link to="/web-technologies" className="text-gray-400 hover:text-white">Web Technologies</Link></li>
+              <li className="mb-2"><Link to="/erp-crm" className="text-gray-400 hover:text-white">ERP & CRM</Link></li>
             </ul>
           </FooterColumn>
         </div>
