@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Overview: React.FC = () => {
   return (
@@ -30,61 +31,80 @@ const Overview: React.FC = () => {
         </div>
       </section>
 
-      {/* Mission & Vision Section */}
-
-
       {/* Company Story Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* First Part */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-16">
-            <div className="relative">
+            <motion.div 
+              className="relative"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
               <img 
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Company Story" 
                 className="rounded-lg shadow-xl w-full h-[500px] object-cover"
               />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="flex flex-col justify-center"
+            >
               <h2 className="text-4xl md:text-5xl font-bold text-[#0a3d62] mb-8">Bringing Innovative Technology Solutions for Your Success</h2>
               <div className="space-y-6">
-                <p className="text-lg text-gray-700">
+                <p className="text-lg text-gray-700 text-justify">
                   At Accord Innovations, we harness the power of technology and develop innovative solutions that cater to your diverse needs in this rapidly evolving market. We are the leaders in cutting-edge technology, analytics, and consulting services.
                 </p>
-                <p className="text-lg text-gray-700">
+                <p className="text-lg text-gray-700 text-justify">
                   With an unwavering passion for technology, determination to solve complex problems, and a vision to create revolutionary solutions, we ensure sophisticated visual appeal, seamless usability and substantial profits.
                 </p>
-                <p className="text-lg text-gray-700">
+                <p className="text-lg text-gray-700 text-justify">
                   Quality and cost-effectiveness intertwined with innovation are the cornerstones of our approach. We strive to be your dependable solutions partner, providing outcomes that exceed your expectations.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           {/* Second Part */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div className="md:order-2">
+            <motion.div 
+              className="md:order-2"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
               <img 
                 src="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
                 alt="Global Presence" 
                 className="rounded-lg shadow-xl w-full h-[500px] object-cover"
               />
-            </div>
-            <div className="md:order-1">
+            </motion.div>
+            <motion.div 
+              className="md:order-1 flex flex-col justify-center"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
               <div className="space-y-6">
-                <p className="text-lg text-gray-700">
+                <p className="text-lg text-gray-700 text-justify">
                   As a Microsoft Certified Partner, we hold ourselves to the highest industry standards, and aim to consistently deliver exceptional results in every endeavour. We cater to a wide array of key verticals, including Healthcare, Financial Services, Real Estate, Banking and Financial Services, Insurance, Telecommunications, Software, Aerospace & Aviation, Manufacturing, Retail, Consumer Electronics Sector, Energy, Travel & Logistics, Life Sciences, Medical Devices, Pharmaceutical, Automotive and the IT Industry.
                 </p>
-                <p className="text-lg text-gray-700">
+                <p className="text-lg text-gray-700 text-justify">
                   With an exceptional team of over 1000 professionals, we have amassed 15+ years of valuable experience in the IT industry. We are proud to have served more than 500 active clients worldwide, with offices in six strategic locations across Asia-Pacific, making us truly global.
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
-
-   
 
       {/* CTA Section */}
       <section className="py-16 bg-[#0a3d62] text-white">
