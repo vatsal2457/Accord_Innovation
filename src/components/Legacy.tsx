@@ -68,7 +68,22 @@ const Legacy: React.FC = () => {
       icon: <Cpu size={28} />
     },
     {
+      title: "Customized and Innovative Problem solving",
+      description: "Solutions designed with your specific requirements and satisfaction as our priority.",
+      icon: <Heart size={28} />
+    },
+    {
       title: "Customer-centric approach",
+      description: "Solutions designed with your specific requirements and satisfaction as our priority.",
+      icon: <Heart size={28} />
+    },
+    {
+      title: "Continuous learning culture",
+      description: "Solutions designed with your specific requirements and satisfaction as our priority.",
+      icon: <Heart size={28} />
+    },
+    {
+      title: "Global presence and reach",
       description: "Solutions designed with your specific requirements and satisfaction as our priority.",
       icon: <Heart size={28} />
     }
