@@ -14,30 +14,30 @@ const OurStory: React.FC = () => {
       details: 'Founded with a vision to bridge the gap between talent and opportunity, Accord began its journey in Malaysia. Our initial focus was on connecting skilled professionals with forward-thinking companies.'
     },
     {
-      year: '2015',
-      title: 'Digital Transformation',
-      description: 'Expanded into digital solutions and software development services.',
+      year: '2012',
+      title: 'Inception of IT Services',
+      description: 'Became One stop IT service provider through our services in both recruitment and IT Services.',
       image: '/images/digital-transformation.jpg',
       details: 'Recognizing the growing demand for digital solutions, we expanded our services to include software development, digital transformation consulting, and technology implementation services.'
     },
     {
-      year: '2018',
-      title: 'Global Expansion',
-      description: 'Established presence in multiple countries across Asia-Pacific region.',
+      year: '2014',
+      title: 'Inception of R&D Team',
+      description: 'Incepted R&D team to research about latest technologies to recommend and implement to clients.',
       image: '/images/global-expansion.jpg',
       details: 'With a strong foundation in Malaysia, we expanded our operations to Singapore, Indonesia, Thailand, and Vietnam, establishing a robust presence across the Asia-Pacific region.'
     },
     {
-      year: '2021',
-      title: 'Innovation Hub',
-      description: 'Launched our innovation hub to drive technological advancement and research.',
+      year: '2015',
+      title: 'Expanded Technologies',
+      description: 'Extended to Business Intelligence (BI), ETL, industrial IOT, Robotic Process Automation (RPA) to provide IT services and consulting services, Big Data and Data Analytics',
       image: '/images/innovation-hub.jpg',
       details: 'Our innovation hub was established to focus on emerging technologies like AI, blockchain, and IoT, positioning us at the forefront of technological advancement in the region.'
     },
     {
-      year: '2023',
-      title: 'Industry Leadership',
-      description: 'Recognized as a leading technology solutions provider with over 1000 professionals.',
+      year: '2020',
+      title: 'Expanded Operations',
+      description: 'Expanding operations to Indonesia, India and Thailand. ',
       image: '/images/industry-leadership.jpg',
       details: 'Today, Accord stands as a leading technology solutions provider with a team of over 1000 professionals, serving clients across diverse industries and geographies.'
     }
