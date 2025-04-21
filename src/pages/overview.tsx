@@ -37,7 +37,7 @@ const Overview: React.FC = () => {
           {/* First Part */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-16">
             <motion.div 
-              className="relative"
+              className="relative order-2 md:order-1"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
@@ -54,7 +54,7 @@ const Overview: React.FC = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="flex flex-col justify-center"
+              className="flex flex-col justify-center order-1 md:order-2"
             >
               <h2 className="text-4xl md:text-5xl font-bold text-[#0a3d62] mb-8">Bringing Innovative Technology Solutions for Your Success</h2>
               <div className="space-y-6">
@@ -74,7 +74,7 @@ const Overview: React.FC = () => {
           {/* Second Part */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <motion.div 
-              className="md:order-2"
+              className="md:order-2 order-2"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
@@ -87,7 +87,7 @@ const Overview: React.FC = () => {
               />
             </motion.div>
             <motion.div 
-              className="md:order-1 flex flex-col justify-center"
+              className="md:order-1 order-1 flex flex-col justify-center"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}

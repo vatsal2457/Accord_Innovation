@@ -291,7 +291,7 @@ const Services: React.FC = () => {
         {/* View all services button */}
         <div className="text-center mt-12 md:mt-16">
           <button className="bg-gradient-to-r from-[#f47847] to-[#f47847]/80 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-medium hover:shadow-lg hover:from-[#f47847]/90 hover:to-[#f47847]/70 transition-all duration-300 inline-flex items-center group">
-            Explore All Services
+            View All Services
             <ChevronRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
           </button>
         </div>

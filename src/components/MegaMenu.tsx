@@ -165,7 +165,15 @@ const menuData: MenuData = {
   Services: {
     'Our Services': {
       items: [
+        { name: 'ITSM', link: '/itsm' },
+
         { name: 'IoT', link: '/iot' },
+        { name: 'ServiceNow Offerings by AI-GTS', link: '/service-now-offerings-by-ai-gts' },
+        { name: 'BMC Suite', link: '/bmc-suite' },
+        { name: 'Automation and Hyperautomation', link: '/automation-hyperautomation' },
+        { name: 'Monitoring & Observability', link: '/monitoring-observability' },
+        { name: 'Artificial Intelligence', link: '/artificial-intelligence' },
+        { name: 'Gen-AI Solution Offerings by AI-GTS ', link: '/gen-ai-solution-offerings-by-ai-gts' },
         { name: 'Software Development Services', link: '/software-development' },
         { name: 'QA Testing Services', link: '/qa-testing-services' },
         { name: 'Mobility Solutions', link: '/mobility-solutions' },
@@ -173,14 +181,7 @@ const menuData: MenuData = {
         { name: 'Professional & Managed Services', link: '/professional-managed-services' },
         { name: 'Cloud Services', link: '/cloud-services' },
         { name: 'Infrastructure Management Services', link: '/infrastructure-management-services' },
-        { name: 'Artificial Intelligence', link: '/artificial-intelligence' },
-        { name: 'Monitoring & Observability', link: '/monitoring-observability' },
-        { name: 'ITSM', link: '/itsm' },
-        { name: 'ServiceNow Offerings by AI-GTS', link: '/service-now-offerings-by-ai-gts' },
-        { name: 'Gen-AI Solution Offerings by AI-GTS ', link: '/gen-ai-solution-offerings-by-ai-gts' },
-        { name: 'BMC Suite', link: '/bmc-suite' },
         { name: 'DevOps', link: '/devops' },
-        { name: 'Automation and Hyperautomation', link: '/automation-hyperautomation' },
         { name: 'Mission Critical Facilities', link: '/mission-critical-facilities' },
         
         
