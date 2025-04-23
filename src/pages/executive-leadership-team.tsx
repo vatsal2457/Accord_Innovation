@@ -81,36 +81,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
                 </div>
                 <div className="p-8 flex-grow bg-gradient-to-b from-white to-gray-50">
                   <h3 className="text-2xl text-[#0a3d62] font-bold mb-2">Krishna Chaitanya Sunkara</h3>
-                  <p className="text-lg text-[#f47847] font-semibold mb-4">Group CEO & Founder</p>
-                  <div className="flex gap-4 mb-4">
-                    <a 
-                      href="#" 
-                      className="w-10 h-10 bg-[#0a3d62] rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 hover:bg-[#f47847]"
-                    >
-                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                      </svg>
-                    </a>
-                    <a 
-                      href="#" 
-                      className="w-10 h-10 bg-[#0a3d62] rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 hover:bg-[#f47847]"
-                    >
-                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                      </svg>
-                    </a>
-                    <a 
-                      href="#" 
-                      className="w-10 h-10 bg-[#0a3d62] rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 hover:bg-[#f47847]"
-                    >
-                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-2 16H8v-6h2v6zM9 9.109c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zM17 16h-2v-3.197c0-.957-.349-1.617-1.219-1.617-.681 0-1.086.412-1.264.808-.065.159-.082.381-.082.602V16h-2v-6h2v.835c.414-.397.902-.661 1.562-.661 1.11 0 1.94.67 1.94 2.111V16z"/>
-                      </svg>
-                    </a>
-                  </div>
-                  <p className="text-gray-600 leading-relaxed">
-                    Leading innovation and strategic growth at Accord Innovations, driving digital transformation across Asia.
-                  </p>
+                  <p className="text-lg text-[#f47847] font-semibold">Group CEO & Founder</p>
                 </div>
               </div>
             </div>
@@ -134,36 +105,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
                 </div>
                 <div className="p-8 flex-grow bg-gradient-to-b from-white to-gray-50">
                   <h3 className="text-2xl text-[#0a3d62] font-bold mb-2">Suchitra Sunkara</h3>
-                  <p className="text-lg text-[#f47847] font-semibold mb-4">Chief Executive Officer</p>
-                  <div className="flex gap-4 mb-4">
-                    <a 
-                      href="#" 
-                      className="w-10 h-10 bg-[#0a3d62] rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 hover:bg-[#f47847]"
-                    >
-                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                      </svg>
-                    </a>
-                    <a 
-                      href="#" 
-                      className="w-10 h-10 bg-[#0a3d62] rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 hover:bg-[#f47847]"
-                    >
-                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                      </svg>
-                    </a>
-                    <a 
-                      href="#" 
-                      className="w-10 h-10 bg-[#0a3d62] rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 hover:bg-[#f47847]"
-                    >
-                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-2 16H8v-6h2v6zM9 9.109c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zM17 16h-2v-3.197c0-.957-.349-1.617-1.219-1.617-.681 0-1.086.412-1.264.808-.065.159-.082.381-.082.602V16h-2v-6h2v.835c.414-.397.902-.661 1.562-.661 1.11 0 1.94.67 1.94 2.111V16z"/>
-                      </svg>
-                    </a>
-                  </div>
-                  <p className="text-gray-600 leading-relaxed">
-                    Leading innovation and strategic growth at Accord Innovations, driving digital transformation across Asia.
-                  </p>
+                  <p className="text-lg text-[#f47847] font-semibold">Chief Executive Officer</p>
                 </div>
               </div>
             </div>
@@ -187,36 +129,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
                 </div>
                 <div className="p-8 flex-grow bg-gradient-to-b from-white to-gray-50">
                   <h3 className="text-2xl text-[#0a3d62] font-bold mb-2">Swathi Mula</h3>
-                  <p className="text-lg text-[#f47847] font-semibold mb-4">Operations Director</p>
-                  <div className="flex gap-4 mb-4">
-                    <a 
-                      href="#" 
-                      className="w-10 h-10 bg-[#0a3d62] rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 hover:bg-[#f47847]"
-                    >
-                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                      </svg>
-                    </a>
-                    <a 
-                      href="#" 
-                      className="w-10 h-10 bg-[#0a3d62] rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 hover:bg-[#f47847]"
-                    >
-                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                      </svg>
-                    </a>
-                    <a 
-                      href="#" 
-                      className="w-10 h-10 bg-[#0a3d62] rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 hover:bg-[#f47847]"
-                    >
-                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-2 16H8v-6h2v6zM9 9.109c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zM17 16h-2v-3.197c0-.957-.349-1.617-1.219-1.617-.681 0-1.086.412-1.264.808-.065.159-.082.381-.082.602V16h-2v-6h2v.835c.414-.397.902-.661 1.562-.661 1.11 0 1.94.67 1.94 2.111V16z"/>
-                      </svg>
-                    </a>
-                  </div>
-                  <p className="text-gray-600 leading-relaxed">
-                    Leading innovation and strategic growth at Accord Innovations, driving digital transformation across Asia.
-                  </p>
+                  <p className="text-lg text-[#f47847] font-semibold">Operations Director</p>
                 </div>
               </div>
             </div>
@@ -240,36 +153,7 @@ const ExecutiveLeadershipTeam: React.FC = () => {
                 </div>
                 <div className="p-8 flex-grow bg-gradient-to-b from-white to-gray-50">
                   <h3 className="text-2xl text-[#0a3d62] font-bold mb-2">Alisha Siddiqa Binti Sanmugam</h3>
-                  <p className="text-lg text-[#f47847] font-semibold mb-4">Group COO</p>
-                  <div className="flex gap-4 mb-4">
-                    <a 
-                      href="#" 
-                      className="w-10 h-10 bg-[#0a3d62] rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 hover:bg-[#f47847]"
-                    >
-                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                      </svg>
-                    </a>
-                    <a 
-                      href="#" 
-                      className="w-10 h-10 bg-[#0a3d62] rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 hover:bg-[#f47847]"
-                    >
-                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                      </svg>
-                    </a>
-                    <a 
-                      href="#" 
-                      className="w-10 h-10 bg-[#0a3d62] rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 hover:bg-[#f47847]"
-                    >
-                      <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-2 16H8v-6h2v6zM9 9.109c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zM17 16h-2v-3.197c0-.957-.349-1.617-1.219-1.617-.681 0-1.086.412-1.264.808-.065.159-.082.381-.082.602V16h-2v-6h2v.835c.414-.397.902-.661 1.562-.661 1.11 0 1.94.67 1.94 2.111V16z"/>
-                      </svg>
-                    </a>
-                  </div>
-                  <p className="text-gray-600 leading-relaxed">
-                    Leading innovation and strategic growth at Accord Innovations, driving digital transformation across Asia.
-                  </p>
+                  <p className="text-lg text-[#f47847] font-semibold">Group COO</p>
                 </div>
               </div>
             </div>
