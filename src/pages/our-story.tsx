@@ -56,9 +56,9 @@ const OurStory: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-[400px] bg-[#0a3d62]">
+      <section className="relative h-[300px] md:h-[400px] bg-[#0a3d62]">
         {/* Background Image - Right Side */}
-        <div className="absolute right-0 w-3/5 h-full">
+        <div className="absolute right-0 w-full md:w-3/5 h-full">
           <div 
             className="w-full h-full"
             style={{
@@ -75,7 +75,7 @@ const OurStory: React.FC = () => {
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
           <div className="flex flex-col justify-center h-full max-w-2xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
               Our Story
             </h1>
           </div>
@@ -83,7 +83,7 @@ const OurStory: React.FC = () => {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 md:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
             {/* Timeline Line */}
@@ -92,7 +92,7 @@ const OurStory: React.FC = () => {
               whileInView={{ height: "100%" }}
               viewport={{ once: true }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
-              className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#0a3d62]/20"
+              className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-[#0a3d62]/20"
             ></motion.div>
 
             {/* Timeline Items */}
@@ -103,33 +103,33 @@ const OurStory: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className={`relative flex items-center mb-20 ${
-                  index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
+                className={`relative flex flex-col md:flex-row items-center mb-12 md:mb-20 ${
+                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                 }`}
               >
                 {/* Content */}
-                <div className={`w-1/2 ${index % 2 === 0 ? 'pr-20' : 'pl-20'}`}>
+                <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-20' : 'md:pl-20'} mb-6 md:mb-0`}>
                   <motion.div
                     initial={{ scale: 0.8 }}
                     whileInView={{ scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.2 + 0.2 }}
-                    className={`bg-white rounded-lg shadow-xl p-6 hover:shadow-2xl transition-all duration-300 cursor-pointer ${
+                    className={`bg-white rounded-lg shadow-xl p-4 md:p-6 hover:shadow-2xl transition-all duration-300 cursor-pointer ${
                       activeItem === index ? 'ring-2 ring-[#f47847] scale-105' : ''
                     }`}
                     onClick={() => handleItemClick(index)}
                     whileHover={{ y: -5 }}
                   >
-                    <div className="text-4xl font-bold text-[#f47847] mb-2">{item.year}</div>
-                    <h3 className="text-2xl font-bold text-[#0a3d62] mb-4">{item.title}</h3>
-                    <p className="text-gray-700">{item.description}</p>
+                    <div className="text-3xl md:text-4xl font-bold text-[#f47847] mb-2">{item.year}</div>
+                    <h3 className="text-xl md:text-2xl font-bold text-[#0a3d62] mb-2 md:mb-4">{item.title}</h3>
+                    <p className="text-gray-700 text-sm md:text-base">{item.description}</p>
                     
                     {/* Expand/Collapse Indicator */}
-                    <div className="mt-4 flex items-center text-[#f47847] text-sm font-medium">
+                    <div className="mt-3 md:mt-4 flex items-center text-[#f47847] text-sm font-medium">
                       <span>{activeItem === index ? 'Show Less' : 'Show More'}</span>
                       <motion.svg 
                         xmlns="http://www.w3.org/2000/svg" 
-                        className={`h-5 w-5 ml-1 ${activeItem === index ? 'rotate-180' : ''}`}
+                        className={`h-4 w-4 md:h-5 md:w-5 ml-1 ${activeItem === index ? 'rotate-180' : ''}`}
                         fill="none" 
                         viewBox="0 0 24 24" 
                         stroke="currentColor"
@@ -149,9 +149,9 @@ const OurStory: React.FC = () => {
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="mt-4 bg-white rounded-lg shadow-lg p-6 overflow-hidden"
+                        className="mt-4 bg-white rounded-lg shadow-lg p-4 md:p-6 overflow-hidden"
                       >
-                        <p className="text-gray-700">{item.details}</p>
+                        <p className="text-gray-700 text-sm md:text-base">{item.details}</p>
                       </motion.div>
                     )}
                   </AnimatePresence>
@@ -163,7 +163,7 @@ const OurStory: React.FC = () => {
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.2 + 0.3 }}
-                  className={`absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full border-4 border-white shadow-lg ${
+                  className={`absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 md:w-6 md:h-6 rounded-full border-4 border-white shadow-lg ${
                     activeItem === index ? 'bg-[#f47847] scale-125' : 'bg-[#f47847]'
                   }`}
                   whileHover={{ scale: 1.5 }}
@@ -176,10 +176,10 @@ const OurStory: React.FC = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.2 + 0.4 }}
-                  className={`w-1/2 ${index % 2 === 0 ? 'pl-20' : 'pr-20'}`}
+                  className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pl-20' : 'md:pr-20'}`}
                 >
                   <motion.div 
-                    className="relative h-48 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                    className="relative h-40 md:h-48 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
                     whileHover={{ scale: 1.05 }}
                     onClick={() => handleItemClick(index)}
                   >
@@ -195,7 +195,7 @@ const OurStory: React.FC = () => {
                       <motion.div
                         initial={{ opacity: 0 }}
                         whileHover={{ opacity: 1 }}
-                        className="text-white font-bold text-xl"
+                        className="text-white font-bold text-lg md:text-xl text-center px-2"
                       >
                         Click to Learn More
                       </motion.div>
