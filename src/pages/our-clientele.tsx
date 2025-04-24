@@ -227,23 +227,23 @@ const OurClientele: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white">
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] bg-gradient-to-r from-[#0a3d62] to-[#1e4d7b]">
+      <section className="relative min-h-[50vh] md:min-h-[60vh] bg-gradient-to-r from-[#0a3d62] to-[#1e4d7b]">
         <div className="absolute inset-0 bg-[url('/images/pattern.png')] opacity-10"></div>
-        <div className="container mx-auto px-4 h-[60vh] flex items-center">
-          {/* Left side - Text Content */}
-          <div className="w-full lg:w-1/2 pl-20 relative z-10">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className="container mx-auto px-4 h-auto md:h-[60vh] flex flex-col md:flex-row items-center">
+          {/* Text Content */}
+          <div className="w-full lg:w-1/2 pl-4 md:pl-20 relative z-10 py-8 md:py-0">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
               <span className="text-white">Our</span>{" "}
               <span className="text-[#f47847]">Clients</span>
             </h1>
-            <p className="text-xl md:text-2xl max-w-3xl text-gray-300">
+            <p className="text-lg md:text-xl lg:text-2xl max-w-3xl text-gray-300">
               Discover the organizations that trust Accord Innovations to deliver exceptional solutions and drive their digital transformation.
             </p>
           </div>
           
-          {/* Right side - Image */}
-          <div className="absolute top-0 right-0 w-full lg:w-1/2 h-full">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0a3d62] via-[#0a3d62]/80 to-transparent z-10" />
+          {/* Image */}
+          <div className="w-full lg:w-1/2 h-[30vh] md:h-full relative">
+            <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#0a3d62] via-[#0a3d62]/80 to-transparent z-10" />
             <div 
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{
@@ -255,14 +255,14 @@ const OurClientele: React.FC = () => {
       </section>
 
       {/* Client Logos Section */}
-      <section className="py-20">
+      <section className="py-12 md:py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-[#0a3d62] mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#0a3d62] mb-8 md:mb-16">
             TRUSTED BY INDUSTRY LEADERS
           </h2>
           
           {/* Client Cards Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 lg:gap-8">
             {clients.slice(0, displayedClients).map((client) => (
               <div 
                 key={client.id}
@@ -274,24 +274,24 @@ const OurClientele: React.FC = () => {
                 onMouseEnter={() => setHoveredCard(client.id)}
                 onMouseLeave={() => setHoveredCard(null)}
               >
-                <div className="p-4 flex flex-col items-center justify-center h-full">
-                  <div className="w-full h-32 flex items-center justify-center mb-3 bg-gradient-to-b from-gray-50 to-white p-2 rounded-lg">
+                <div className="p-3 md:p-4 flex flex-col items-center justify-center h-full">
+                  <div className="w-full h-24 md:h-32 flex items-center justify-center mb-2 md:mb-3 bg-gradient-to-b from-gray-50 to-white p-2 rounded-lg">
                     <img 
                       src={client.logo} 
                       alt={`${client.name} logo`} 
                       className="max-h-full max-w-full object-contain filter hover:brightness-110 transition-all duration-300"
                     />
                   </div>
-                  <h3 className="text-sm font-bold text-[#0a3d62] text-center">{client.name}</h3>
+                  <h3 className="text-xs md:text-sm font-bold text-[#0a3d62] text-center">{client.name}</h3>
                   <div className="flex items-center mt-1">
-                    <span className={`inline-block w-2 h-2 rounded-full mr-1 ${
+                    <span className={`inline-block w-1.5 h-1.5 md:w-2 md:h-2 rounded-full mr-1 ${
                       client.industry === 'Technology' ? 'bg-blue-500' :
                       client.industry === 'Finance' ? 'bg-green-500' :
                       client.industry === 'Healthcare' ? 'bg-red-500' :
                       client.industry === 'Manufacturing' ? 'bg-yellow-500' :
                       'bg-purple-500'
                     }`}></span>
-                    <p className="text-xs text-gray-500">{client.industry}</p>
+                    <p className="text-[10px] md:text-xs text-gray-500">{client.industry}</p>
                   </div>
                 </div>
               </div>
@@ -299,11 +299,11 @@ const OurClientele: React.FC = () => {
           </div>
           
           {/* Load More Button */}
-          <div className="mt-16 text-center">
+          <div className="mt-12 md:mt-16 text-center">
             {displayedClients < clients.length && (
               <button 
                 onClick={() => setDisplayedClients(prev => prev + 12)}
-                className="bg-[#0a3d62] text-white px-8 py-3 rounded-full hover:bg-[#f47847] transition-colors duration-300 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-semibold"
+                className="bg-[#0a3d62] text-white px-6 md:px-8 py-2.5 md:py-3 rounded-full hover:bg-[#f47847] transition-colors duration-300 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 text-sm md:text-base font-semibold"
               >
                 View More Clients
               </button>
