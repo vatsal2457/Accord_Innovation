@@ -18,11 +18,12 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap">
-          <FooterColumn title="Accord Innovations">
+          <div className="w-full lg:w-1/4 mb-8">
+            <img src="/images/accordlogo.png" alt="Accord Innovations Logo" className="h-12 mb-4" />
             <p className="mb-2">People-Powered Performance</p>
             <p className="mb-2">GL: +6.03 8322 7700</p>
             <p className="mb-2">contact@accordinnovations.com</p>
-          </FooterColumn>
+          </div>
           
           <FooterColumn title="Main Links">
             <ul>
