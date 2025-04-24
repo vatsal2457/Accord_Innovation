@@ -9,7 +9,7 @@ const MobilitySolutions: React.FC = () => {
         title="Mobility"
         subtitle="Solutions"
         description="Empower your workforce with innovative mobility solutions that enhance productivity, collaboration, and customer engagement."
-        backgroundImage="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80"
+        backgroundImage="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
         backgroundColor="#0a3d62"
         gradientColor="#0a3d62"
         textColor="white"
@@ -34,7 +34,7 @@ const MobilitySolutions: React.FC = () => {
             </div>
             <div className="relative order-1 md:order-2 flex items-center justify-center h-full">
               <img 
-                src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
+                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
                 alt="Our Approach" 
                 className="rounded-lg shadow-xl w-full h-[300px] md:h-[350px] object-cover"
               />
@@ -45,7 +45,7 @@ const MobilitySolutions: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
             <div className="relative order-1 flex items-center justify-center h-full">
               <img 
-                src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80" 
+                src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
                 alt="Our Solutions" 
                 className="rounded-lg shadow-xl w-full h-[300px] md:h-[350px] object-cover"
               />
