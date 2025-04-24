@@ -6,31 +6,32 @@ const CodeOfConduct: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] bg-[#1E3A8A]">
-        <div className="container mx-auto px-4 h-[60vh] flex items-center">
-          {/* Left side - Text Content */}
-          <div className="w-full lg:w-1/2 pl-20 relative z-10">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+      <section className="relative min-h-[50vh] md:min-h-[60vh] bg-gradient-to-r from-[#0a3d62] to-[#1e4d7b]">
+        <div className="absolute inset-0 bg-[url('/images/pattern.png')] opacity-10"></div>
+        <div className="container mx-auto px-4 h-auto md:h-[60vh] flex flex-col md:flex-row items-center">
+          {/* Text Content */}
+          <div className="w-full lg:w-1/2 pl-4 md:pl-8 lg:pl-20 relative z-10 py-8 md:py-0">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
               <span className="text-white">Code of</span>{" "}
               <span className="text-[#f47847]">Conduct</span>
             </h1>
-            <p className="text-xl md:text-2xl max-w-3xl text-gray-300">
-              Our Values & Guidelines
+            <p className="text-lg md:text-xl lg:text-2xl max-w-3xl text-gray-300">
+              Our commitment to ethical business practices and professional standards.
             </p>
           </div>
           
-          {/* Right side - Image */}
-          <div className="absolute top-0 right-0 w-full lg:w-1/2 h-full">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#1E3A8A] via-[#1E3A8A]/80 to-transparent z-10" />
+          {/* Image */}
+          <div className="w-full lg:w-1/2 h-[30vh] md:h-full relative">
+            <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#0a3d62] via-[#0a3d62]/80 to-transparent z-10" />
             <div 
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{
-                backgroundImage: 'url("https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80")',
+                backgroundImage: 'url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")',
               }}
             />
           </div>
         </div>
-        </section>
+      </section>
 
       {/* Main Content */}
       <section className="py-16 bg-gray-50">
