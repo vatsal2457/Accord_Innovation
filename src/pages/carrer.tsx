@@ -477,7 +477,7 @@ const Career: React.FC = () => {
                     <option value="">Select a position</option>
                     <option value="software-developer">Software Developer</option>
                     <option value="data-scientist">Data Scientist</option>
-                    <option value="project-manager">Project Manager</option>
+                    <option value="project-manager">Project Managers</option>
                     <option value="ui-ux-designer">UI/UX Designer</option>
                     <option value="devops-engineer">DevOps Engineer</option>
                     <option value="business-analyst">Business Analyst</option>
